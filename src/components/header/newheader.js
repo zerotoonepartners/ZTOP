@@ -1,8 +1,10 @@
 import React from "react";
 import './newheader.scss'
 import logo from '../../static/images/ztopheaderlogo.png'
+import { useHistory } from 'react-router';
 
-function newheader() {
+function Newheader() {
+    let history = useHistory()
     return (
     <>
         <div className="newHeaderWrapper">
@@ -10,13 +12,13 @@ function newheader() {
                 <img src={logo} alt="logo" />
            </div>
            <div className="headerLinkWrapper">
-               <div className="linkItem">
+               <div className="linkItem" onClick={()=>history.push('/')}>
                    <span>ABOUT</span>
                </div>
-               <div className="linkItem">
+               <div className="linkItem" onClick={()=>history.push('/media')}>
                    <span>MEDIA</span>
                </div>
-               <div className="linkItem">
+               <div className="linkItem" onClick={()=>history.push('/contact')}>
                    <span>CONTACT</span>
                </div>
            </div>
@@ -25,4 +27,4 @@ function newheader() {
     )
 }
 
-export default newheader;
+export default Newheader;
