@@ -7,6 +7,7 @@ import Library from './pages/library';
 import About from './pages/about';
 import Main from './pages/main';
 import scrollToTop from '../src/components/common/scrollToTop';
+import Contact from './pages/contact';
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
           <Route path="/" exact component={Main}/>
           <Route path="/about" component={About}/>
           <Route path="/library" component={Library}/>
+          <Route path="/contact" component={Contact} />
         </Switch>
       </BrowserRouter>
     </ZtopContextProvider>
