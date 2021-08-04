@@ -8,26 +8,34 @@ function Contact() {
     <div>
       <div className="contactPageWrapper">
         <div className="contactMenuBarWrapper">
-          기업 검토
+          <div className="contactMenu">
+          <span>기업 검토</span>
+          </div>
+          <div className="contactMenu">
+          <span>오시는 길</span>
+          </div>
         </div>
         <div className="contactContentsWrapper">
           <div className="contentsWrapperOne">
-            <span>간단한 신청 친절한 답변!<br/>
-            아래 신청하기를 눌러 메일을 보내주세요</span>
+            <span>간단한 신청 빠른 답변!<br/>
+            아래 신청하기를 눌러 카카오톡으로 문의 및 신청을 해주세요</span>
           </div>
           <div className="contentsWrapperTwo">
             <div className="iconAndNameWrapper">
               <div className="iconAndName">
               <img src={ci1} className="icon" />
-                <span className="name">1. IR 자료, 명함<br/>준비하기</span>
+                <span className="name">
+                  <span className="desktopName">1. IR자료/명함/사업자등록증/<br/>4대보험명부 준비</span>
+                  <span className="mobileName">1. 기업자료 준비</span>
+                </span>
               </div>
               <div className="iconAndName">
               <img src={ci2} className="icon" />
-                <span className="name">2. 신청폼 작성하기</span>
+                <span className="name">2. 카카오톡 문의하기</span>
               </div>
               <div className="iconAndName">
               <img src={ci3} className="icon" />
-                <span className="name">3. 메일 보내기</span>
+                <span className="name">3. 기업서류 보내기</span>
               </div>
 
             </div>
