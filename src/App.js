@@ -8,6 +8,7 @@ import About from './pages/about';
 import Main from './pages/main';
 import scrollToTop from '../src/components/common/scrollToTop';
 import Contact from './pages/contact';
+import Contact2 from './pages/contact2';
 
 
 function App() {

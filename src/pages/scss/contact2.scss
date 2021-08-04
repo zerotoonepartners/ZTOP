@@ -1,0 +1,288 @@
+
+@media all and (min-width: 320px) {
+    .contactPageWrapper{
+        width: 100%;
+        height: 100vh;
+
+        .contactMenuBarWrapper{
+            // border:1px solid green;
+            height: 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .contactMenu{
+                // border:1px solid orange;
+                width: 40%;
+                text-align: center;
+                span{
+                    font-weight: bold;
+                    font-size: 4.5vw;
+                }
+
+            }
+        }
+
+
+        .contactContentsWrapper2{
+            // border:3px solid pink;
+            height: 80%;
+            display: flex;
+            flex-direction: column;
+
+            .contentsWrapperOne2{
+                // border:1px solid red;
+                height: 70%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .pcMap{
+                    display: none;
+                    
+                }
+                .mobileMap{
+                    display: flex;
+
+                }
+
+
+            }
+
+
+
+            .contentsWrapperTwo2{
+                // border:1px solid blue;
+                height: 30%;
+                display: flex;
+                justify-content: center;
+
+                .infoWrapper{
+                    // border:1px solid pink;
+                    display: flex;
+                    flex-direction: column;
+                    // justify-content: space-around;
+
+                    .info{
+                        // border: 1px solid green;
+                        margin: 2% 0;
+                        
+
+                        .strong{
+                            font-size: 4vw;
+                            font-weight: 700;
+                        }
+                        span{
+                            font-size: 3vw;
+                        
+                        }
+
+                    }
+                }
+
+            }
+
+
+
+
+
+        }
+
+
+
+    }
+   
+}
+@media all and (min-width: 768px) {
+    .contactPageWrapper{
+        width: 100%;
+        height: 100vh;
+
+        .contactMenuBarWrapper{
+            // border:1px solid green;
+            height: 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .contactMenu{
+                // border:1px solid orange;
+                width: 40%;
+                text-align: center;
+                span{
+                    font-weight: bold;
+                    font-size: 4.5vw;
+                }
+
+            }
+        }
+
+
+        .contactContentsWrapper2{
+            // border:3px solid pink;
+            height: 80%;
+            display: flex;
+            flex-direction: column;
+
+            .contentsWrapperOne2{
+                // border:1px solid red;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .pcMap{
+                    display: flex;
+                    
+                }
+                .mobileMap{
+                    display: none;
+
+                }
+
+
+            }
+
+
+
+            .contentsWrapperTwo2{
+                // border:1px solid blue;
+                height: 50%;
+                display: flex;
+                justify-content: center;
+
+                .infoWrapper{
+                    // border:1px solid pink;
+                    display: flex;
+                    flex-direction: column;
+                    // justify-content: space-around;
+
+                    .info{
+                        // border: 1px solid green;
+                        margin: 2% 0;
+                        
+
+                        .strong{
+                            font-size: 4vw;
+                            font-weight: 700;
+                        }
+                        span{
+                            font-size: 3vw;
+                        
+                        }
+
+                    }
+                }
+
+            }
+
+
+
+
+
+        }
+
+
+
+    }
+
+}
+@media all and (min-width: 1024px) {
+    .contactPageWrapper{
+        width: 100%;
+        height: 100vh;
+
+        .contactMenuBarWrapper{
+            // border:1px solid green;
+            height: 30%;
+            display: flex;
+            justify-content: center;
+
+            .contactMenu{
+                // border:1px solid orange;
+                width: 30%;
+                text-align: center;
+                span{
+                    font-weight: bold;
+                    font-size: 1.8vw;
+                }
+
+            }
+
+        }
+
+
+        .contactContentsWrapper2{
+            // border:3px solid pink;
+            height: 70%;
+            display: flex;
+            flex-direction: row;
+
+            .contentsWrapperOne2{
+                // border:1px solid red;
+                width: 60%;
+                height: auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .pcMap{
+                    display: flex;
+                    
+                }
+                .mobileMap{
+                    display: none;
+
+                }
+
+
+            }
+
+
+
+            .contentsWrapperTwo2{
+                // border:1px solid blue;
+                width:40%;
+                height: auto;
+                display: flex;
+                justify-content: start;
+                align-items: center;
+
+
+                .infoWrapper{
+                    // border:1px solid pink;
+                    display: flex;
+                    flex-direction: column;
+                    // justify-content: space-around;
+
+                    .info{
+                        // border: 1px solid green;
+                        margin: 4% 0;
+                        
+
+                        .strong{
+                            font-size: 1.5vw;
+                            font-weight: 700;
+                        }
+                        span{
+                            font-size: 1.2vw;
+                        
+                        }
+
+                    }
+                }
+
+            }
+
+
+
+
+
+        }
+
+
+
+    }   
+
+  
+}
