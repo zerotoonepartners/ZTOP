@@ -5,10 +5,10 @@ const ZtopContext = createContext();
 const ZtopContextProvider = ({ children }) => {
   const [loading,setLoading] = useState(true);
   const [modal,setModal] = useState(false);
-  const [blogLink_,setBlogLink_] = useState();
-  const [corporatenews_,setCorporatenews_] = useState();
-  const [namecard_,setNamecard_] = useState();
-  const [pressRelease_,setPressRelease_] = useState();
+  const [blogLink_,setBlogLink_] = useState([]);
+  const [corporatenews_,setCorporatenews_] = useState([]);
+  const [namecard_,setNamecard_] = useState([]);
+  const [pressRelease_,setPressRelease_] = useState([]);
 
 
   const getBlogLink=()=>{
