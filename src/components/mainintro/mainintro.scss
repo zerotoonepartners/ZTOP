@@ -9,9 +9,9 @@
       display: flex;
       flex-direction: column;
       margin-top: 0rem;
-      margin-bottom: 1rem;
+      margin-bottom: 0rem;
       .introTitle {
-        margin-top: 5rem;
+        margin-top: 2rem;
         margin-bottom: 1rem;
         display: flex;
         justify-content: center;
@@ -38,8 +38,8 @@
       flex-direction: column;
       align-items: center;
       .boxItem {
-        width: 12rem;
-        height: 12rem;
+        width: 14rem;
+        height: 8rem;
         background-color: rgba(0, 56, 255, 0.05);
         border-radius: 10px;
         margin-bottom: 2rem;
@@ -47,14 +47,14 @@
         flex-direction: column;
         align-items: center;
         .itemTItle {
-          margin-top: 2rem;
+          margin-top: 1.3rem;
           font-size: 1rem;
           font-weight: 800;
         }
         .itemDesc {
-          margin-top: 2rem;
+          margin-top: 1rem;
           font-weight: 200;
-          font-size: 0.8rem;
+          font-size: 0.7rem;
           text-align: center;
           line-height: 140%;
         }
@@ -73,9 +73,9 @@
       display: flex;
       flex-direction: column;
       margin-top: 0rem;
-      margin-bottom: 1rem;
+      margin-bottom: 0rem;
       .introTitle {
-        margin-top: 5rem;
+        margin-top: 2rem;
         margin-bottom: 1rem;
         display: flex;
         justify-content: center;
@@ -102,8 +102,8 @@
       flex-direction: column;
       align-items: center;
       .boxItem {
-        width: 12rem;
-        height: 12rem;
+        width: 14rem;
+        height: 8rem;
         background-color: rgba(0, 56, 255, 0.05);
         border-radius: 10px;
         margin-bottom: 2rem;
@@ -111,14 +111,14 @@
         flex-direction: column;
         align-items: center;
         .itemTItle {
-          margin-top: 2rem;
+          margin-top: 1.3rem;
           font-size: 1rem;
           font-weight: 800;
         }
         .itemDesc {
-          margin-top: 2rem;
+          margin-top: 1rem;
           font-weight: 200;
-          font-size: 0.8rem;
+          font-size: 0.7rem;
           text-align: center;
           line-height: 140%;
         }
