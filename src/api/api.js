@@ -4,8 +4,9 @@ import axios from 'axios';
 export const blogLink = async () => {
   try{
     const res = await axios.get(`${url}/bloglink`);
-    console.log("b"+res.data);
-    return res.data;
+    const data = JSON.stringify(res.data);
+
+    return data;
   }
   catch(e){
     alert(e);
@@ -15,8 +16,9 @@ export const blogLink = async () => {
 export const corporateNews = async () => {
   try{
     const res = await axios.get(`${url}/corporatenews`);
-    console.log("c"+res.data);
-    return res.data;
+    const data = JSON.stringify(typeof(res.data));
+    console.log(data);
+    return data;
   }
   catch(e){
     alert(e);
@@ -26,8 +28,8 @@ export const corporateNews = async () => {
 export const nameCard = async () => {
   try{
     const res = await axios.get(`${url}/namecard`);
-    console.log("n"+res.data);
-    return res.data;
+    const data = JSON.stringify(res.data);
+    return data;
   }
   catch(e){
     alert(e);
@@ -37,8 +39,8 @@ export const nameCard = async () => {
 export const pressRelease = async () => {
   try{
     const res = await axios.get(`${url}/pressrelease`);
-    console.log("p"+res.data);
-    return res.data;
+    const data = JSON.stringify(res.data);
+    return data;
   }
   catch(e){
     alert(e);
