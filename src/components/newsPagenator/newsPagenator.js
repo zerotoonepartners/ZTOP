@@ -1,32 +1,19 @@
 import './newsPagenator.scss';
 
-import {useContext} from 'react'
+import {useContext,useState} from 'react'
 import Loading from "../loading/loading";
 import {ZtopContext} from "../../context/ztop";
+import Posts from './Posts'
 
 function NewsPagenator(){
     const {loading,pressRelease_} = useContext(ZtopContext);
+    const [currentPage,setCurrentPage] = useState(1);
+    const [postsPerPage,setPostsPerPAge] = useState(10);
+    //console.log(pressRelease_)
     return(
         <>
-        {
-            loading&&
-            <Loading/>
-        }
         <div className="NewsPagenatorWrapper">
-            <div className="NewsPagenatorBox">
-                <div className="NewsPagenatorNo">
-                    <span>1</span>
-                </div>
-                <div className="NewsPagenatorTitle">
-                    <span>나는가수다나는가수다나는가수다나는가수다나는가수다나는가수다나는가수다나는가수다</span>
-                </div>
-                <div className="NewsPagenatorWriter">
-                    <span>안경록</span>
-                </div>
-                <div className="NewsPagenatorStamp">
-                    <span>2021-02-23</span>
-                </div>
-            </div>
+            <Posts/>
         </div>
         </>
     )
