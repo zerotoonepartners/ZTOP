@@ -2,19 +2,33 @@ import './scss/contact.scss';
 import ci1 from '../static/images/contactIcon1.png';
 import ci2 from '../static/images/contactIcon2.png';
 import ci3 from '../static/images/contactIcon3.png';
+import { useEffect, useState } from 'react';
+import userEvent from '@testing-library/user-event';
 
 function Contact() {
+  const [contact, setContact] = useState(0)
+  const [test, setTest] = useState(2)
+  useEffect(()=>{
+    console.log(contact)
+  },[contact])
+
+  useEffect(()=>{
+    console.log(test)
+  },[test])
+
+
   return (
     <div>
       <div className="contactPageWrapper">
         <div className="contactMenuBarWrapper">
-          <div className="contactMenu">
+          <div className="contactMenu" onClick={()=>setTest(0)}>
           <span>기업 검토</span>
           </div>
-          <div className="contactMenu">
+          <div className="contactMenu" onClick={()=>setTest(1)}>
           <span>오시는 길</span>
           </div>
         </div>
+        
         <div className="contactContentsWrapper">
           <div className="contentsWrapperOne">
             <span>간단한 신청 빠른 답변!<br/>
