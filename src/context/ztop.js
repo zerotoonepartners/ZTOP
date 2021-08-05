@@ -1,14 +1,20 @@
 import { createContext, useEffect, useState } from 'react';
-import { getData } from '../api/api';
+import { bloglink, namecard, pressrelease, corporatenews } from '../api/api';
 const ZtopContext = createContext();
 
 const ZtopContextProvider = ({ children }) => {
-  const [data,setData] = useState()
+  const [data, setData] = useState();
+  const [blogLinkData, setBlogLinkData] = useState({
+    id: undefined,
+    title: undefined,
+    link: undefined,
+  });
+  const [corporateNewsData, setCorpoerateNewsData] = useState({});
 
   async function fetchData() {
     try {
-      let temp = await getData();
-      console.log(temp)
+      let blData = await bloglink();
+      setBlogLinkData(blData);
     } catch (e) {
       console.log(e);
     }
@@ -22,6 +28,8 @@ const ZtopContextProvider = ({ children }) => {
       value={{
         data,
         setData,
+        blogLinkData,
+        setBlogLinkData,
       }}
     >
       {children}
