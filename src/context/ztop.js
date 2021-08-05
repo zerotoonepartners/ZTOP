@@ -1,35 +1,58 @@
 import { createContext, useEffect, useState } from 'react';
-import { bloglink, namecard, pressrelease, corporatenews } from '../api/api';
+import { blogLink, corporateNews, nameCard, pressRelease } from '../api/api';
 const ZtopContext = createContext();
 
 const ZtopContextProvider = ({ children }) => {
-  const [data, setData] = useState();
-  const [blogLinkData, setBlogLinkData] = useState({
-    id: undefined,
-    title: undefined,
-    link: undefined,
-  });
-  const [corporateNewsData, setCorpoerateNewsData] = useState({});
+  const [loading, setLoading] = useState(true);
+  const [modal, setModal] = useState(false);
+  const [blogLink_, setBlogLink_] = useState([]);
+  const [corporatenews_, setCorporatenews_] = useState([]);
+  const [namecard_, setNamecard_] = useState([]);
+  const [pressRelease_, setPressRelease_] = useState([]);
 
-  async function fetchData() {
-    try {
-      let blData = await bloglink();
-      setBlogLinkData(blData);
-    } catch (e) {
-      console.log(e);
-    }
-  }
+  const getBlogLink = () => {
+    let data = blogLink();
+    setBlogLink_(data);
+  };
+  const getCorporatenews = () => {
+    let data = corporateNews();
+    setCorporatenews_(data);
+  };
+  const getNamecard = () => {
+    let data = nameCard();
+    setNamecard_(data);
+  };
+  const getPressRelease = () => {
+    let data = pressRelease();
+    setPressRelease_(data);
+  };
 
   useEffect(() => {
-    fetchData();
+    try {
+      getBlogLink();
+      getCorporatenews();
+      getNamecard();
+      getPressRelease();
+      setLoading(false);
+    } catch (e) {
+      alert(e);
+    }
   }, []);
   return (
     <ZtopContext.Provider
       value={{
-        data,
-        setData,
-        blogLinkData,
-        setBlogLinkData,
+        loading,
+        setLoading,
+        modal,
+        setModal,
+        blogLink_,
+        setBlogLink_,
+        corporatenews_,
+        setCorporatenews_,
+        namecard_,
+        setNamecard_,
+        pressRelease_,
+        setPressRelease_,
       }}
     >
       {children}

@@ -1,0 +1,73 @@
+.NewsPagenatorWrapper{
+    width : 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0rem;
+}
+
+@media all and (min-width:320px){
+
+}
+
+@media all and (min-width:768px){
+    
+}
+
+@media all and (min-width:1024px){
+    .NewsPagenatorWrapper{
+            .NewsPagenatorBox{
+                width : 100%;
+                height: 5vh;
+                
+                display: flex;
+                flex-direction: row;
+                .NewsPagenatorNo{
+                    height: 100%;
+                    width: 10%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border : 1px solid red;
+                    span{
+                    }
+
+                }
+                .NewsPagenatorTitle{
+                    height: 100%;
+                    width: 70%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border : 1px solid blue;
+                    span{
+                    }
+                    
+                }
+                .NewsPagenatorWriter{
+                    height: 100%;
+                    width: 10%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border : 1px solid orange;
+                    span{
+                    }
+                    
+                }
+                .NewsPagenatorStamp{
+                    height: 100%;
+                    width: 10%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border : 1px solid purple;
+                    span{
+                    }
+                    
+                }
+            }
+        }
+    
+}

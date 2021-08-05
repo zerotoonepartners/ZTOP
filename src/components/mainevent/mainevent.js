@@ -14,8 +14,8 @@ function Mainevent() {
             스타트업을 위한 IR 행사를 개최합니다. 제로투원파트너스의 행사입니다.
           </span>
         </div>
-        <div className="eventCardWrapper"></div>
       </div>
+      <div className="eventCardWrapper">s</div>
     </div>
   );
 }
