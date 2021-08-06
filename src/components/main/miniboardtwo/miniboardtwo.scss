@@ -1,0 +1,162 @@
+@media all and (min-width: 320px) {
+  .miniboardWrapperTwo {
+    width: 17rem;
+    height: 14rem;
+    background-color: #eeeef9;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    .miniboardHeaderWrapper {
+      margin-bottom: 1.5rem;
+      width: 100%;
+      height: 2rem;
+      display: flex;
+      position: relative;
+      align-items: center;
+      justify-content: flex-end;
+      .boradMore {
+        span {
+          display: block;
+          margin-right: 0.8rem;
+          font-size: 1.2rem;
+        }
+      }
+      .boardName {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 5rem;
+        height: 2rem;
+        background-color: #000a60;
+        position: absolute;
+        left: -1rem;
+        top: -0.5rem;
+        border-radius: 2px;
+        span {
+          color: #ffffff;
+          font-size: 0.7rem;
+        }
+      }
+    }
+    .boardLinkWrapper {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      .boardLinkItem {
+        span {
+          margin-left: 1rem;
+          font-weight: 200;
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+}
+@media all and (min-width: 768px) {
+  .miniboardWrapperTwo {
+    width: 17rem;
+    height: 14rem;
+    background-color: #eeeef9;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    .miniboardHeaderWrapper {
+      width: 100%;
+      height: 2rem;
+      display: flex;
+      position: relative;
+      align-items: center;
+      justify-content: flex-end;
+      .boradMore {
+        span {
+          display: block;
+          margin-right: 0.8rem;
+          font-size: 1.2rem;
+        }
+      }
+      .boardName {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 5rem;
+        height: 2rem;
+        background-color: #000a60;
+        position: absolute;
+        left: -1rem;
+        top: -0.5rem;
+        border-radius: 2px;
+        span {
+          color: #ffffff;
+          font-size: 0.7rem;
+        }
+      }
+    }
+    .boardLinkWrapper {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      .boardLinkItem {
+        span {
+          margin-left: 1rem;
+          font-weight: 200;
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+}
+@media all and (min-width: 1024px) {
+  .miniboardWrapperTwo {
+    width: 28rem;
+    height: 24rem;
+    background-color: #eeeef9;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    .miniboardHeaderWrapper {
+      margin-bottom: 1.5rem;
+      width: 100%;
+      height: 2rem;
+      display: flex;
+      position: relative;
+      align-items: center;
+      justify-content: flex-end;
+      .boradMore {
+        span {
+          display: block;
+          margin-right: 0.8rem;
+          font-size: 1.2rem;
+        }
+      }
+      .boardName {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 8rem;
+        height: 3rem;
+        background-color: #000a60;
+        position: absolute;
+        left: -1rem;
+        top: -0.5rem;
+        border-radius: 2px;
+        span {
+          color: #ffffff;
+          font-size: 1rem;
+        }
+      }
+    }
+    .boardLinkWrapper {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      .boardLinkItem {
+        span {
+          margin-left: 1rem;
+          font-weight: 200;
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}
