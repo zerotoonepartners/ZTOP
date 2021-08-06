@@ -17,7 +17,7 @@ function MiniboardOne() {
       console.log(corporatenews_);
       return (
         <>
-          <div className="miniboardWrapper">
+          <div className="miniboardWrapperOne">
             <div className="miniboardHeaderWrapper">
               <div className="boardName">
                 <span>보도자료</span>
@@ -28,17 +28,27 @@ function MiniboardOne() {
             </div>
             <div className="boardContentWrapper">
               <div className="boardContent border">
-                <span>
+                <span className="borderTitleSpan">
                   {corporatenews_.data[0].title.length > 35
                     ? `${corporatenews_.data[0].title.substring(0, 35)}...`
                     : `${corporatenews_.data[0].title}`}
                 </span>
+                <span className="borderTitleDesc">
+                  {corporatenews_.data[0].content_1.length > 70
+                    ? `${corporatenews_.data[0].content_1.substring(0, 70)}...`
+                    : `${corporatenews_.data[0].content_1}`}
+                </span>
               </div>
               <div className="boardContent">
-                <span>
+                <span className="borderTitleSpan">
                   {corporatenews_.data[1].title.length > 35
                     ? `${corporatenews_.data[1].title.substring(0, 35)} ...`
                     : `${corporatenews_.data[1].title}`}
+                </span>
+                <span className="borderTitleDesc">
+                  {corporatenews_.data[1].content_1.length > 70
+                    ? `${corporatenews_.data[1].content_1.substring(0, 70)}...`
+                    : `${corporatenews_.data[1].content_1}`}
                 </span>
               </div>
             </div>
