@@ -1,13 +1,11 @@
-import { useContext, useState } from 'react';
-import Loading from '../loading/loading';
-import './newsPagenator.scss';
-import { ZtopContext } from '../../context/ztop';
-import { corporateNews } from '../../api/api';
 
-function Posts({posts}){
+import './cardpost.scss';
+
+function CardPosts({posts}){
     console.log(posts);
             return (
                 <>
+            <div className="cardPagenatorContainer">
                 { posts.length===0? 
                 <div className="NewsPagenatorBox">
                     <div className="NewsPagenatorNo">
@@ -25,24 +23,25 @@ function Posts({posts}){
                 </div>  
                 
                 :
+                
                 posts.map((post,idx)=>(
-                  <div key={post.id} className="NewsPagenatorBox">
-                  <div className="NewsPagenatorNo">
-                      <span>{idx+1}</span>
-                  </div>
-                  <div className="NewsPagenatorTitle">
-                      <span>{post.title}</span>
-                  </div>
-                  <div className="NewsPagenatorWriter">
-                      <span>{post.writer}</span>
-                  </div>
-                  <div className="NewsPagenatorStamp">
-                      <span>{post.created_at.slice(0,10)}</span>
-                  </div>
+                  <div key={post.id} className="cardPagenatorBox">
+                        <div className="cardPagenatorImgBox">
+                            <img src={post.picture_1}/>
+                        </div>
+                        <div className="cardPagenatorContentBox">
+                            <div className="cardPagenatorTitle">
+                                <span>{post.title}</span>
+                            </div>
+                            <div className="cardPagenatorStamp">
+                                <span>{post.created_at.slice(0,10)}</span>
+                        </div>
+                    </div>
               </div>
                 ))}
+            </div>
               </>
               );
   
 };
-export default Posts;
+export default CardPosts;

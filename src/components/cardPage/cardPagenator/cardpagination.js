@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import './pagination.scss';
+import './cardpagination.scss';
 
-function Pagination({ pages, setCurrentPage }) {
+function CardPagination({ pages, setCurrentPage }) {
 
   //Set number of pages
   const numberOfPages = []
@@ -68,7 +68,7 @@ function Pagination({ pages, setCurrentPage }) {
 
 
   return (
-    <div className="pagination-container">
+    <div className="card-pagination-container">
       <a
         href="#"
         className={`${currentButton === 1 ? 'disabled' : ''}`}
@@ -100,4 +100,4 @@ function Pagination({ pages, setCurrentPage }) {
 }
 
 
-export default Pagination
+export default CardPagination

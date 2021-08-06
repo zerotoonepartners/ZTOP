@@ -1,6 +1,8 @@
 import {useState} from 'react';
 import './newsPage.scss';
 
+import Header from "../header/newheader"; 
+
 import NewsPagenator from "../newsPagenator/newsPagenator";
 
 function NewsPage(){
@@ -8,6 +10,7 @@ function NewsPage(){
     return(
         <>
         <div className="NewsWrapper">
+            
             <div className="NewsTitle">
                <span>NEWS</span>
             </div>

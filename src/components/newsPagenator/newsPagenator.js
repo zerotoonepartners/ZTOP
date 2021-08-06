@@ -5,54 +5,30 @@ import Loading from "../loading/loading";
 import {ZtopContext} from "../../context/ztop";
 import Posts from './Posts';
 import Pagination from './pagination';
-import Paging from './paging';
+import { useEffect } from 'react/cjs/react.development';
 
 function NewsPagenator(){
-    const {loading,pressRelease_,corporatenews_} = useContext(ZtopContext);
+    const {news_} = useContext(ZtopContext);
     const [currentPage,setCurrentPage] = useState(1);
-    const [postsPerPage,setPostsPerPage] = useState(10);
-    //console.log(pressRelease_)
-    const indexofLast = currentPage * postsPerPage;
-    const indexofFirst = indexofLast - postsPerPage;
-
-    function currentPosts(tmp){
-        let currentPosts = 0;
-        currentPosts = tmp.slice(indexofFirst,indexofLast);
-        return currentPosts;
-    }
-    switch(corporatenews_.status){
+    const [postsPerPage] = useState(10)
+    switch(news_.status){
         case 'pending':
-            return <Loading/>
+            return <div className="NewsPagenatorWrapper"><Loading/></div>
         case 'idle' :
-            return <Loading/>
+            return <div className="NewsPagenatorWrapper"><Loading/></div>
         case 'rejected' :
             return <>ERR</>
         default:
-            // const posts=corporatenews_.data;
-            // const dispatch = useDispatch();
-            // const {count,page,items} = useSelector(
-            //     ({posts})=>({
-            //         count : posts.count,
-            //         page: posts.page,
-            //         items: posts.items,
-            //     }),
-            //     shallowEqual
-            // );
-            // useEffect(()=>{
-            //     dispatch(eventActions.getEvents());
-            // },[]);
-            // const setPage = useCallback(
-            //     (page)=>{
-            //         dispatch(eventActions.getEvents(page));
-            //     },[dispatch]
-            // )
+            let indexOfLastPost = currentPage * postsPerPage;
+            let indexOfFirstPost = indexOfLastPost - postsPerPage;
+            let currentPosts = news_.data.slice(indexOfFirstPost,indexOfLastPost) 
+            let howManyPages = Math.ceil(news_.data.length/postsPerPage)
             return(
                 <>
                 <div className="NewsPagenatorWrapper">
-                        <Posts posts={posts}/>
+                        <Posts posts={currentPosts}/>
                     <div className="pageNumberWrapper">
-                        {/* <Pagination postsPerPage={postsPerPage} totalPosts={posts.length} paginate={setCurrentPage}/> */}
-                        <Paging page={page} count={count} setPage={setPage}/>
+                        <Pagination pages={howManyPages} setCurrentPage={setCurrentPage}/>
                     </div>
                 </div>
                 </>

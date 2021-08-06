@@ -1,109 +1,110 @@
 import { createContext, useEffect, useState } from 'react';
-import { blogLink,corporateNews,nameCard,pressRelease } from '../api/api';
+import { blogLink, ztopNotice, nameCard, news } from '../api/api';
 const ZtopContext = createContext();
 
 const ZtopContextProvider = ({ children }) => {
-  const [loading,setLoading] = useState(true);
-  const [modal,setModal] = useState(false);
-  const [blogLink_,setBlogLink_] = useState({
+  const [loading, setLoading] = useState(true);
+  const [modal, setModal] = useState(false);
+  const [blogLink_, setBlogLink_] = useState({
     status: 'idle',
-    data: null
+    data: null,
   });
-  const [corporatenews_,setCorporatenews_] = useState({
+  const [ztopNotice_, setZtopNotice_] = useState({
     status: 'idle',
-    data: null
+    data: null,
   });
-  const [namecard_,setNamecard_] = useState({
+  const [namecard_, setNamecard_] = useState({
     status: 'idle',
-    data: null
+    data: null,
   });
-  const [pressRelease_,setPressRelease_] = useState({
-    status:'idle',
-    data:null
+  const [news_, setNews_] = useState({
+    status: 'idle',
+    data: null,
   });
 
-
-  const getBlogLink=async()=>{
+  const getBlogLink = async () => {
     let res = await blogLink();
     try {
       setBlogLink_({
-        status:'pending',
-        data: null
+        status: 'pending',
+        data: null,
       });
       setBlogLink_({
         status:'resolved',
         data: res.reverse()
       });
-    }catch(e){
+    } catch (e) {
       setBlogLink_({
-        status:'rejected',
-        data : null
-      })
+        status: 'rejected',
+        data: null,
+      });
     }
-  }
-  const getCorporatenews=async()=>{
-    let res = await corporateNews();
+  };
+  const getZtopNotice = async () => {
+    let res = await ztopNotice();
+
     try {
-      setCorporatenews_({
-        status:'pending',
-        data: null
+      setZtopNotice_({
+        status: 'pending',
+        data: null,
       });
-      setCorporatenews_({
+      setZtopNotice_({
         status:'resolved',
         data: res.reverse()
       });
-    }catch(e){
-      setCorporatenews_({
-        status:'rejected',
-        data : null
-      })
+    } catch (e) {
+      setZtopNotice_({
+        status: 'rejected',
+        data: null,
+      });
     }
-  }
-  const getNamecard=async()=>{
+  };
+  const getNamecard = async () => {
     let res = await nameCard();
     try {
       setNamecard_({
-        status:'pending',
-        data: null
+        status: 'pending',
+        data: null,
       });
       setNamecard_({
         status:'resolved',
         data: res.reverse()
       });
-    }catch(e){
+    } catch (e) {
       setNamecard_({
-        status:'rejected',
-        data : null
-      })
+        status: 'rejected',
+        data: null,
+      });
     }
-  }
-  const getPressRelease=async()=>{
-    let res = await pressRelease();
+  };
+  const getNews = async () => {
+    let res = await news();
+    console.log(res);
     try {
-      setPressRelease_({
-        status:'pending',
-        data: null
+      setNews_({
+        status: 'pending',
+        data: null,
       });
-      setPressRelease_({
+      setNews_({
         status:'resolved',
         data: res.reverse()
       });
-    }catch(e){
-      setPressRelease_({
-        status:'rejected',
-        data : null
-      })
+    } catch (e) {
+      setNews_({
+        status: 'rejected',
+        data: null,
+      });
     }
-  }
+  };
 
   useEffect(() => {
-    try{
-    getBlogLink();
-    getCorporatenews();
-    getNamecard();
-    getPressRelease();
-    setLoading(false);
-    }catch(e){
+    try {
+      getBlogLink();
+      getZtopNotice();
+      getNamecard();
+      getNews();
+      setLoading(false);
+    } catch (e) {
       alert(e);
     }
   }, []);
@@ -116,12 +117,12 @@ const ZtopContextProvider = ({ children }) => {
         setModal,
         blogLink_,
         setBlogLink_,
-        corporatenews_,
-        setCorporatenews_,
+        ztopNotice_,
+        setZtopNotice_,
         namecard_,
         setNamecard_,
-        pressRelease_,
-        setPressRelease_
+        news_,
+        setNews_,
       }}
     >
       {children}
