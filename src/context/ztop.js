@@ -42,6 +42,7 @@ const ZtopContextProvider = ({ children }) => {
   };
   const getCorporatenews = async () => {
     let res = await corporateNews();
+
     try {
       setCorporatenews_({
         status: 'pending',
@@ -78,6 +79,7 @@ const ZtopContextProvider = ({ children }) => {
   };
   const getPressRelease = async () => {
     let res = await pressRelease();
+    console.log(res);
     try {
       setPressRelease_({
         status: 'pending',

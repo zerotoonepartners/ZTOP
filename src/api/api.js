@@ -14,9 +14,8 @@ export const blogLink = async () => {
 
 export const corporateNews = async () => {
   try {
-    const res = await axios.get(`${url}/corporatenews`);
+    const res = await axios.get(`${url}/ztopnotice`);
     const data = res.data;
-    console.log(data);
     return data;
   } catch (e) {
     alert(e);
@@ -35,7 +34,7 @@ export const nameCard = async () => {
 
 export const pressRelease = async () => {
   try {
-    const res = await axios.get(`${url}/pressrelease`);
+    const res = await axios.get(`${url}/ztopnotice`);
     const data = res.data;
     return data;
   } catch (e) {
