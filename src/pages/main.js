@@ -7,6 +7,7 @@ import Mainposter from '../components/main/mainposter/mainposter';
 import Mainevent from '../components/main/mainevent/mainevent';
 import Mainstory from '../components/main/mainstory/mainstory';
 import Footer from '../components/footer/footer';
+import TopCircle from '../components/topcircle/topcircle';
 
 function Main() {
   return (
@@ -18,6 +19,7 @@ function Main() {
       <Mainevent />
       <Mainstory />
       <Footer />
+      <TopCircle />
     </>
   );
 }
