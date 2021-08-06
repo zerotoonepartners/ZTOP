@@ -4,22 +4,11 @@ import './newsPagenator.scss';
 import {ZtopContext} from "../../context/ztop";
 import { corporateNews } from '../../api/api';
 
-const Posts = () => {
-    const {loading,corporatenews_} = useContext(ZtopContext);
-    console.log(corporatenews_);
-    
-    switch(corporatenews_.status){
-        case 'pending':
-            return <Loading/>
-        case 'idle' :
-            return <Loading/>
-        case 'rejected' :
-            return <>ERR</>
-        default:
-            console.log(corporatenews_);
+const Posts = ({posts}) => {
+
             return (
                 <>
-                { corporatenews_.data.length===0? 
+                { posts.length===0? 
                 <div className="NewsPagenatorBox">
                     <div className="NewsPagenatorNo">
                         <span>0</span>
@@ -36,11 +25,10 @@ const Posts = () => {
                 </div>  
                 
                 :
-                corporatenews_.data.map((post,idx)=>{
-                    return(
+                posts.map((post,idx)=>(
                   <div key={post.id} className="NewsPagenatorBox">
                   <div className="NewsPagenatorNo">
-                      <span>{post.id}</span>
+                      <span>{idx+1}</span>
                   </div>
                   <div className="NewsPagenatorTitle">
                       <span>{post.title}</span>
@@ -49,14 +37,12 @@ const Posts = () => {
                       <span>{post.writer}</span>
                   </div>
                   <div className="NewsPagenatorStamp">
-                      <span>{post.createdAt}</span>
+                      <span>{post.created_at.slice(0,10)}</span>
                   </div>
               </div>
-                    )
-                    })}
+                ))}
               </>
               );
-    }
   
 };
 export default Posts;

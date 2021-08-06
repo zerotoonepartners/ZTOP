@@ -32,7 +32,7 @@ const ZtopContextProvider = ({ children }) => {
       });
       setBlogLink_({
         status:'resolved',
-        data: res
+        data: res.reverse()
       });
     }catch(e){
       setBlogLink_({
@@ -50,7 +50,7 @@ const ZtopContextProvider = ({ children }) => {
       });
       setCorporatenews_({
         status:'resolved',
-        data: res
+        data: res.reverse()
       });
     }catch(e){
       setCorporatenews_({
@@ -68,7 +68,7 @@ const ZtopContextProvider = ({ children }) => {
       });
       setNamecard_({
         status:'resolved',
-        data: res
+        data: res.reverse()
       });
     }catch(e){
       setNamecard_({
@@ -86,7 +86,7 @@ const ZtopContextProvider = ({ children }) => {
       });
       setPressRelease_({
         status:'resolved',
-        data: res
+        data: res.reverse()
       });
     }catch(e){
       setPressRelease_({
