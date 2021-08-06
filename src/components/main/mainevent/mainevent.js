@@ -1,13 +1,12 @@
 import React, { useState } from 'react';
 import styled, { css, keyframes } from 'styled-components';
 import './mainevent.scss';
-import { ZtopContext } from '../../context/ztop';
-import { corporateNews } from '../../api/api';
+import { ZtopContext } from '../../../context/ztop';
 import { useContext } from 'react';
 import Loading from 'react-loading';
 import Card from '../card/card';
-import right from '../../static/images/left.png';
-import left from '../../static/images/right.png';
+import right from '../../../static/images/left.png';
+import left from '../../../static/images/right.png';
 
 function Mainevent() {
   const { corporatenews_ } = useContext(ZtopContext);

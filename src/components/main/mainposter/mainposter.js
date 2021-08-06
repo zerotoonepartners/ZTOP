@@ -1,10 +1,10 @@
 import React from 'react';
 import styled, { css, keyframes } from 'styled-components';
 import './mainposter.scss';
-import layer1 from '../../static/images/mainlayer1.png';
-import layer2 from '../../static/images/mainlayer2.png';
-import layer3 from '../../static/images/mainlayer3.png';
-import layer4 from '../../static/images/mainlayer4.png';
+import layer1 from '../../../static/images/mainlayer1.png';
+import layer2 from '../../../static/images/mainlayer2.png';
+import layer3 from '../../../static/images/mainlayer3.png';
+import layer4 from '../../../static/images/mainlayer4.png';
 
 function Mainposter() {
   return (
