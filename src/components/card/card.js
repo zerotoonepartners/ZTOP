@@ -8,7 +8,9 @@ function Card({ data }) {
       <div className="cardImgWrapper">
         <img src={data.picture_1} alt="" />
       </div>
-      <span>{data.id}</span>
+      <div className="cardContentWrapper">
+        <span>{data.title}</span>
+      </div>
     </div>
   );
 }

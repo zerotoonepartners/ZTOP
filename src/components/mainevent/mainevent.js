@@ -21,7 +21,7 @@ function Mainevent() {
     case 'rejected':
       return <>Err</>;
     default:
-      console.log(corporatenews_.data.slice(undefined, 12));
+      console.log(corporatenews_);
       return (
         <>
           <div className="mainEventWrapper">
