@@ -1,20 +1,20 @@
-import {useState} from 'react';
-import './cardPage.scss';
+// import {useState} from 'react';
+// import './cardPage.scss';
 
-import CardPagenator from './cardPagenator/cardpagenator';
-function CardPage(){
+// import CardPagenator from './cardPagenator/cardpagenator';
+// function CardPage(){
 
-    return(
-        <>
-        <div className="cardPageWrapper">
-            <div className="cardPageTitle">
-               <span>기업행사</span>
-            </div>
-            <CardPagenator/>
+//     return(
+//         <>
+//         <div className="cardPageWrapper">
+//             <div className="cardPageTitle">
+//                <span>기업행사</span>
+//             </div>
+//             <CardPagenator/>
             
-        </div>
-        </>
-    )
-}
+//         </div>
+//         </>
+//     )
+// }
 
-export default CardPage;
+// export default CardPage;
