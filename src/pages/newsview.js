@@ -12,10 +12,6 @@ function NewsView({history,location,match}) {
   const [notice,setNotice]=useState(false);
   const {news_} = useContext(ZtopContext);
 
-  useEffect(()=>{
-    window.scrollTo(0, 0);
-  },[]);
-
   const {no} = match.params;
   return (
     <div>
@@ -145,12 +141,12 @@ function NewsView({history,location,match}) {
                                 <Link className="newsPrev" to={post.id+1>news_.data[0].id? '/media' : `/newsview/${post.id+1}`}>
                                     {   
                                         Number(no)+1>news_.data[0].id?
-                                        <span>이전글        이전 글이 없습니다.</span>
+                                        <span><q>이전글</q>이전 글이 없습니다.</span>
                                         :
                                         news_.data.map((item,idx)=>{
                                             if(Number(no)+1==item.id){
                                                 return(
-                                                    <span>이전글        {item.title}</span>
+                                                    <span><q>이전글</q>{item.title}</span>
                                                 )
                                             }
                                         })
@@ -159,12 +155,12 @@ function NewsView({history,location,match}) {
                                 <Link className="newsNext" to={post.id-1<news_.data[news_.data.length-1].id? '/media' : `/newsview/${post.id-1}`}>
                                 {   
                                         Number(no)-1<news_.data[news_.data.length-1].id?
-                                        <span>다음글        다음 글이 없습니다.</span>
+                                        <span><q>다음글</q>다음 글이 없습니다.</span>
                                         :
                                         news_.data.map((item,idx)=>{
                                             if(Number(no)-1==item.id){
                                                 return(
-                                                    <span>다음글        {item.title}</span>
+                                                    <span><q>다음글</q>{item.title}</span>
                                                 )
                                             }
                                         })
