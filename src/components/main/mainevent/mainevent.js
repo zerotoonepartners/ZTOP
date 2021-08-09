@@ -54,6 +54,7 @@ function Mainevent() {
               <div className="eventSliderWrapper">
                 <EventCardMapWrapper page={sliderToggle}>
                   {ztopNotice_.data.slice(undefined, 12).map((item, index) => {
+                    console.log(item.id);
                     return (
                       <Link to={`/noticeview/${item.id}`}>
                         <Card key={index} data={item} />

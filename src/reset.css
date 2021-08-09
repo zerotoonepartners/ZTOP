@@ -112,6 +112,9 @@ section {
 body {
   line-height: 1;
 }
+html {
+  scroll-behavior: smooth;
+}
 ol,
 ul {
   list-style: none;

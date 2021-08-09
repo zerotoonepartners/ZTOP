@@ -1,5 +1,6 @@
 
 import './cardpost.scss';
+import {Link} from "react-router-dom";
 
 function CardPosts({posts}){
     console.log(posts);
@@ -25,7 +26,7 @@ function CardPosts({posts}){
                 :
                 
                 posts.map((post,idx)=>(
-                  <div key={post.id} className="cardPagenatorBox">
+                  <Link key={post.id} className="cardPagenatorBox" to={`/noticeview/${post.id}`}>
                         <div className="cardPagenatorImgBox">
                             <img src={post.picture_1}/>
                         </div>
@@ -37,7 +38,7 @@ function CardPosts({posts}){
                                 <span>{post.created_at.slice(0,10)}</span>
                         </div>
                     </div>
-              </div>
+              </Link>
                 ))}
             </div>
               </>

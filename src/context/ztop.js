@@ -5,6 +5,8 @@ const ZtopContext = createContext();
 const ZtopContextProvider = ({ children }) => {
   const [loading, setLoading] = useState(true);
   const [modal, setModal] = useState(false);
+  const [event, setEvent] = useState();
+
   const [blogLink_, setBlogLink_] = useState({
     status: 'idle',
     data: null,
@@ -156,6 +158,8 @@ const ZtopContextProvider = ({ children }) => {
         setSelectionNotice_,
         detail_,
         setDetail_,
+        event,
+        setEvent,
       }}
     >
       {children}

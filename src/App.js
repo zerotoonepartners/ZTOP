@@ -8,7 +8,8 @@ import Main from './pages/main';
 import Media from './pages/media';
 import NewsView from './pages/newsview';
 import NoticeView from './pages/noticeview';
-import ScrollToTop from './components/common/scrollToTop';
+import ScrollToTop from '../src/components/common/scrollToTop';
+import CardContainers from './containers/CardContainers';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/media" component={Media} />
           <Route path="/newsview/:no" component={NewsView} />
           <Route path="/noticeview/:no" component={NoticeView} />
+          <Route path="/namecard/:no" component={CardContainers} />
         </Switch>
       </BrowserRouter>
     </ZtopContextProvider>

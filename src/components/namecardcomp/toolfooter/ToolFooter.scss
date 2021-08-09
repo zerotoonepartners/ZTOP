@@ -1,0 +1,74 @@
+.toolFooterWrapper {
+    width: 100%;
+    height: 30vh;
+    background-color: #303243;
+    display: flex;
+    flex-direction: column;
+    .footerContentWrapper {
+        width: 100%;
+        height: 60%;
+        border-bottom: 1px dotted #ffffff;
+        display: flex;
+        flex-direction: column;
+
+        .companyTitle {
+            margin-top: 0.5rem;
+            width: 100%;
+            height: 4vh;
+            display: flex;
+            align-items: center;
+            span {
+                margin-left: 1rem;
+                font-size: 0.8rem;
+                color: #abb4ff;
+            }
+        }
+        .companyInfo {
+            width: 100%;
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+            justify-content: space-around;
+            .infoItem {
+                width: 100%;
+                .infoSpan {
+                    margin-left: 1rem;
+                    font-weight: 500;
+                    font-size: 0.5rem;
+                    color: #ffffff;
+                    .strong {
+                        color: #abb4ff;
+                        font-weight: 800;
+                    }
+                    .strongMargin {
+                        margin-left: 2rem;
+                    }
+                }
+            }
+        }
+    }
+    .toolWrapper {
+        width: 100%;
+        height: 40%;
+        display: flex;
+        .toolItem {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            width: 25%;
+            height: 100%;
+            border-right: 1px dotted #ffffff;
+            span {
+                margin-top: 0.5rem;
+                font-size: 0.8rem;
+                font-weight: 200;
+                color: #abb4ff;
+            }
+        }
+        .lastChild {
+            border-right: none;
+        }
+    }
+}
