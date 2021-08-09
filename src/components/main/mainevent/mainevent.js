@@ -7,6 +7,7 @@ import Loading from 'react-loading';
 import Card from '../card/card';
 import right from '../../../static/images/left.png';
 import left from '../../../static/images/right.png';
+import { Link } from 'react-router-dom';
 
 function Mainevent() {
   const { corporatenews_ } = useContext(ZtopContext);
@@ -55,7 +56,11 @@ function Mainevent() {
                   {corporatenews_.data
                     .slice(undefined, 12)
                     .map((item, index) => {
-                      return <Card key={index} data={item} />;
+                      return (
+                        <Link>
+                          <Card key={index} data={item} />
+                        </Link>
+                      );
                     })}
                 </EventCardMapWrapper>
               </div>
