@@ -1,52 +1,180 @@
 import './scss/media.scss';
 import {useContext, useEffect, useState} from 'react';
+import {Link} from 'react-router-dom';
 import NewsPagenator from '../components/newsPagenator/newsPagenator';
 import CardPagenator from '../components/cardPage/cardPagenator/cardpagenator';
 import Header from "../components/header/newheader";
 import { ZtopContext } from '../context/ztop';
+import './scss/newsview.scss';
 
 function NewsView({history,location,match}) {
   const [news,setNews]=useState(true);
   const [notice,setNotice]=useState(false);
   const {news_} = useContext(ZtopContext);
-  const [selectionNotice,setSelelctionNotice]=useState(-1);
-  const clickAct = () => {if(news===true){setNews(!news);setNotice(!notice)}};
-  const clickNotice = () => {if(notice===true){setNotice(!notice);setNews(!news)}};
+
+  useEffect(()=>{
+    window.scrollTo(0, 0);
+  },[]);
 
   const {no} = match.params;
-
   return (
     <div>
       <Header/>
-      <div className="libraryImgWrapper">
-        <div className="libraryCategoryContainer">
-          <div className={`libraryCategoryBox ${news?'active':'inactive'}`} onClick={clickNotice}>
+      <div className="newsViewImgWrapper">
+        <div className="newsViewCategoryContainer">
+          <div className="newsViewCategoryBox active" onClick={()=>{history.push('/media')}}>
             <span>NEWS</span>
           </div>
-          <div className={`libraryCategoryBox ${notice?'active':'inactive'}`} onClick={clickAct}>
+          <div className="newsViewCategoryBox inactive" onClick={()=>{history.push('/media')}}>
             <span>기업소식</span>
           </div>
 
         </div>
       </div>
-      <div className="libraryPageWrapper">
+      <div className="newsViewPageWrapper">
         {   
             news_.data!==null ? 
-
-            
             news_.data.map((post,idx)=>{
-                console.log(no==post.id);
                 if(no==post.id){
                     return(
                         <>
-                        <div>
-                        {post.title}
-                        </div>
-                        <div>
-                        {post.writer}
-                        </div>
-                        <div>
-                        {post.created_At}
+                        <div className="newsViewWrapper">
+                            <div className="newsViewTitlecontainer">
+                                <span>NEWS</span>
+                            </div>
+                            <div className="newsViewInfoContainer">
+                                <div className="newsViewTitleBox">
+                                    <span>{post.title}</span>
+                                </div>
+                                <div className="newsViewInfoBox">
+                                    <div className="newsViewWriterBox">
+                                        <span>작성자 : {post.writer}</span>
+                                    </div>
+                                    <div className="newsViewCreateBox">
+                                        <span>작성일 : {post.created_at.slice(0,10)}</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="newsViewContentContainer">
+                                <div className="newsViewContentImgBox">
+                                    <img src={post.picture_1} alt=""/><br/>
+                                </div>
+                                <div className="newsViewContentTextBox">
+                                    <span>
+                                        {post.content_1}<br/>
+                                    </span>
+                                </div>
+                                <div className="newsViewContentImgBox">
+                                    <img src={post.picture_2}/><br/>
+                                </div>
+                                <div className="newsViewContentTextBox">
+                                    <span>
+                                        {post.content_2}<br/>
+                                    </span>
+                                </div>
+                                <div className="newsViewContentImgBox">
+                                    <img src={post.picture_3}/><br/>
+                                </div>
+                                <div className="newsViewContentTextBox">
+                                    <span>
+                                        {post.content_3}<br/>
+                                    </span>
+                                </div>
+                                <div className="newsViewContentTextBox">
+                                    <span>
+                                        {post.content_4}<br/>
+                                    </span>
+                                </div>
+                                <div className="newsViewContentTextBox">
+                                    <span>
+                                        {post.content_5}<br/>
+                                    </span>
+                                </div>
+                                <div className="newsViewContentTextBox">
+                                    <span>
+                                        {post.content_6}<br/>
+                                    </span>
+                                </div>
+                                <div className="newsViewContentTextBox">
+                                    <span>
+                                        {post.content_7}<br/>
+                                    </span>
+                                </div>
+                                <div className="newsViewContentTextBox">
+                                    <span>
+                                        {post.content_8}<br/>
+                                    </span>
+                                </div>
+                                <div className="newsViewContentTextBox">
+                                    <span>
+                                        {post.content_9}<br/>
+                                    </span>
+                                </div>
+                                <div className="newsViewContentTextBox">
+                                    <span>
+                                        {post.content_10}<br/>
+                                    </span>
+                                </div>
+                                <div className="newsViewContentTextBox">
+                                    <span>
+                                        {post.content_11}<br/>
+                                    </span>
+                                </div>
+                                <div className="newsViewContentTextBox">
+                                    <span>
+                                        {post.content_12}<br/>
+                                    </span>
+                                </div>
+                                <div className="newsViewContentTextBox">
+                                    <span>
+                                        {post.content_13}<br/>
+                                    </span>
+                                </div>
+                                <div className="newsViewContentTextBox">
+                                    <span>
+                                        {post.content_14}<br/>
+                                    </span>
+                                </div>
+                                <div className="newsViewContentTextBox">
+                                    <span>
+                                        {post.content_15}<br/>
+                                    </span>
+                                </div>  
+                            </div>
+                            <div className="newsViewPrevNextContainer">
+                                <Link className="newsPrev" to={post.id+1>news_.data[0].id? '/media' : `/newsview/${post.id+1}`}>
+                                    {   
+                                        Number(no)+1>news_.data[0].id?
+                                        <span>이전글        이전 글이 없습니다.</span>
+                                        :
+                                        news_.data.map((item,idx)=>{
+                                            if(Number(no)+1==item.id){
+                                                return(
+                                                    <span>이전글        {item.title}</span>
+                                                )
+                                            }
+                                        })
+                                        }
+                                </Link>
+                                <Link className="newsNext" to={post.id-1<news_.data[news_.data.length-1].id? '/media' : `/newsview/${post.id-1}`}>
+                                {   
+                                        Number(no)-1<news_.data[news_.data.length-1].id?
+                                        <span>다음글        다음 글이 없습니다.</span>
+                                        :
+                                        news_.data.map((item,idx)=>{
+                                            if(Number(no)-1==item.id){
+                                                return(
+                                                    <span>다음글        {item.title}</span>
+                                                )
+                                            }
+                                        })
+                                        }
+                                </Link>
+                            </div>
+                            <div className="newsNoticeBackBox" onClick={()=>{history.push('/media')}}>
+                                        <span>목록</span>
+                            </div>
+
                         </div>
                         </>
                     )
@@ -54,12 +182,12 @@ function NewsView({history,location,match}) {
                 
             })
         
-        :
-        <div>해당 게시글을 찾을 수 없습니다.</div>
+            :
+            <div>해당 게시글을 찾을 수 없습니다.</div>
+                
+                }
             
-            }
-        
-      </div>
+        </div>
     </div>
   );
 }

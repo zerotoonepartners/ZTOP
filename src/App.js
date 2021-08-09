@@ -8,13 +8,13 @@ import Main from './pages/main';
 import Media from './pages/media';
 import NewsView from './pages/newsview';
 import NoticeView from './pages/noticeview';
-import scrollToTop from '../src/components/common/scrollToTop';
+import ScrollToTop from '../src/components/common/scrollToTop';
 
 function App() {
   return (
     <ZtopContextProvider>
       <BrowserRouter>
-        <scrollToTop />
+        <ScrollToTop />
         <Switch>
           <Route path="/" exact component={Main} />
           <Route path="/about" component={About} />
