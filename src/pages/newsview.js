@@ -18,10 +18,10 @@ function NewsView({history,location,match}) {
       <Header/>
       <div className="newsViewImgWrapper">
         <div className="newsViewCategoryContainer">
-          <div className="newsViewCategoryBox active" onClick={()=>{history.push('/media')}}>
+          <div className="newsViewCategoryBox active" onClick={()=>{history.push('/media/1')}}>
             <span>NEWS</span>
           </div>
-          <div className="newsViewCategoryBox inactive" onClick={()=>{history.push('/media')}}>
+          <div className="newsViewCategoryBox inactive" onClick={()=>{history.push('/media/2')}}>
             <span>기업소식</span>
           </div>
 
@@ -32,6 +32,7 @@ function NewsView({history,location,match}) {
             news_.data!==null ? 
             news_.data.map((post,idx)=>{
                 if(no==post.id){
+                    console.log(post);
                     return(
                         <>
                         <div className="newsViewWrapper">
@@ -52,86 +53,86 @@ function NewsView({history,location,match}) {
                                 </div>
                             </div>
                             <div className="newsViewContentContainer">
-                                <div className="newsViewContentImgBox">
+                                <div className={`newsViewContentImgBox ${post.picture_1!==null? 'active' : 'inactive'}`}>
                                     <img src={post.picture_1} alt=""/><br/>
                                 </div>
-                                <div className="newsViewContentTextBox">
+                                <div className={`newsViewContentTextBox ${post.content_1!==null? 'active' : 'inactive'}`}>
                                     <span>
                                         {post.content_1}<br/>
                                     </span>
                                 </div>
-                                <div className="newsViewContentImgBox">
+                                <div className={`newsViewContentImgBox ${post.picture_2!==null? 'active' : 'inactive'}`}>
                                     <img src={post.picture_2}/><br/>
                                 </div>
-                                <div className="newsViewContentTextBox">
+                                <div className={`newsViewContentTextBox ${post.content_2!==null? 'active' : 'inactive'}`}>
                                     <span>
                                         {post.content_2}<br/>
                                     </span>
                                 </div>
-                                <div className="newsViewContentImgBox">
+                                <div className={`newsViewContentImgBox ${post.picture_3!==null? 'active' : 'inactive'}`}>
                                     <img src={post.picture_3}/><br/>
                                 </div>
-                                <div className="newsViewContentTextBox">
+                                <div className={`newsViewContentTextBox ${post.content_3!==null? 'active' : 'inactive'}`}>
                                     <span>
                                         {post.content_3}<br/>
                                     </span>
                                 </div>
-                                <div className="newsViewContentTextBox">
+                                <div className={`newsViewContentTextBox ${post.content_4!==null? 'active' : 'inactive'}`}>
                                     <span>
                                         {post.content_4}<br/>
                                     </span>
                                 </div>
-                                <div className="newsViewContentTextBox">
+                                <div className={`newsViewContentTextBox ${post.content_5!==null? 'active' : 'inactive'}`}>
                                     <span>
                                         {post.content_5}<br/>
                                     </span>
                                 </div>
-                                <div className="newsViewContentTextBox">
+                                <div className={`newsViewContentTextBox ${post.content_6!==null? 'active' : 'inactive'}`}>
                                     <span>
                                         {post.content_6}<br/>
                                     </span>
                                 </div>
-                                <div className="newsViewContentTextBox">
+                                <div className={`newsViewContentTextBox ${post.content_7!==null? 'active' : 'inactive'}`}>
                                     <span>
                                         {post.content_7}<br/>
                                     </span>
                                 </div>
-                                <div className="newsViewContentTextBox">
+                                <div className={`newsViewContentTextBox ${post.content_8!==null? 'active' : 'inactive'}`}>
                                     <span>
                                         {post.content_8}<br/>
                                     </span>
                                 </div>
-                                <div className="newsViewContentTextBox">
+                                <div className={`newsViewContentTextBox ${post.content_9!==null? 'active' : 'inactive'}`}>
                                     <span>
                                         {post.content_9}<br/>
                                     </span>
                                 </div>
-                                <div className="newsViewContentTextBox">
+                                <div className={`newsViewContentTextBox ${post.content_10!==null? 'active' : 'inactive'}`}>
                                     <span>
                                         {post.content_10}<br/>
                                     </span>
                                 </div>
-                                <div className="newsViewContentTextBox">
+                                <div className={`newsViewContentTextBox ${post.content_11!==null? 'active' : 'inactive'}`}>
                                     <span>
                                         {post.content_11}<br/>
                                     </span>
                                 </div>
-                                <div className="newsViewContentTextBox">
+                                <div className={`newsViewContentTextBox ${post.content_12!==null? 'active' : 'inactive'}`}>
                                     <span>
                                         {post.content_12}<br/>
                                     </span>
                                 </div>
-                                <div className="newsViewContentTextBox">
+                                <div className={`newsViewContentTextBox ${post.content_13!==null? 'active' : 'inactive'}`}>
                                     <span>
                                         {post.content_13}<br/>
                                     </span>
                                 </div>
-                                <div className="newsViewContentTextBox">
+                                <div className={`newsViewContentTextBox ${post.content_14!==null? 'active' : 'inactive'}`}>
                                     <span>
                                         {post.content_14}<br/>
                                     </span>
                                 </div>
-                                <div className="newsViewContentTextBox">
+                                <div className={`newsViewContentTextBox ${post.content_15!==null? 'active' : 'inactive'}`}>
                                     <span>
                                         {post.content_15}<br/>
                                     </span>

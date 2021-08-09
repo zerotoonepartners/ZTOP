@@ -13,10 +13,10 @@ function NoticeView({history,location,match}) {
       <Header/>
       <div className="noticeViewImgWrapper">
         <div className="noticeViewCategoryContainer">
-          <div className="noticeViewCategoryBox inactive" onClick={()=>{history.push('/media')}}>
+          <div className="noticeViewCategoryBox inactive" onClick={()=>{history.push('/media/1')}}>
             <span>NEWS</span>
           </div>
-          <div className="noticeViewCategoryBox active" onClick={()=>{history.push('/media')}}>
+          <div className="noticeViewCategoryBox active" onClick={()=>{history.push('/media/2')}} >
             <span>기업소식</span>
           </div>
 
@@ -47,122 +47,122 @@ function NoticeView({history,location,match}) {
                                 </div>
                             </div>
                             <div className="noticeViewContentContainer">
-                                <div className="noticeViewContentImgBox">
+                                <div className={`noticeViewContentImgBox ${post.picture_1!==null? 'active' : 'inactive'}`}>
                                     <img src={post.picture_1} alt=""/><br/>
                                 </div>
-                                <div className="noticeViewContentImgBox">
+                                <div className={`noticeViewContentImgBox ${post.picture_2!==null? 'active' : 'inactive'}`}>
                                     <img src={post.picture_2} alt=""/><br/>
                                 </div>
-                                <div className="noticeViewContentImgBox">
+                                <div className={`noticeViewContentImgBox ${post.picture_3!==null? 'active' : 'inactive'}`}>
                                     <img src={post.picture_3} alt=""/><br/>
                                 </div>
-                                <div className="noticeViewContentTextBox">
+                                <div className={`noticeViewContentTextBox ${post.content_1!==null? 'active' : 'inactive'}`}>
                                     <span>
                                         {post.content_1}<br/>
                                     </span>
                                 </div>
-                                <div className="noticeViewContentImgBox">
+                                <div className={`noticeViewContentImgBox ${post.picture_4!==null? 'active' : 'inactive'}`}>
                                     <img src={post.picture_4} alt=""/><br/>
                                 </div>
-                                <div className="noticeViewContentImgBox">
+                                <div className={`noticeViewContentImgBox ${post.picture_5!==null? 'active' : 'inactive'}`}>
                                     <img src={post.picture_5} alt=""/><br/>
                                 </div>
-                                <div className="noticeViewContentImgBox">
+                                <div className={`noticeViewContentImgBox ${post.picture_6!==null? 'active' : 'inactive'}`}>
                                     <img src={post.picture_6} alt=""/><br/>
                                 </div>
-                                <div className="noticeViewContentTextBox">
+                                <div className={`noticeViewContentTextBox ${post.content_2!==null? 'active' : 'inactive'}`}>
                                     <span>
                                         {post.content_2}<br/>
                                     </span>
                                 </div>
-                                <div className="noticeViewContentImgBox">
+                                <div className={`noticeViewContentImgBox ${post.picture_7!==null? 'active' : 'inactive'}`}>
                                     <img src={post.picture_7} alt=""/><br/>
                                 </div>
-                                <div className="noticeViewContentImgBox">
+                                <div className={`noticeViewContentImgBox ${post.picture_8!==null? 'active' : 'inactive'}`}>
                                     <img src={post.picture_8} alt=""/><br/>
                                 </div>
-                                <div className="noticeViewContentImgBox">
+                                <div className={`noticeViewContentImgBox ${post.picture_9!==null? 'active' : 'inactive'}`}>
                                     <img src={post.picture_9} alt=""/><br/>
                                 </div>
-                                <div className="noticeViewContentTextBox">
+                                <div className={`noticeViewContentTextBox ${post.content_3!==null? 'active' : 'inactive'}`}>
                                     <span>
                                         {post.content_3}<br/>
                                     </span>
                                 </div>
-                                <div className="noticeViewContentImgBox">
+                                <div className={`noticeViewContentImgBox ${post.picture_10!==null? 'active' : 'inactive'}`}>
                                     <img src={post.picture_10} alt=""/><br/>
                                 </div>
-                                <div className="noticeViewContentImgBox">
+                                <div className={`noticeViewContentImgBox ${post.picture_11!==null? 'active' : 'inactive'}`}>
                                     <img src={post.picture_11} alt=""/><br/>
                                 </div>
-                                <div className="noticeViewContentImgBox">
+                                <div className={`noticeViewContentImgBox ${post.picture_12!==null? 'active' : 'inactive'}`}>
                                     <img src={post.picture_12} alt=""/><br/>
                                 </div>
-                                <div className="noticeViewContentTextBox">
+                                <div className={`noticeViewContentTextBox ${post.content_4!==null? 'active' : 'inactive'}`}>
                                     <span>
                                         {post.content_4}<br/>
                                     </span>
                                 </div>
-                                <div className="noticeViewContentImgBox">
+                                <div className={`noticeViewContentImgBox ${post.picture_13!==null? 'active' : 'inactive'}`}>
                                     <img src={post.picture_13} alt=""/><br/>
                                 </div>
-                                <div className="noticeViewContentImgBox">
+                                <div className={`noticeViewContentImgBox ${post.picture_14!==null? 'active' : 'inactive'}`}>
                                     <img src={post.picture_14} alt=""/><br/>
                                 </div>
-                                <div className="noticeViewContentImgBox">
+                                <div className={`noticeViewContentImgBox ${post.picture_15!==null? 'active' : 'inactive'}`}>
                                     <img src={post.picture_15} alt=""/><br/>
                                 </div>
-                                <div className="noticeViewContentTextBox">
+                                <div className={`noticeViewContentTextBox ${post.content_5!==null? 'active' : 'inactive'}`}>
                                     <span>
                                         {post.content_5}<br/>
                                     </span>
                                 </div>
-                                <div className="noticeViewContentTextBox">
+                                <div className={`noticeViewContentTextBox ${post.content_6!==null? 'active' : 'inactive'}`}>
                                     <span>
                                         {post.content_6}<br/>
                                     </span>
                                 </div>
-                                <div className="noticeViewContentTextBox">
+                                <div className={`noticeViewContentTextBox ${post.content_7!==null? 'active' : 'inactive'}`}>
                                     <span>
                                         {post.content_7}<br/>
                                     </span>
                                 </div>
-                                <div className="noticeViewContentTextBox">
+                                <div className={`noticeViewContentTextBox ${post.content_8!==null? 'active' : 'inactive'}`}>
                                     <span>
                                         {post.content_8}<br/>
                                     </span>
                                 </div>
-                                <div className="noticeViewContentTextBox">
+                                <div className={`noticeViewContentTextBox ${post.content_9!==null? 'active' : 'inactive'}`}>
                                     <span>
                                         {post.content_9}<br/>
                                     </span>
                                 </div>
-                                <div className="noticeViewContentTextBox">
+                                <div className={`noticeViewContentTextBox ${post.content_10!==null? 'active' : 'inactive'}`}>
                                     <span>
                                         {post.content_10}<br/>
                                     </span>
                                 </div>
-                                <div className="noticeViewContentTextBox">
+                                <div className={`noticeViewContentTextBox ${post.content_11!==null? 'active' : 'inactive'}`}>
                                     <span>
                                         {post.content_11}<br/>
                                     </span>
                                 </div>
-                                <div className="noticeViewContentTextBox">
+                                <div className={`noticeViewContentTextBox ${post.content_12!==null? 'active' : 'inactive'}`}>
                                     <span>
                                         {post.content_12}<br/>
                                     </span>
                                 </div>
-                                <div className="noticeViewContentTextBox">
+                                <div className={`noticeViewContentTextBox ${post.content_13!==null? 'active' : 'inactive'}`}>
                                     <span>
                                         {post.content_13}<br/>
                                     </span>
                                 </div>
-                                <div className="noticeViewContentTextBox">
+                                <div className={`noticeViewContentTextBox ${post.content_14!==null? 'active' : 'inactive'}`}>
                                     <span>
                                         {post.content_14}<br/>
                                     </span>
                                 </div>
-                                <div className="noticeViewContentTextBox">
+                                <div className={`noticeViewContentTextBox ${post.content_15!==null? 'active' : 'inactive'}`}>
                                     <span>
                                         {post.content_15}<br/>
                                     </span>

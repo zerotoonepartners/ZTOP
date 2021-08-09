@@ -19,17 +19,17 @@ function MiniboardTwo() {
           <div className="miniboardWrapperTwo">
             <div className="miniboardHeaderWrapper">
               <div className="boardName">
-                <span>블로그</span>
+                <span >블로그</span>
               </div>
               <div className="boradMore">
-                <span>+</span>
+                <span onClick={()=>{window.open("https://blog.naver.com/sjscjr",'_blank')}}>+</span>
               </div>
             </div>
             <div className="boardLinkWrapper">
               {blogLink_.data.slice(undefined, 7).map((item, index) => {
                 return (
                   <div className="boardLinkItem">
-                    <span>▶ {item.title}</span>
+                    <span onClick={()=>{window.open(`${item.link}`,'_blank');console.log(item.link)}}>▶ {item.title}</span>
                   </div>
                 );
               })}
