@@ -10,10 +10,10 @@ import left from '../../../static/images/right.png';
 import { Link } from 'react-router-dom';
 
 function Mainevent() {
-  const { corporatenews_ } = useContext(ZtopContext);
+  const { ztopNotice_ } = useContext(ZtopContext);
   const [sliderToggle, setSliderToggle] = useState(0);
 
-  switch (corporatenews_.status) {
+  switch (ztopNotice_.status) {
     case 'pending':
       return <Loading />;
     case 'idle':
@@ -21,7 +21,6 @@ function Mainevent() {
     case 'rejected':
       return <>Err</>;
     default:
-      console.log(corporatenews_);
       return (
         <>
           <div className="mainEventWrapper">
@@ -53,7 +52,7 @@ function Mainevent() {
               )}
               <div className="eventSliderWrapper">
                 <EventCardMapWrapper page={sliderToggle}>
-                  {corporatenews_.data
+                  {ztopNotice_.data
                     .slice(undefined, 12)
                     .map((item, index) => {
                       return (

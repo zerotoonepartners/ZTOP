@@ -12,7 +12,7 @@ export const blogLink = async () => {
   }
 };
 
-export const corporateNews = async () => {
+export const ztopNotice = async () => {
   try {
     const res = await axios.get(`${url}/ztopnotice`);
     const data = res.data;
@@ -32,9 +32,9 @@ export const nameCard = async () => {
   }
 };
 
-export const pressRelease = async () => {
+export const news = async () => {
   try {
-    const res = await axios.get(`${url}/ztopnotice`);
+    const res = await axios.get(`${url}/news`);
     const data = res.data;
     return data;
   } catch (e) {
@@ -42,20 +42,3 @@ export const pressRelease = async () => {
   }
 };
 
-export const bloglink = async () => {
-  try {
-    const res = await axios.get(`${url}/bloglink`);
-    return res.data;
-  } catch (e) {
-    console.log(e);
-  }
-};
-
-export const getData = async () => {
-  try {
-    const corporatenews = await axios.get(`${url}/corporatenews`);
-    return corporatenews.data;
-  } catch (e) {
-    console.log(e);
-  }
-};
