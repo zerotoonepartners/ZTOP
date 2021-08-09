@@ -1,5 +1,5 @@
 import { BrowserRouter, Route, Switch, useHistory } from 'react-router-dom';
-import {ZtopContextProvider } from './context/ztop';
+import { ZtopContextProvider } from './context/ztop';
 import './App.css';
 import './reset.css';
 
@@ -8,21 +8,19 @@ import Main from './pages/main';
 import Media from './pages/media';
 import NewsView from './pages/newsview';
 import NoticeView from './pages/noticeview';
-import scrollToTop from '../src/components/common/scrollToTop';
+import ScrollToTop from './components/common/scrollToTop';
 
 function App() {
   return (
     <ZtopContextProvider>
       <BrowserRouter>
-        <scrollToTop />
+        <ScrollToTop />
         <Switch>
           <Route path="/" exact component={Main} />
           <Route path="/about" component={About} />
-            <Route path="/media" component={Media} />
-            <Route path="/newsview/:no" component={NewsView}/>
-            <Route path="/noticeview/:no" component={NoticeView}/>
-         
-          
+          <Route path="/media" component={Media} />
+          <Route path="/newsview/:no" component={NewsView} />
+          <Route path="/noticeview/:no" component={NoticeView} />
         </Switch>
       </BrowserRouter>
     </ZtopContextProvider>
