@@ -4,7 +4,7 @@ import NewsPagenator from '../components/newsPagenator/newsPagenator';
 import CardPagenator from '../components/cardPage/cardPagenator/cardpagenator';
 import Header from "../components/header/newheader";
 
-function Media() {
+function NoticeView() {
   const [news,setNews]=useState(true);
   const [notice,setNotice]=useState(false);
   
@@ -26,12 +26,6 @@ function Media() {
         </div>
       </div>
       <div className="libraryPageWrapper">
-        {
-          news?
-          <NewsPagenator/>
-          :
-          <CardPagenator/>
-        }
         
         
       </div>
@@ -39,4 +33,4 @@ function Media() {
   );
 }
 
-export default Media;
+export default NoticeView;
