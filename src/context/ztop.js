@@ -129,7 +129,7 @@ const ZtopContextProvider = ({ children }) => {
       getZtopNotice();
       getNamecard();
       getNews();
-      getDetail();
+      // getDetail();
       setLoading(false);
     } catch (e) {
       alert(e);
