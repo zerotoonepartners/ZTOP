@@ -1,11 +1,15 @@
-import { useContext, useState } from 'react';
+import { useContext, useState, useEffect } from 'react';
+import {Link} from 'react-router-dom';
 import Loading from '../loading/loading';
 import './newsPagenator.scss';
 import { ZtopContext } from '../../context/ztop';
 import { corporateNews } from '../../api/api';
 
+
+
 function Posts({posts}){
     console.log(posts);
+    const {news_,setSelectionNews_} = useContext(ZtopContext);
             return (
                 <>
                 { posts.length===0? 
@@ -26,7 +30,10 @@ function Posts({posts}){
                 
                 :
                 posts.map((post,idx)=>(
-                  <div key={post.id} className="NewsPagenatorBox">
+                  
+                
+                    <div onClick={()=>{setSelectionNews_(post.id)}} className="NewsPagenatorBox">
+                    {console.log(post.id)}
                   <div className="NewsPagenatorNo">
                       <span>{idx+1}</span>
                   </div>
@@ -39,7 +46,8 @@ function Posts({posts}){
                   <div className="NewsPagenatorStamp">
                       <span>{post.created_at.slice(0,10)}</span>
                   </div>
-              </div>
+                  </div>
+     
                 ))}
               </>
               );

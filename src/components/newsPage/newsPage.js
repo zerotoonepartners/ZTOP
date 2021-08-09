@@ -6,6 +6,7 @@ import Header from "../header/newheader";
 import NewsPagenator from "../newsPagenator/newsPagenator";
 
 function NewsPage(){
+    
 
     return(
         <>

@@ -21,6 +21,8 @@ const ZtopContextProvider = ({ children }) => {
     status: 'idle',
     data: null,
   });
+  const [selectionNews_,setSelectionNews_] = useState(undefined);
+  const [selectionNotice_,setSelectionNotice_]  = useState(undefined);
 
   const getBlogLink = async () => {
     let res = await blogLink();
@@ -123,6 +125,8 @@ const ZtopContextProvider = ({ children }) => {
         setNamecard_,
         news_,
         setNews_,
+        selectionNews_,setSelectionNews_,
+        selectionNotice_,setSelectionNotice_
       }}
     >
       {children}

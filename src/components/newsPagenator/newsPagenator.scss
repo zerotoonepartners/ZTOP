@@ -5,7 +5,9 @@
     align-items: center;
     justify-content: center;
     margin-top: 0rem;
+    
 }
+
 
 @media all and (min-width:320px){
 
@@ -33,6 +35,8 @@
                 display: flex;
                 flex-direction: row;
                 cursor: pointer;
+                text-decoration: none !important;
+                color : #000;
                 .NewsPagenatorNo{
                     height: 100%;
                     width: 10%;

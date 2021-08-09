@@ -5,10 +5,11 @@ import Loading from "../loading/loading";
 import {ZtopContext} from "../../context/ztop";
 import Posts from './Posts';
 import Pagination from './pagination';
+import NewsRead from "../newsRead/newsRead";
 import { useEffect } from 'react/cjs/react.development';
 
 function NewsPagenator(){
-    const {news_} = useContext(ZtopContext);
+    const {news_,selectionNews_} = useContext(ZtopContext);
     const [currentPage,setCurrentPage] = useState(1);
     const [postsPerPage] = useState(10)
     switch(news_.status){
@@ -27,9 +28,9 @@ function NewsPagenator(){
                 <>
                 <div className="NewsPagenatorWrapper">
                         <Posts posts={currentPosts}/>
-                    <div className="pageNumberWrapper">
+                            <div className="pageNumberWrapper">
                         <Pagination pages={howManyPages} setCurrentPage={setCurrentPage}/>
-                    </div>
+                            </div> 
                 </div>
                 </>
             )
