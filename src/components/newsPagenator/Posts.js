@@ -27,13 +27,7 @@ function Posts({ posts }) {
         </div>
       ) : (
         posts.map((post, idx) => (
-          <div
-            onClick={() => {
-              setSelectionNews_(post.id);
-            }}
-            className="NewsPagenatorBox"
-          >
-            {console.log(post.id)}
+          <Link to={`/newsview/${post.id}`} className="NewsPagenatorBox">
             <div className="NewsPagenatorNo">
               <span>{idx + 1}</span>
             </div>
@@ -46,7 +40,7 @@ function Posts({ posts }) {
             <div className="NewsPagenatorStamp">
               <span>{post.created_at.slice(0, 10)}</span>
             </div>
-          </div>
+          </Link>
         ))
       )}
     </>

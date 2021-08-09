@@ -1,13 +1,14 @@
-import './scss/mediaes.scss';
-import { useContext, useState } from 'react';
-// import NewsPage from '../components/newsPage/newsPage';
-import CardPage from '../components/cardPage/cardPage';
+import './scss/media.scss';
+import { useState } from 'react';
+import NewsPagenator from '../components/newsPagenator/newsPagenator';
+import CardPagenator from '../components/cardPage/cardPagenator/cardpagenator';
 import Header from '../components/header/newheader';
-import { ZtopContext } from '../context/ztop';
-import NewsRead from '../components/newsRead/newsRead';
+
 function Media() {
   const [news, setNews] = useState(true);
   const [notice, setNotice] = useState(false);
+
+  const [selectionNotice, setSelelctionNotice] = useState(-1);
   const clickAct = () => {
     if (news === true) {
       setNews(!news);
@@ -20,28 +21,27 @@ function Media() {
       setNews(!news);
     }
   };
-  const { ztopNotice_ } = useContext(ZtopContext);
   return (
     <div>
-      {/* <Header/> */}
-      <div className="mediaImgWrapper">
-        <div className="mediaCategoryContainer">
+      <Header />
+      <div className="libraryImgWrapper">
+        <div className="libraryCategoryContainer">
           <div
-            className={`mediaCategoryBox ${news ? 'active' : 'inactive'}`}
+            className={`libraryCategoryBox ${news ? 'active' : 'inactive'}`}
             onClick={clickNotice}
           >
             <span>NEWS</span>
           </div>
           <div
-            className={`mediaCategoryBox ${notice ? 'active' : 'inactive'}`}
+            className={`libraryCategoryBox ${notice ? 'active' : 'inactive'}`}
             onClick={clickAct}
           >
             <span>기업소식</span>
           </div>
         </div>
       </div>
-      <div className="mediaPageWrapper">
-        <NewsRead />
+      <div className="libraryPageWrapper">
+        {news ? <NewsPagenator /> : <CardPagenator />}
       </div>
     </div>
   );
