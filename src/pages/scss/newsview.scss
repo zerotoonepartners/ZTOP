@@ -27,6 +27,7 @@
         align-items: center;
         justify-content: center;
         cursor: pointer;
+        text-decoration: none !important;
         span {
           font-size: 1rem;
           color: white;
@@ -42,7 +43,6 @@
     }
   }
   .newsViewPageWrapper {
-    border: 1px solid green;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -108,8 +108,9 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        border: 1px solid green;
+        //border : 1px solid green;
         .newsViewContentImgBox {
+          display: none;
           width: 100%;
           margin-bottom: 2rem;
           img {
@@ -117,16 +118,22 @@
             //border : 1px solid black;
           }
         }
+        .newsViewContentImgBox.active {
+          display: block;
+        }
         .newsViewContentTextBox {
           width: 100%;
-          border: 1px solid blue;
           margin-bottom: 1rem;
+          display: none;
           span {
             font-size: 1.2rem;
             font-weight: 250;
             line-height: 140%;
             text-align: justify;
           }
+        }
+        .newsViewContentTextBox.active {
+          display: block;
         }
       }
       .newsViewPrevNextContainer {
@@ -137,7 +144,7 @@
         align-items: center;
         justify-content: center;
         border-radius: 15px;
-        border: 1px solid red;
+        //border : 1px solid red;
         .newsPrev {
           &:hover {
             background-color: rgb(237, 241, 237);
