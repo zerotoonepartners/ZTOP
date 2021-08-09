@@ -1,7 +1,7 @@
 import './scss/mediaes.scss';
 import {useState} from 'react';
-import NewsPage from '../components/newsPage/newsPage';
-import CardPage from '../components/cardPage/cardPage';
+import NewsPagenator from '../components/newsPagenator/newsPagenator';
+import CardPagenator from '../components/cardPage/cardPagenator/cardpagenator';
 import Header from "../components/header/newheader";
 
 function Library() {
@@ -28,9 +28,9 @@ function Library() {
       <div className="libraryPageWrapper">
         {
           news?
-          <NewsPage/>
+          <NewsPagenator/>
           :
-          <CardPage/>
+          <CardPagenator/>
         }
         
         

@@ -25,10 +25,15 @@ function CardPagenator(){
             let howManyPages = Math.ceil(ztopNotice_.data.length/postsPerPage)
             return(
                 <>
-                <div className="CardPagenatorWrapper">
-                    <CardPost posts={currentPosts}/>
-                    <div className="CardNumberWrapper">
-                    <CardPagination pages={howManyPages} setCurrentPage={setCurrentPage}/>
+                <div className="cardPageWrapper">
+                    <div className="cardPageTitle">
+                        <span>기업행사</span>
+                    </div>
+                    <div className="CardPagenatorWrapper">
+                        <CardPost posts={currentPosts}/>
+                        <div className="CardNumberWrapper">
+                        <CardPagination pages={howManyPages} setCurrentPage={setCurrentPage}/>
+                        </div>
                     </div>
                 </div>
                 </>

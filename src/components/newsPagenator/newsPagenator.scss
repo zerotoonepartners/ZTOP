@@ -1,10 +1,5 @@
 .NewsPagenatorWrapper{
-    width : 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 0rem;
+    
     
 }
 
@@ -18,70 +13,150 @@
 }
 
 @media all and (min-width:1024px){
-    .NewsPagenatorWrapper{
-            .pageNumberWrapper{
-                width : 100%;
-                display: block;
-                overflow: hidden;
-                margin-top: 1.5rem;
+    .NewsWrapper{
+        .NewsTitle{
+            width : 100%;
+            margin-top: 2rem;
+            margin-bottom: 4rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            span{
+                text-align: center;
+                font-size: 2rem;
+                font-weight: 800;
             }
-            .NewsPagenatorBox{
-                &:hover{
-                    background-color: rgb(206, 203, 203);
-                }
+        }
+        .NewsBody{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        
+            .NewsBodyCategoryBox{
                 width : 100%;
-                height: 7vh;
-                border-bottom: 1px solid rgb(219, 214, 214);
+                height: 5vh;
+                border-top: 1px solid black;
+                border-bottom: 1px solid black;
                 display: flex;
                 flex-direction: row;
-                cursor: pointer;
-                text-decoration: none !important;
-                color : #000;
-                .NewsPagenatorNo{
+                .NewsBodyCategoryContentNo{
                     height: 100%;
                     width: 10%;
                     display: flex;
                     align-items: center;
                     justify-content: center;
                     span{
-                        font-size: 1rem;
+                        font-weight: 800;
                     }
 
                 }
-                .NewsPagenatorTitle{
+                .NewsBodyCategoryContentTitle{
                     height: 100%;
                     width: 65%;
                     display: flex;
                     align-items: center;
                     justify-content: center;
                     span{
-                        font-size: 1rem;
+                        font-weight: 800;
                     }
                     
                 }
-                .NewsPagenatorWriter{
+                .NewsBodyCategoryContentWriter{
                     height: 100%;
                     width: 10%;
                     display: flex;
                     align-items: center;
                     justify-content: center;
                     span{
-                        font-size: 1rem;
+                        font-weight: 800;
                     }
                     
                 }
-                .NewsPagenatorStamp{
+                .NewsBodyCategoryContentStamp{
                     height: 100%;
                     width: 15%;
                     display: flex;
                     align-items: center;
                     justify-content: center;
                     span{
-                        font-size: 1rem;
+                        font-weight: 800;
                     }
                     
                 }
             }
+            .NewsPagenatorWrapper{
+                width : 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                margin-top: 0rem;
+                    .pageNumberWrapper{
+                        width : 100%;
+                        display: block;
+                        overflow: hidden;
+                        margin-top: 1.5rem;
+                    }
+                    .NewsPagenatorBox{
+                        &:hover{
+                            background-color: rgb(206, 203, 203);
+                        }
+                        width : 100%;
+                        height: 7vh;
+                        border-bottom: 1px solid rgb(219, 214, 214);
+                        display: flex;
+                        flex-direction: row;
+                        cursor: pointer;
+                        text-decoration: none !important;
+                        color : #000;
+                        .NewsPagenatorNo{
+                            height: 100%;
+                            width: 10%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            span{
+                                font-size: 1rem;
+                            }
+        
+                        }
+                        .NewsPagenatorTitle{
+                            height: 100%;
+                            width: 65%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            span{
+                                font-size: 1rem;
+                            }
+                            
+                        }
+                        .NewsPagenatorWriter{
+                            height: 100%;
+                            width: 10%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            span{
+                                font-size: 1rem;
+                            }
+                            
+                        }
+                        .NewsPagenatorStamp{
+                            height: 100%;
+                            width: 15%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            span{
+                                font-size: 1rem;
+                            }
+                            
+                        }
+                    }
+                }
         }
+    }
+    
     
 }
