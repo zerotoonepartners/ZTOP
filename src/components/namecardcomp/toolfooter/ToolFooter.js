@@ -1,42 +1,24 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './ToolFooter.scss';
 import car from '../../../static/images/car.png';
 import home from '../../../static/images/home.png';
 import share from '../../../static/images/share.png';
 import phone from '../../../static/images/phone.png';
-import { useEffect } from 'react';
+import { ZtopContext } from '../../../context/ztop';
+import { useContext } from 'react';
+import Kakaolink from './kakaolink';
 
-function ToolFooter() {
+function ToolFooter({ no }) {
+  const { namecard_ } = useContext(ZtopContext);
+  const [kp, setKp] = useState();
   useEffect(() => {
-    try {
-      window.Kakao.init('d149effdaec276eadf4b088d938de0f2');
-    } catch (e) {}
+    namecard_ &&
+      namecard_.map((item, idx) => {
+        if (no == item.id) {
+          setKp(item.kakao_picture);
+        }
+      });
   }, []);
-
-  const shareKakao = () => {
-    window.Kakao.Link.createDefaultButton({
-      container: '#kakao_share',
-      objectType: 'feed',
-      content: {
-        title: '타이틀',
-        description: '내용!',
-        imageUrl: '',
-        link: {
-          mobileWebUrl: window.location.href,
-          webUrl: window.location.href,
-        },
-      },
-      buttons: [
-        {
-          title: '제로투원파트너스',
-          link: {
-            mobileWebUrl: window.location.href,
-            webUrl: window.location.href,
-          },
-        },
-      ],
-    });
-  };
   return (
     <div className="toolFooterWrapper">
       <div className="footerContentWrapper">
@@ -89,9 +71,10 @@ function ToolFooter() {
           href="javascript:sendLink()"
           className="toolItem lastChild"
         >
-          <div onClick={shareKakao} className="shareBtn">
+          <div className="shareBtn">
             <img src={share} alt="" />
-            <span>공유하기</span>
+            <Kakaolink kp={kp} />
+            {/* <span>공유하기</span> */}
           </div>
         </a>
       </div>
