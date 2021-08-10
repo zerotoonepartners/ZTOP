@@ -4,7 +4,7 @@ import car from '../../../static/images/car.png';
 import home from '../../../static/images/home.png';
 import share from '../../../static/images/share.png';
 import phone from '../../../static/images/phone.png';
-import { useEffect } from 'react/cjs/react.development';
+import { useEffect } from 'react';
 
 function ToolFooter() {
   useEffect(() => {
