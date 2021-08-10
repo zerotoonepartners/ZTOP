@@ -1,20 +1,13 @@
 import './scss/contact2.scss';
-import ci1 from '../static/images/contactIcon1.png';
-import ci2 from '../static/images/contactIcon2.png';
-import ci3 from '../static/images/contactIcon3.png';
+import ci1 from '../../static/images/contactIcon1.png';
+import ci2 from '../../static/images/contactIcon2.png';
+import ci3 from '../../static/images/contactIcon3.png';
 
-function Contact() {
+function ContactTwo() {
   return (
     <div>
-      <div className="contactPageWrapper">
-        <div className="contactMenuBarWrapper">
-          <div className="contactMenu">
-          <span>기업 검토</span>
-          </div>
-          <div className="contactMenu">
-          <span>오시는 길</span>
-          </div>
-        </div>
+      <div className="contactPageWrapper2">
+      
 
         <div className="contactContentsWrapper2">
           <div className="contentsWrapperOne2">
@@ -62,4 +55,4 @@ function Contact() {
   );
 }
 
-export default Contact;
+export default ContactTwo;

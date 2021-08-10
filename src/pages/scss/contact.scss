@@ -1,8 +1,8 @@
 
 @media all and (min-width: 320px) {
     .contactPageWrapper{
-        width: 100%;
-        height: 100%;
+        // width: 100%;
+        // height: 100%;
 
         .contactMenuBarWrapper{
             // border:1px solid green;
@@ -12,10 +12,11 @@
             align-items: center;
 
             .contactMenu{
-                border-top:1px solid orange;
+                
                 width: 40%;
                 text-align: center;
                 span{
+                    border-bottom: 3px solid #0D2B97;
                     font-weight: bold;
                     font-size: 4.5vw;
                 }
@@ -147,9 +148,12 @@
 
 }
 @media all and (min-width: 1024px) {
+
     .contactPageWrapper{
+        border:4px solid red;
         width: 100%;
         height: 100vh;
+        margin-top: 5rem;
 
         .contactMenuBarWrapper{
             // border:1px solid green;
@@ -158,10 +162,11 @@
             justify-content: center;
 
             .contactMenu{
-                // border:1px solid orange;
+                
                 width: 30%;
                 text-align: center;
                 span{
+                    border-bottom: 3px solid #0D2B97;
                     font-weight: bold;
                     font-size: 1.8vw;
                 }
@@ -291,6 +296,6 @@
 
 
     }   
-
+    
   
 }

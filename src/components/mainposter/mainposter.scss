@@ -1,0 +1,220 @@
+@media all and (min-width: 320px) {
+  .mainPoster {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    .poster {
+      width: 100%;
+      height: 50vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      .posterContentWrapper {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: #ffffff;
+        .posterTitle {
+          margin-bottom: 0.2rem;
+          span {
+            font-size: 1rem;
+            font-weight: 600;
+          }
+        }
+        .posterKorTitle {
+          margin-bottom: 1rem;
+          span {
+            font-size: 0.7rem;
+            font-weight: 600;
+          }
+        }
+        .posterDesc {
+          width: 80%;
+          span {
+            font-size: 0.5rem;
+            font-weight: 200;
+          }
+        }
+      }
+    }
+    .posterOne {
+      &:hover {
+        .posterContentWrapper {
+          display: flex;
+        }
+      }
+    }
+    .posterTwo {
+      &:hover {
+        .posterContentWrapper {
+          display: flex;
+        }
+      }
+    }
+    .posterThree {
+      &:hover {
+        .posterContentWrapper {
+          display: flex;
+        }
+      }
+    }
+    .posterFour {
+      &:hover {
+        .posterContentWrapper {
+          display: flex;
+        }
+      }
+    }
+  }
+}
+@media all and (min-width: 768px) {
+  .mainPoster {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    .poster {
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      .posterContentWrapper {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: #ffffff;
+        .posterTitle {
+          margin-bottom: 0.2rem;
+          span {
+            font-size: 1rem;
+            font-weight: 600;
+          }
+        }
+        .posterKorTitle {
+          margin-bottom: 1rem;
+          span {
+            font-size: 0.7rem;
+            font-weight: 600;
+          }
+        }
+        .posterDesc {
+          width: 80%;
+          span {
+            font-size: 0.5rem;
+            font-weight: 200;
+          }
+        }
+      }
+    }
+    .posterOne {
+      &:hover {
+        .posterContentWrapper {
+          display: flex;
+        }
+      }
+    }
+    .posterTwo {
+      &:hover {
+        .posterContentWrapper {
+          display: flex;
+        }
+      }
+    }
+    .posterThree {
+      &:hover {
+        .posterContentWrapper {
+          display: flex;
+        }
+      }
+    }
+    .posterFour {
+      &:hover {
+        .posterContentWrapper {
+          display: flex;
+        }
+      }
+    }
+  }
+}
+@media all and (min-width: 1024px) {
+  .mainPoster {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    .poster {
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      .posterContentWrapper {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: #ffffff;
+        .posterTitle {
+          margin-bottom: 0.4rem;
+          span {
+            font-size: 1.6rem;
+            font-weight: 600;
+          }
+        }
+        .posterKorTitle {
+          margin-bottom: 2rem;
+          span {
+            font-size: 1rem;
+            font-weight: 600;
+          }
+        }
+        .posterDesc {
+          width: 60%;
+          span {
+            line-height: 160%;
+            font-size: 1rem;
+            font-weight: 200;
+          }
+        }
+      }
+    }
+    .posterOne {
+      &:hover {
+        .posterContentWrapper {
+          display: flex;
+        }
+      }
+    }
+    .posterTwo {
+      &:hover {
+        .posterContentWrapper {
+          display: flex;
+        }
+      }
+    }
+    .posterThree {
+      &:hover {
+        .posterContentWrapper {
+          display: flex;
+        }
+      }
+    }
+    .posterFour {
+      &:hover {
+        .posterContentWrapper {
+          display: flex;
+        }
+      }
+    }
+  }
+}
