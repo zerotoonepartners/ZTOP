@@ -1,21 +1,19 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useContext } from 'react';
+import { ZtopContext } from '../../../context/ztop';
 
-function Kakaolink({ kp }) {
-  const { cp } = kp.params;
+function Kakaolink() {
+  const { namecardTarget } = useContext(ZtopContext);
   useEffect(() => {
-    console.log(cp);
-    const script = document.createElement('script');
     try {
       window.Kakao.init('d149effdaec276eadf4b088d938de0f2');
     } catch (e) {}
-    let kp = '123';
     window.Kakao.Link.createDefaultButton({
       container: '#kakao_share',
       objectType: 'feed',
       content: {
         title: '타이틀',
         description: '내용!',
-        imageUrl: `${cp}`,
+        imageUrl: namecardTarget,
         link: {
           mobileWebUrl: '',
           webUrl: window.location.href,
@@ -31,10 +29,7 @@ function Kakaolink({ kp }) {
         },
       ],
     });
-    document.body.appendChild(script);
-    document.body.removeChild(script);
-    console.log(cp);
-  }, []);
+  }, [namecardTarget]);
   return <div></div>;
 }
 

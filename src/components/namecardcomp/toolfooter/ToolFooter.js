@@ -12,7 +12,7 @@ function ToolFooter({ no }) {
   const { namecard_ } = useContext(ZtopContext);
   const [kp, setKp] = useState();
   useEffect(() => {
-    namecard_ &&
+    namecard_.data &&
       namecard_.map((item, idx) => {
         if (no == item.id) {
           setKp(item.kakao_picture);
@@ -66,6 +66,7 @@ function ToolFooter({ no }) {
           <img src={car} alt="" />
           <span>찾아오시는길</span>
         </div>
+
         <a
           id="kakao_share"
           href="javascript:sendLink()"
@@ -73,8 +74,7 @@ function ToolFooter({ no }) {
         >
           <div className="shareBtn">
             <img src={share} alt="" />
-            <Kakaolink kp={kp} />
-            {/* <span>공유하기</span> */}
+            <Kakaolink />
           </div>
         </a>
       </div>

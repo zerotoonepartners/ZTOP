@@ -2,7 +2,6 @@ import React from 'react';
 import './Landing.scss';
 import bell from '../../../static/images/bell.png';
 import logo from '../../../static/images/ZeroToOnePartners.png';
-
 import landing from '../../../static/images/landingImg.jpeg';
 
 function Landing() {
