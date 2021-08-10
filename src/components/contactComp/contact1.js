@@ -9,8 +9,6 @@ function ContactOne() {
   return (
     <div>
       <div className="contactPageWrapper1">
-
-        
         <div className="contactContentsWrapper">
           <div className="contentsWrapperOne">
             <span>간단한 신청 빠른 답변!<br/>
@@ -39,7 +37,7 @@ function ContactOne() {
 
           </div>
           <div className="contentsWrapperThree">
-            <div className="buttonWrapper">
+            <div className="buttonWrapper"  onClick={() => window.open('http://pf.kakao.com/_mQQWs/chat', '_blank', 'width=340,height=520')}>
               <span>신청하기</span>
             </div>
 

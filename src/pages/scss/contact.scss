@@ -3,7 +3,7 @@
     .contactPageWrapper{
         // width: 100%;
         // height: 100%;
-
+        margin-top: 30%;
         .contactMenuBarWrapper{
             // border:1px solid green;
             height: 20%;
@@ -12,131 +12,38 @@
             align-items: center;
 
             .contactMenu{
-                
-                width: 40%;
+                // border:1px solid green;
+                width: 20%;//20->100
                 text-align: center;
+                margin: 0% 10%;
+                cursor: pointer;
+                position: relative;
                 span{
-                    border-bottom: 3px solid #0D2B97;
+                    // border-bottom: 3px solid #0D2B97;
                     font-weight: bold;
-                    font-size: 4.5vw;
-                }
-
-            }
-        }
-
-
-        .contactContentsWrapper{
-            // border:3px solid pink;
-            height: 80%;
-            display: flex;
-            flex-direction: column;
-
-            .contentsWrapperOne{
-                // border:1px solid red;
-                height: 15%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-
-                span{
-                    font-weight: bold;
-                    text-align: center;
-                    font-size: 3.4vw;
-                    line-height: 170%;
-                }
-
-
-            }
-
-
-
-            .contentsWrapperTwo{
-                // border:1px solid blue;
-                height: 35%;
-                display: flex;
-                justify-content: center;
-                .iconAndNameWrapper{
-                    height: 100%;
-                    // border:1px solid red;
-                    display: flex;
-                    align-items: center;
-                   
-
+                    font-size: 4vw;
                     
-
-                    .iconAndName{
-                        // border:1px solid orange;
-                        height: 100%;
-                        display: flex;
-                        flex-direction: column;
-                        align-items: center;
-                        // justify-content: center;
-
-
-
-
-                        .icon{
-                            width: 50%;
-                            // border:1px solid red;
-                            margin-bottom: 1rem;
-                            margin-top: 50%;
-
-                        }
-
-                        .name{
-                            // border:1px solid red;
-                            font-size: 3vw;
-                            display: flex;
-                            white-space: normal;
-                            text-align: center;
-                            font-weight: 900;
-                            .desktopName{
-                                display: none;
-                            }
-                            .mobileName{
-                                display: flex;
-                            }
-                        }
-                    }
-
-
-                }
-            }
-
-
-
-            .contentsWrapperThree{
-                // border:1px solid purple;
-                height: 50%;
-                display: flex;
-                justify-content: center;
-                
-                .buttonWrapper{
-                    // border:1px solid pink;
-                    margin-top: 20%;
-                    span{
-
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-
-                        width: 10rem;
-                        height: 2.5rem;
-                        border-radius: 20px;
-                        border: 1px solid #3D6889;
-                        background-color: #3D6889;
-                        color:white;
-                        font-weight: 700;
-                        font-size: 1.3rem;
-                        letter-spacing: -1px;
-                    }
                     
-
-
                 }
+
             }
 
-
+            // .contactMenu span:before{
+            //     content: '';
+            //     position: absolute;
+            //     background-color: #0D2B97;
+            //     height: 0.15rem;
+            //     width: 0rem;
+            //     bottom: -5px;
+            //     transition: 0.5s;
+            //     text-decoration: none;
+            //     margin-bottom: -10%;
+            // }
+            // .contactMenu span:hover:before {
+            //     width: 88%;
+            //     text-decoration: none;
+            //   }
+    
         }
 
 
@@ -150,7 +57,7 @@
 @media all and (min-width: 1024px) {
 
     .contactPageWrapper{
-        border:4px solid red;
+        // border:4px solid red;
         width: 100%;
         height: 100vh;
         margin-top: 5rem;
@@ -160,139 +67,39 @@
             height: 30%;
             display: flex;
             justify-content: center;
-
             .contactMenu{
-                
-                width: 30%;
+                // border:1px solid green;
+                width: 10%;//10->100
                 text-align: center;
+                margin: 0% 5%;
+                cursor: pointer;
+                position: relative;
                 span{
-                    border-bottom: 3px solid #0D2B97;
+                    // border-bottom: 3px solid #0D2B97;
                     font-weight: bold;
                     font-size: 1.8vw;
-                }
-
-            }
-
-        }
-
-
-        .contactContentsWrapper{
-            // border:3px solid pink;
-            height: 70%;
-            display: flex;
-            flex-direction: column;
-            
-
-            .contentsWrapperOne{
-                // border:1px solid red;
-                height: 15%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-
-                span{
-                    font-weight: bold;
-                    text-align: center;
-                    font-size: 1.5vw;
-                    line-height: 120%;
-                }
-
-
-            }
-
-
-
-            .contentsWrapperTwo{
-                // border:1px solid blue;
-                height: 35%;
-                display: flex;
-                justify-content: center;
-                .iconAndNameWrapper{
-                    // border:1px solid red;
-                    width: 60%;
-                    display: flex;
-                    align-items: center;
-                   
-
                     
+                }           
 
-                    .iconAndName{
-                        // border:1px solid orange;
-                        height: 100%;
-                        display: flex;
-                        flex-direction: column;
-                        align-items: center;
-                        // justify-content: center;
-
-
-
-
-                        .icon{
-                            width: 30%;
-                            // border:1px solid red;
-                            margin-bottom: 1rem;
-                            margin-top: 10%;
-
-                        }
-
-                        .name{
-                            // border:1px solid red;
-                            font-size: 1vw;
-                            display: flex;
-                            white-space: normal;
-                            text-align: center;
-                            font-weight: 500;
-                            line-height: 120%;
-
-                            .desktopName{
-                                display: flex;
-                            }
-                            .mobileName{
-                                display: none;
-                            }
-                        }
-                    }
-
-
-                }
             }
-
-
-
-            .contentsWrapperThree{
-                // border:1px solid purple;
-                height: 50%;
-                display: flex;
-                justify-content: center;
-                
-                .buttonWrapper{
-                    // border:1px solid pink;
-                    margin-top: 5%;
-                    span{
-
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-
-                        width: 18rem;
-                        height: 3.5rem;
-                        border-radius: 60px;
-                        border: 1px solid #3D6889;
-                        background-color: #3D6889;
-                        color:white;
-                        font-weight: 700;
-                        font-size: 2.3rem;
-                        letter-spacing: -1px;
-                    }
-                    
-
-
-                }
-            }
+            // .contactMenu span:before{
+            //     content: '';
+            //     position: absolute;
+            //     background-color: #0D2B97;
+            //     height: 0.15rem;
+            //     width: 0rem;
+            //     bottom: -5px;
+            //     transition: 0.5s;
+            //     text-decoration: none;
+            //     margin-bottom: 1%;
+            // }
+            // .contactMenu span:hover:before {
+            //     width: 80%;
+            //     text-decoration: none;
+            //   }
 
 
         }
-
 
 
     }   

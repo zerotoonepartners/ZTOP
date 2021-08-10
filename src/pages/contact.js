@@ -7,6 +7,35 @@ import userEvent from '@testing-library/user-event';
 import Newheader from '../components/header/newheader'
 import ContactOne from '../components/contactComp/contact1';
 import ContactTwo from '../components/contactComp/contact2';
+import styled, {css}from 'styled-components';
+
+
+const Menu = styled.div`
+width: 100%;
+margin: 0% 5%;
+cursor: pointer;
+position: relative;
+padding-bottom:15%;
+border-bottom: ${({ contact }) => {
+  if (contact) {
+    return "3px solid #0D2B97";
+  }
+  else{
+    return "none";
+  }
+}};
+
+color: ${({ contact }) => {
+  if (contact) {
+    return "black";
+  }
+  else{
+    return "#A7A7A7";
+  }
+  
+}};
+
+`;
 
 function Contact() {
   const [contact, setContact] = useState(0)
@@ -21,12 +50,18 @@ function Contact() {
       <Newheader />
       <div className="contactPageWrapper">
         <div className="contactMenuBarWrapper">
+
             <div className="contactMenu" 
-            onClick={()=>setContact(0)}>
-            <span>기업 검토</span>
+            onClick={()=>setContact(0)}>   
+            <Menu contact={!contact}>    
+            <span>기업 검토</span>   
+            </Menu>
             </div>
+
             <div className="contactMenu" onClick={()=>setContact(1)}>
+            <Menu contact={contact}>
             <span>오시는 길</span>
+            </Menu>
             </div>
         </div>
         {contact === 0 ?  <ContactOne /> :<ContactTwo /> }
