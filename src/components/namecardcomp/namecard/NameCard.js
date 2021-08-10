@@ -22,7 +22,7 @@ function NameCard({ no }) {
                   </div>
                   <div className="nameCardContentWrapper">
                     <div className="sloganWrapper">
-                      <span>스타트업 투자 마케팅 기업</span>
+                      <span>스타트업 투자 마케팅 기업</span>
                     </div>
                     <img src={logo} alt="" className="logo" />
                     <div className="cardInfoWrapper">

@@ -8,6 +8,7 @@ import Newheader from '../components/header/newheader'
 import ContactOne from '../components/contactComp/contact1';
 import ContactTwo from '../components/contactComp/contact2';
 import styled, {css}from 'styled-components';
+import Footer from '../components/footer/footer';
 
 
 const Menu = styled.div`
@@ -66,6 +67,7 @@ function Contact() {
         </div>
         {contact === 0 ?  <ContactOne /> :<ContactTwo /> }
       </div>
+      <Footer/>
     </>
   );
 }
