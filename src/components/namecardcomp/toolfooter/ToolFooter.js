@@ -3,18 +3,17 @@ import car from '../../../static/images/car.png';
 import home from '../../../static/images/home.png';
 import share from '../../../static/images/share.png';
 import phone from '../../../static/images/phone.png';
-import { useEffect, useContext, useState } from 'react';
 import { ZtopContext } from '../../../context/ztop';
+import { useContext, useEffect } from 'react';
 import Kakaolink from './kakaolink';
 
 function ToolFooter({ no }) {
-  const { namecard_ } = useContext(ZtopContext);
-  const [kp, setKp] = useState();
+  const { namecard_, setNamecardTarget } = useContext(ZtopContext);
   useEffect(() => {
     namecard_.data &&
       namecard_.data.map((item, idx) => {
         if (no == item.id) {
-          setKp(item.kakao_picture);
+          setNamecardTarget(item.kakao_picture);
         }
       });
   }, []);
@@ -70,7 +69,7 @@ function ToolFooter({ no }) {
           <div className="shareBtn">
             <img src={share} alt="" />
 
-            <Kakaolink kp={kp} />
+            <Kakaolink />
             <span>공유하기</span>
           </div>
         </a>
