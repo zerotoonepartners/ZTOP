@@ -1,0 +1,242 @@
+
+@media all and (min-width: 320px) {
+    .contactPageWrapper2{
+        width: 100%;
+        height: 100vh;
+
+
+
+
+        .contactContentsWrapper2{
+            // border:3px solid pink;
+            height: 80%;
+            display: flex;
+            flex-direction: column;
+            margin-top: 15%;
+
+            .contentsWrapperOne2{
+                // border:1px solid red;
+                height: 70%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .pcMap{
+                    display: none;
+                    
+                }
+                .mobileMap{
+                    display: flex;
+
+                }
+
+
+            }
+
+
+
+            .contentsWrapperTwo2{
+                // border:1px solid blue;
+                height: 30%;
+                display: flex;
+                justify-content: center;
+
+                .infoWrapper{
+                    // border:1px solid pink;
+                    display: flex;
+                    flex-direction: column;
+                    // justify-content: space-around;
+
+                    .info{
+                        // border: 1px solid green;
+                        margin: 2% 0;
+                        
+                        span{
+                            font-size: 3vw;
+                            color:#4D4D4D;
+                        }
+                        .strong{
+                            font-size: 4vw;
+                            font-weight: 700;
+                            color:black;
+                        }
+
+
+                    }
+                }
+
+            }
+
+
+
+
+
+        }
+
+
+
+    }
+   
+}
+@media all and (min-width: 768px) {
+    .contactPageWrapper2{
+        width: 100%;
+        height: 100vh;
+
+
+
+
+        .contactContentsWrapper2{
+            // border:3px solid pink;
+            height: 80%;
+            display: flex;
+            flex-direction: column;
+            margin-top: 10%;
+
+
+            .contentsWrapperOne2{
+                // border:1px solid red;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .pcMap{
+                    display: flex;
+                    
+                }
+                .mobileMap{
+                    display: none;
+
+                }
+
+
+            }
+
+
+
+            .contentsWrapperTwo2{
+                // border:1px solid blue;
+                height: 50%;
+                display: flex;
+                justify-content: center;
+
+                .infoWrapper{
+                    // border:1px solid pink;
+                    display: flex;
+                    flex-direction: column;
+                    // justify-content: space-around;
+
+                    .info{
+                        // border: 1px solid green;
+                        margin: 2% 0;
+                        
+                        span{
+                            font-size: 3vw;
+                            color:#4D4D4D;
+                        
+                        }
+                        .strong{
+                            font-size: 4vw;
+                            font-weight: 700;
+                            color:black;
+                        }
+
+                    }
+                }
+
+            }
+
+
+
+
+
+        }
+
+
+
+    }
+
+}
+@media all and (min-width: 1024px) {
+    .contactPageWrapper2{
+        width: 100%;
+        height: 100vh;
+
+
+        .contactContentsWrapper2{
+            // border:3px solid pink;
+            height: 70%;
+            display: flex;
+            flex-direction: row;
+            margin-top: 0%;
+
+            .contentsWrapperOne2{
+                // border:1px solid red;
+                width: 60%;
+                height: auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .pcMap{
+                    display: flex;
+                    
+                }
+                .mobileMap{
+                    display: none;
+
+                }
+
+
+            }
+
+
+
+            .contentsWrapperTwo2{
+                // border:1px solid blue;
+                width:40%;
+                height: auto;
+                display: flex;
+                justify-content: start;
+                align-items: center;
+
+
+                .infoWrapper{
+                    // border:1px solid pink;
+                    display: flex;
+                    flex-direction: column;
+                    // justify-content: space-around;
+
+                    .info{
+                        // border: 1px solid green;
+                        margin: 4% 0;
+                        
+
+                        span{
+                            font-size: 1.2vw;
+                            color:#4D4D4D;
+                        }
+                        .strong{
+                            font-size: 1.5vw;
+                            font-weight: 700;
+                            color:black;
+                        }
+
+                    }
+                }
+
+            }
+
+
+
+
+
+        }
+
+
+
+    }   
+
+  
+}
