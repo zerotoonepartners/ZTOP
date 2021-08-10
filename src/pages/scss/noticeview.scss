@@ -1,10 +1,431 @@
 
 @media all and (min-width: 320px) {
-   
+    .noticeViewImgWrapper{
+        width: 100%;
+        height: 30vh;
+        background-image: url('https://images.unsplash.com/photo-1583924688061-ed27f017a516?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80');
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        margin-bottom: 2rem;
+        .noticeViewCategoryContainer{
+            position: absolute;
+            bottom: 0;
+            width : 100%;
+            height: 6vh;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            .noticeViewCategoryBox{
+                height: 100%;
+                width : 40%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                text-decoration: none !important;
+                span{
+                    font-size: 0.8rem;
+                    color: white;
+                }
+            }
+            .noticeViewCategoryBox.active{
+                background-color: white;
+                cursor: pointer;
+                span{
+                    color:black;
+                }
+            }
+
+        }
+    }
+    .noticeViewPageWrapper{
+        width : 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        //border : 1px solid red;
+        .noticeViewWrapper{
+            width : 95%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            //border : 1px solid blue;
+            .noticeViewTitlecontainer{
+                width : 85%;
+                height: 4rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-bottom: 2px solid black;
+                span{
+                    font-size: 1rem;
+                    font-weight: 800;
+                }
+
+            }
+            .noticeViewInfoContainer{
+                width : 85%;
+                height: 4rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                //margin-top: 2rem;
+                //margin-bottom: 2rem;
+                .noticeViewTitleBox{
+                    width : 100%;
+                    height: 50%;
+                    span{
+                        font-size: 0.7rem;
+                        font-weight: 600;
+                    }
+                }
+                .noticeViewInfoBox{
+                    width : 100%;
+                    display: flex;
+                    flex-direction: row;
+                    //margin-top: 1rem;
+                    .noticeViewWriterBox{
+                        width : 50%;
+                        span{
+                            font-size: 0.5rem;
+                            font-weight: 200;
+                        }
+                    }
+                    .noticeViewCreateBox{
+                        width : 50%;
+                        span{
+                            font-size: 0.5rem;
+                            font-weight: 200;
+                        }
+                    }
+                }
+            }
+            .noticeViewContentContainer{
+                width: 85%;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                //border : 1px solid green;
+                .noticeViewContentImgBox{
+                    display: none;
+                    width : 100%;
+                    margin-bottom: 2rem;
+                    img{
+                        width : 100%;
+                        //border : 1px solid black;
+                    }
+                }
+                .noticeViewContentImgBox.active{
+                    display: block;
+                }
+                .noticeViewContentTextBox{
+                    width : 100%;
+                    margin-bottom: 1rem;
+                    display: none;
+                    span{
+                        font-size: 0.6rem;
+                        font-weight: 300;
+                        line-height: 140%;
+                        text-align: justify;
+                    }
+                }
+                .noticeViewContentTextBox.active{
+                    display: block;
+                }
+            }
+            .noticeViewPrevNextContainer{
+                width : 85%;
+                height: 5rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                border-radius: 15px;
+                .noticePrev{
+                    &:hover{
+                        background-color: rgb(237, 241, 237);
+                    }
+                    width: 100%;
+                    height: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    border-top : 1px solid rgb(191, 196, 191);
+                    border-bottom : 1px solid rgb(191, 196, 191);
+                    text-decoration: none !important;
+                    span{
+                        color : rgb(191, 196, 191);
+                        padding-left: 1rem;
+                        font-size: 0.2rem;
+                        q{
+                            color : #61658f;
+                            margin-right: 1rem;
+                            font-size: 0.2rem;
+                        }
+                    }
+
+                }
+                .noticeNext{
+                    &:hover{
+                        background-color: rgb(237, 241, 237);
+                    }
+                    width: 100%;
+                    height: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    border-bottom : 1px solid rgb(191, 196, 191);
+                    text-decoration: none !important;
+                    span{
+                        color : rgb(191, 196, 191);
+                        padding-left: 1rem;
+                        font-size: 0.2rem;
+                        q{  
+                            color : #61658f;
+                            margin-right: 1rem;
+                            font-size: 0.2rem;
+                        }
+                    }
+                }
+            }
+            .noticeNoticeBackBox{
+                margin-top : 3rem;
+                width : 10rem;
+                height: 2rem;
+                border-radius: 5px;
+                background-color: #61658f;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                span{
+                    color : white;
+                    font-size: 0.6rem;
+                    font-weight: 350;
+                }
+
+            }
+        }
+    }
 }
+//tablet
 @media all and (min-width: 768px) {
+    .noticeViewImgWrapper{
+        width: 100%;
+        height: 40vh;
+        background-image: url('https://images.unsplash.com/photo-1583924688061-ed27f017a516?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80');
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        margin-bottom: 2rem;
+        .noticeViewCategoryContainer{
+            position: absolute;
+            bottom: 0;
+            width : 100%;
+            height: 6vh;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            .noticeViewCategoryBox{
+                height: 100%;
+                width : 40%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                text-decoration: none !important;
+                span{
+                    font-size: 1rem;
+                    color: white;
+                }
+            }
+            .noticeViewCategoryBox.active{
+                background-color: white;
+                cursor: pointer;
+                span{
+                    color:black;
+                }
+            }
+
+        }
+    }
+    .noticeViewPageWrapper{
+        width : 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        //border : 1px solid red;
+        .noticeViewWrapper{
+            width : 90%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            //border : 1px solid blue;
+            .noticeViewTitlecontainer{
+                width : 85%;
+                height: 6rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-bottom: 2px solid black;
+                span{
+                    font-size: 2rem;
+                    font-weight: 800;
+                }
+
+            }
+            .noticeViewInfoContainer{
+                width : 85%;
+                height: 4rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin-top: 2rem;
+                margin-bottom: 2rem;
+                .noticeViewTitleBox{
+                    width : 100%;
+                    height: 50%;
+                    span{
+                        font-size: 1.2rem;
+                        font-weight: 600;
+                    }
+                }
+                .noticeViewInfoBox{
+                    width : 100%;
+                    display: flex;
+                    flex-direction: row;
+                    margin-top: 1rem;
+                    .noticeViewWriterBox{
+                        width : 30%;
+                        span{
+                            font-size: 0.7rem;
+                            font-weight: 300;
+                        }
+                    }
+                    .noticeViewCreateBox{
+                        width : 30%;
+                        span{
+                            font-size: 0.7rem;
+                            font-weight: 300;
+                        }
+                    }
+                }
+            }
+            .noticeViewContentContainer{
+                width: 85%;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                //border : 1px solid green;
+                .noticeViewContentImgBox{
+                    display: none;
+                    width : 100%;
+                    margin-bottom: 2rem;
+                    img{
+                        width : 100%;
+                        //border : 1px solid black;
+                    }
+                }
+                .noticeViewContentImgBox.active{
+                    display: block;
+                }
+                .noticeViewContentTextBox{
+                    width : 100%;
+                    margin-bottom: 1rem;
+                    display: none;
+                    span{
+                        font-size: 1.2rem;
+                        font-weight: 250;
+                        line-height: 140%;
+                        text-align: justify;
+                    }
+                }
+                .noticeViewContentTextBox.active{
+                    display: block;
+                }
+            }
+            .noticeViewPrevNextContainer{
+                width : 85%;
+                height: 6rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                border-radius: 15px;
+                .noticePrev{
+                    &:hover{
+                        background-color: rgb(237, 241, 237);
+                    }
+                    width: 100%;
+                    height: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    border-top : 1px solid rgb(191, 196, 191);
+                    border-bottom : 1px solid rgb(191, 196, 191);
+                    text-decoration: none !important;
+                    span{
+                        color : rgb(191, 196, 191);
+                        padding-left: 1rem;
+                        font-size: 0.8rem;
+                        q{
+                            color : #61658f;
+                            margin-right: 1rem;
+                            font-size: 0.8rem;
+                        }
+                    }
+
+                }
+                .noticeNext{
+                    &:hover{
+                        background-color: rgb(237, 241, 237);
+                    }
+                    width: 100%;
+                    height: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    border-bottom : 1px solid rgb(191, 196, 191);
+                    text-decoration: none !important;
+                    span{
+                        color : rgb(191, 196, 191);
+                        padding-left: 1rem;
+                        font-size: 0.8rem;
+                        q{  
+                            color : #61658f;
+                            margin-right: 1rem;
+                            font-size: 0.8rem;
+                        }
+                    }
+                }
+            }
+            .noticeNoticeBackBox{
+                margin-top : 3rem;
+                width : 15rem;
+                height: 3rem;
+                border-radius: 5px;
+                background-color: #61658f;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                span{
+                    color : white;
+                    font-size: 1rem;
+                    font-weight: 350;
+                }
+
+            }
+        }
+    }
 
 }
+//web
 @media all and (min-width: 1024px) {
         .noticeViewImgWrapper{
             width: 100%;
@@ -91,18 +512,19 @@
                         width : 100%;
                         display: flex;
                         flex-direction: row;
+                        margin-top: 1rem;
                         .noticeViewWriterBox{
                             width : 30%;
                             span{
-                                font-size: 1.5rem;
-                                font-weight: 400;
+                                font-size: 1.2rem;
+                                font-weight: 300;
                             }
                         }
                         .noticeViewCreateBox{
                             width : 30%;
                             span{
-                                font-size: 1.5rem;
-                                font-weight: 400;
+                                font-size: 1.2rem;
+                                font-weight: 300;
                             }
                         }
                     }
@@ -213,3 +635,4 @@
         }
   
 }
+

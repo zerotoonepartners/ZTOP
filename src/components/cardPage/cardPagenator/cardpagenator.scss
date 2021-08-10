@@ -7,15 +7,45 @@
     margin-top: 2rem;
 }
 @media all and (min-width:320px){
-
+    .cardPageWrapper{
+        width :95%;
+        margin-top: 0rem;
+        .cardPageTitle{
+            width : 100%;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-bottom: 1px solid rgb(77, 75, 75);
+            span{
+                text-align: center;
+                font-size: 1rem;
+                font-weight: 800;
+                padding-bottom: 1rem;
+                margin-bottom: 0rem;
+            }
+        }
+        
+        .CardPagenatorWrapper{
+            width : 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 0rem;
+                .CardNumberWrapper{
+                    width : 100%;
+                    display: block;
+                    overflow: hidden;
+                    margin-top: 1.5rem;
+                }
+        }
+    }
 }
 
 @media all and (min-width:768px){
-    
-}
-
-@media all and (min-width:1024px){
     .cardPageWrapper{
+        //margin-top: 5rem;
         .cardPageTitle{
             width : 100%;
             margin-bottom: 4rem;
@@ -29,6 +59,43 @@
                 font-weight: 800;
                 padding-bottom: 1rem;
                 margin-bottom: 2rem;
+            }
+        }
+        
+        .CardPagenatorWrapper{
+            width : 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 0rem;
+                .CardNumberWrapper{
+                    width : 100%;
+                    display: block;
+                    overflow: hidden;
+                    margin-top: 1.5rem;
+                }
+        }
+    }
+}
+
+@media all and (min-width:1024px){
+    .cardPageWrapper{
+        width: 80%;
+        .cardPageTitle{
+            width : 100%;
+            margin-bottom: 4rem;
+            margin-top: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-bottom: 1px solid rgb(77, 75, 75);
+            span{
+                text-align: center;
+                font-size: 2rem;
+                font-weight: 800;
+                //padding-bottom: 1rem;
+                //margin-bottom: 2rem;
             }
         }
         
