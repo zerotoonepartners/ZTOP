@@ -7,11 +7,12 @@ import Loading from 'react-loading';
 import Card from '../card/card';
 import right from '../../../static/images/left.png';
 import left from '../../../static/images/right.png';
+import { Link } from 'react-router-dom';
 
 function Mainevent() {
   const { ztopNotice_ } = useContext(ZtopContext);
   const [sliderToggle, setSliderToggle] = useState(0);
-
+  console.log(ztopNotice_);
   switch (ztopNotice_.status) {
     case 'pending':
       return <Loading />;
@@ -20,6 +21,7 @@ function Mainevent() {
     case 'rejected':
       return <>Err</>;
     default:
+      console.log(ztopNotice_);
       return (
         <>
           <div className="mainEventWrapper">
@@ -51,11 +53,14 @@ function Mainevent() {
               )}
               <div className="eventSliderWrapper">
                 <EventCardMapWrapper page={sliderToggle}>
-                  {ztopNotice_.data
-                    .slice(undefined, 12)
-                    .map((item, index) => {
-                      return <Card key={index} data={item} />;
-                    })}
+                  {ztopNotice_.data.slice(undefined, 12).map((item, index) => {
+                    console.log(item.id);
+                    return (
+                      <Link to={`/noticeview/${item.id}`}>
+                        <Card key={index} data={item} />
+                      </Link>
+                    );
+                  })}
                 </EventCardMapWrapper>
               </div>
               <button

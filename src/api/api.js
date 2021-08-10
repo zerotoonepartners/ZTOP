@@ -42,3 +42,12 @@ export const news = async () => {
   }
 };
 
+export const detail = async (id) => {
+  try {
+    const res = await axios.get(`${url}/ztopnotice/${id}`);
+    const data = res.data;
+    return data;
+  } catch (e) {
+    alert(e);
+  }
+};

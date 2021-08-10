@@ -23,29 +23,28 @@ function Media({location}) {
       clickNotice();
     }
   },[])
+  
   return (
     <div>
-      <Header/>
+      <Header />
       <div className="libraryImgWrapper">
         <div className="libraryCategoryContainer">
-          <div className={`libraryCategoryBox ${news?'active':'inactive'}`} onClick={clickNotice}>
+          <div
+            className={`libraryCategoryBox ${news ? 'active' : 'inactive'}`}
+            onClick={clickNotice}
+          >
             <span>NEWS</span>
           </div>
-          <div className={`libraryCategoryBox ${notice?'active':'inactive'}`} onClick={clickAct}>
+          <div
+            className={`libraryCategoryBox ${notice ? 'active' : 'inactive'}`}
+            onClick={clickAct}
+          >
             <span>기업소식</span>
           </div>
-
         </div>
       </div>
       <div className="libraryPageWrapper">
-        {
-          news?
-          <NewsPagenator/>
-          :
-          <CardPagenator/>
-        }
-        
-        
+        {news ? <NewsPagenator /> : <CardPagenator />}
       </div>
       <Kakao/>
       <Footer/>

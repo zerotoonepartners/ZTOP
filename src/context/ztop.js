@@ -1,10 +1,12 @@
 import { createContext, useEffect, useState } from 'react';
-import { blogLink, ztopNotice, nameCard, news } from '../api/api';
+import { blogLink, ztopNotice, nameCard, news, detail } from '../api/api';
 const ZtopContext = createContext();
 
 const ZtopContextProvider = ({ children }) => {
   const [loading, setLoading] = useState(true);
   const [modal, setModal] = useState(false);
+  const [event, setEvent] = useState();
+
   const [blogLink_, setBlogLink_] = useState({
     status: 'idle',
     data: null,
@@ -21,8 +23,12 @@ const ZtopContextProvider = ({ children }) => {
     status: 'idle',
     data: null,
   });
-  const [selectionNews_,setSelectionNews_] = useState(undefined);
-  const [selectionNotice_,setSelectionNotice_]  = useState(undefined);
+  const [detail_, setDetail_] = useState({
+    status: 'idle',
+    data: null,
+  });
+  const [selectionNews_, setSelectionNews_] = useState(undefined);
+  const [selectionNotice_, setSelectionNotice_] = useState(undefined);
 
   const getBlogLink = async () => {
     let res = await blogLink();
@@ -32,8 +38,8 @@ const ZtopContextProvider = ({ children }) => {
         data: null,
       });
       setBlogLink_({
-        status:'resolved',
-        data: res.reverse()
+        status: 'resolved',
+        data: res.reverse(),
       });
     } catch (e) {
       setBlogLink_({
@@ -51,8 +57,8 @@ const ZtopContextProvider = ({ children }) => {
         data: null,
       });
       setZtopNotice_({
-        status:'resolved',
-        data: res.reverse()
+        status: 'resolved',
+        data: res.reverse(),
       });
     } catch (e) {
       setZtopNotice_({
@@ -69,8 +75,8 @@ const ZtopContextProvider = ({ children }) => {
         data: null,
       });
       setNamecard_({
-        status:'resolved',
-        data: res.reverse()
+        status: 'resolved',
+        data: res.reverse(),
       });
     } catch (e) {
       setNamecard_({
@@ -88,8 +94,8 @@ const ZtopContextProvider = ({ children }) => {
         data: null,
       });
       setNews_({
-        status:'resolved',
-        data: res.reverse()
+        status: 'resolved',
+        data: res.reverse(),
       });
     } catch (e) {
       setNews_({
@@ -99,12 +105,33 @@ const ZtopContextProvider = ({ children }) => {
     }
   };
 
+  const getDetail = async (id) => {
+    let res = await detail(id);
+    console.log(res, 'this is detail');
+    try {
+      setDetail_({
+        status: 'pending',
+        data: null,
+      });
+      setDetail_({
+        status: 'resolved',
+        data: res.reverse(),
+      });
+    } catch (e) {
+      setDetail_({
+        status: 'rejected',
+        data: null,
+      });
+      console.log(e);
+    }
+  };
   useEffect(() => {
     try {
       getBlogLink();
       getZtopNotice();
       getNamecard();
       getNews();
+      // getDetail();
       setLoading(false);
     } catch (e) {
       alert(e);
@@ -125,8 +152,14 @@ const ZtopContextProvider = ({ children }) => {
         setNamecard_,
         news_,
         setNews_,
-        selectionNews_,setSelectionNews_,
-        selectionNotice_,setSelectionNotice_
+        selectionNews_,
+        setSelectionNews_,
+        selectionNotice_,
+        setSelectionNotice_,
+        detail_,
+        setDetail_,
+        event,
+        setEvent,
       }}
     >
       {children}
