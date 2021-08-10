@@ -6,7 +6,7 @@ import { ZtopContext } from '../../../context/ztop';
 import { useContext } from 'react';
 
 function NameCard({ no }) {
-  const { namecard_ } = useContext(ZtopContext);
+  const { namecard_,setNamecardTarget } = useContext(ZtopContext);
   console.log(namecard_);
   return (
     <>
@@ -14,6 +14,7 @@ function NameCard({ no }) {
         namecard_.data.map((item, index) => {
           if (no == item.id) {
             console.log(item);
+            setNamecardTarget(item.kakao_picture);
             return (
               <div className="nameCardWrapper">
                 <div className="nameCardWrap">

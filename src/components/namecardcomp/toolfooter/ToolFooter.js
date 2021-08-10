@@ -4,7 +4,9 @@ import car from '../../../static/images/car.png';
 import home from '../../../static/images/home.png';
 import share from '../../../static/images/share.png';
 import phone from '../../../static/images/phone.png';
-import { useEffect } from 'react';
+import { useEffect,useContext } from 'react';
+import { ZtopContext } from '../../../context/ztop';
+import Kakaolink from './kakaolink';
 
 function ToolFooter() {
   useEffect(() => {
@@ -86,8 +88,9 @@ function ToolFooter() {
         <div className="toolItem lastChild">
           <a id="kakao_share">
             <img src={share} alt="" />
+            <Kakaolink/>
             <span>공유하기</span>
-            <button onClick={shareKakao}>카카오톡 공유하기</button>
+            {/* <button onClick={shareKakao}>카카오톡 공유하기</button> */}
           </a>
         </div>
       </div>
