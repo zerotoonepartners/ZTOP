@@ -19,7 +19,7 @@ function ToolFooter() {
         description: '내용!',
         imageUrl: '',
         link: {
-          mobileWebUrl: 'https://master.dqlh28bpjy2qg.amplifyapp.com/',
+          mobileWebUrl: 'https://master.dqlh28bpjy2qg.amplifyapp.com',
           androidExecParams: 'test',
         },
       },
@@ -27,7 +27,7 @@ function ToolFooter() {
         {
           title: '웹으로 이동',
           link: {
-            mobileWebUrl: 'https://master.dqlh28bpjy2qg.amplifyapp.com/',
+            mobileWebUrl: 'https://master.dqlh28bpjy2qg.amplifyapp.com',
           },
         },
       ],
