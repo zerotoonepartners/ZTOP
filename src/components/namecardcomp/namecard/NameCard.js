@@ -6,7 +6,7 @@ import { ZtopContext } from '../../../context/ztop';
 import { useContext } from 'react';
 
 function NameCard({ no }) {
-  const { namecard_,setNamecardTarget } = useContext(ZtopContext);
+  const { namecard_, setNamecardTarget } = useContext(ZtopContext);
   console.log(namecard_);
   return (
     <>

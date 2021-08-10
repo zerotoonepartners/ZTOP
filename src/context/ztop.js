@@ -6,7 +6,7 @@ const ZtopContextProvider = ({ children }) => {
   const [loading, setLoading] = useState(true);
   const [modal, setModal] = useState(false);
   const [event, setEvent] = useState();
-  const [namecardTarget,setNamecardTarget] = useState('');
+  const [namecardTarget, setNamecardTarget] = useState('');
 
   const [blogLink_, setBlogLink_] = useState({
     status: 'idle',
@@ -161,7 +161,10 @@ const ZtopContextProvider = ({ children }) => {
         setDetail_,
         event,
         setEvent,
-        namecardTarget,setNamecardTarget
+        namecardTarget,
+        setNamecardTarget,
+        namecardTarget,
+        setNamecardTarget,
       }}
     >
       {children}
