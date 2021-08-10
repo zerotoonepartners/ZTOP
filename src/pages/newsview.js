@@ -7,6 +7,7 @@ import Header from "../components/header/newheader";
 import Footer from '../components/footer/footer';
 import { ZtopContext } from '../context/ztop';
 import './scss/newsview.scss';
+import Kakao from '../components/kakao/kakao';
 
 function NewsView({history,location,match}) {
   const [news,setNews]=useState(true);
@@ -186,6 +187,7 @@ function NewsView({history,location,match}) {
                 }
             
         </div>
+        <Kakao/>
         <Footer/>
     </div>
   );

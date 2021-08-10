@@ -5,6 +5,7 @@ import CardPagenator from '../components/cardPage/cardPagenator/cardpagenator';
 import Header from "../components/header/newheader";
 import Footer from '../components/footer/footer';
 import {useLocation} from "react-router";
+import Kakao from "../components/kakao/kakao";
 
 
 function Media({location}) {
@@ -46,6 +47,7 @@ function Media({location}) {
         
         
       </div>
+      <Kakao/>
       <Footer/>
     </div>
   );

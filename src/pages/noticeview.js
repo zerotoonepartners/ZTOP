@@ -4,6 +4,7 @@ import Header from "../components/header/newheader";
 import Footer from '../components/footer/footer';
 import { ZtopContext } from '../context/ztop';
 import './scss/noticeview.scss';
+import Kakao from '../components/kakao/kakao';
 
 function NoticeView({history,location,match}) {
   const {ztopNotice_} = useContext(ZtopContext);
@@ -216,6 +217,7 @@ function NoticeView({history,location,match}) {
                 }
             
         </div>
+        <Kakao/>
         <Footer/>
     </div>
   );
