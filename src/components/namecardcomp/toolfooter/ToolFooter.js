@@ -1,15 +1,23 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './ToolFooter.scss';
 import car from '../../../static/images/car.png';
 import home from '../../../static/images/home.png';
 import share from '../../../static/images/share.png';
 import phone from '../../../static/images/phone.png';
+<<<<<<< HEAD
 import { useEffect,useContext } from 'react';
 import { ZtopContext } from '../../../context/ztop';
+=======
+import { ZtopContext } from '../../../context/ztop';
+import { useContext } from 'react';
+>>>>>>> 30a048d23373a45884570491ebecaccaa93a132a
 import Kakaolink from './kakaolink';
 
-function ToolFooter() {
+function ToolFooter({ no }) {
+  const { namecard_ } = useContext(ZtopContext);
+  const [kp, setKp] = useState();
   useEffect(() => {
+<<<<<<< HEAD
     try{
     window.Kakao.init('1b4391ecab97342f8952423eba09a979');
     }catch(e){}
@@ -38,6 +46,15 @@ function ToolFooter() {
     });
     console.log(window.Kakao.Link);
   };
+=======
+    namecard_ &&
+      namecard_.map((item, idx) => {
+        if (no == item.id) {
+          setKp(item.kakao_picture);
+        }
+      });
+  }, []);
+>>>>>>> 30a048d23373a45884570491ebecaccaa93a132a
   return (
     <div className="toolFooterWrapper">
       <div className="footerContentWrapper">
@@ -85,14 +102,25 @@ function ToolFooter() {
           <img src={car} alt="" />
           <span>찾아오시는길</span>
         </div>
-        <div className="toolItem lastChild">
-          <a id="kakao_share">
+        <a
+          id="kakao_share"
+          href="javascript:sendLink()"
+          className="toolItem lastChild"
+        >
+          <div className="shareBtn">
             <img src={share} alt="" />
+<<<<<<< HEAD
             <Kakaolink/>
             <span>공유하기</span>
             {/* <button onClick={shareKakao}>카카오톡 공유하기</button> */}
           </a>
         </div>
+=======
+            <Kakaolink kp={kp} />
+            {/* <span>공유하기</span> */}
+          </div>
+        </a>
+>>>>>>> 30a048d23373a45884570491ebecaccaa93a132a
       </div>
     </div>
   );
