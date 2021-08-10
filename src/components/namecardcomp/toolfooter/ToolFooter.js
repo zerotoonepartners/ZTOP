@@ -8,28 +8,30 @@ import { useEffect } from 'react';
 
 function ToolFooter() {
   useEffect(() => {
-    window.Kakao.init('1b4391ecab97342f8952423eba09a979');
+    try {
+      window.Kakao.init('d149effdaec276eadf4b088d938de0f2');
+    } catch (e) {}
   }, []);
 
   const shareKakao = () => {
-    window.Kakao.Link.sendDefault({
+    window.Kakao.Link.createDefaultButton({
+      container: '#kakao_share',
       objectType: 'feed',
       content: {
         title: '타이틀',
         description: '내용!',
         imageUrl: '',
         link: {
-          mobileWebUrl:
-            'https://master.dqlh28bpjy2qg.amplifyapp.com/namecard/7',
-          androidExecParams: 'test',
+          mobileWebUrl: window.location.href,
+          webUrl: window.location.href,
         },
       },
       buttons: [
         {
-          title: '웹으로 이동',
+          title: '제로투원파트너스',
           link: {
-            mobileWebUrl:
-              'https://master.dqlh28bpjy2qg.amplifyapp.com/namecard/7',
+            mobileWebUrl: window.location.href,
+            webUrl: window.location.href,
           },
         },
       ],
@@ -82,13 +84,16 @@ function ToolFooter() {
           <img src={car} alt="" />
           <span>찾아오시는길</span>
         </div>
-        <div className="toolItem lastChild">
-          <a id="kakao_share">
+        <a
+          id="kakao_share"
+          href="javascript:sendLink()"
+          className="toolItem lastChild"
+        >
+          <div onClick={shareKakao} className="shareBtn">
             <img src={share} alt="" />
             <span>공유하기</span>
-            <button onClick={shareKakao}>카카오톡 공유하기</button>
-          </a>
-        </div>
+          </div>
+        </a>
       </div>
     </div>
   );
