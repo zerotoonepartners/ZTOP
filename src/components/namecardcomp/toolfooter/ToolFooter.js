@@ -8,7 +8,9 @@ import { useEffect } from 'react';
 
 function ToolFooter() {
   useEffect(() => {
+    try{
     window.Kakao.init('1b4391ecab97342f8952423eba09a979');
+    }catch(e){}
   }, []);
 
   const shareKakao = () => {
@@ -19,7 +21,7 @@ function ToolFooter() {
         description: '내용!',
         imageUrl: '',
         link: {
-          mobileWebUrl: 'https://master.dqlh28bpjy2qg.amplifyapp.com',
+          mobileWebUrl: '123',
           androidExecParams: 'test',
         },
       },
@@ -27,11 +29,12 @@ function ToolFooter() {
         {
           title: '웹으로 이동',
           link: {
-            mobileWebUrl: 'https://master.dqlh28bpjy2qg.amplifyapp.com',
+            mobileWebUrl: '123',
           },
         },
       ],
     });
+    console.log(window.Kakao.Link);
   };
   return (
     <div className="toolFooterWrapper">
