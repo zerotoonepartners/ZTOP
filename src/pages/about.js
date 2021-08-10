@@ -1,7 +1,7 @@
 import './scss/about.scss';
 import Newheader from '../components/header/newheader';
 import Footer from '../components/footer/footer';
-import { useContext } from 'react';
+import {useContext} from 'react';
 import { ZtopContext } from '../context/ztop';
 import Loading from 'react-loading';
 import { Link } from 'react-router-dom';
