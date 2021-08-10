@@ -4,6 +4,7 @@ import {Link} from 'react-router-dom';
 import NewsPagenator from '../components/newsPagenator/newsPagenator';
 import CardPagenator from '../components/cardPage/cardPagenator/cardpagenator';
 import Header from "../components/header/newheader";
+import Footer from '../components/footer/footer';
 import { ZtopContext } from '../context/ztop';
 import './scss/newsview.scss';
 
@@ -185,6 +186,7 @@ function NewsView({history,location,match}) {
                 }
             
         </div>
+        <Footer/>
     </div>
   );
 }

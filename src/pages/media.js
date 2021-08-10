@@ -3,6 +3,7 @@ import {useState,useEffect} from 'react';
 import NewsPagenator from '../components/newsPagenator/newsPagenator';
 import CardPagenator from '../components/cardPage/cardPagenator/cardpagenator';
 import Header from "../components/header/newheader";
+import Footer from '../components/footer/footer';
 import {useLocation} from "react-router";
 
 
@@ -45,6 +46,7 @@ function Media({location}) {
         
         
       </div>
+      <Footer/>
     </div>
   );
 }

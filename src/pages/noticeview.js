@@ -1,6 +1,7 @@
 import {useContext, useEffect, useState} from 'react';
 import {Link} from 'react-router-dom';
 import Header from "../components/header/newheader";
+import Footer from '../components/footer/footer';
 import { ZtopContext } from '../context/ztop';
 import './scss/noticeview.scss';
 
@@ -215,6 +216,7 @@ function NoticeView({history,location,match}) {
                 }
             
         </div>
+        <Footer/>
     </div>
   );
 }
