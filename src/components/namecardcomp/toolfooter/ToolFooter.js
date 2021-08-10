@@ -4,8 +4,35 @@ import car from '../../../static/images/car.png';
 import home from '../../../static/images/home.png';
 import share from '../../../static/images/share.png';
 import phone from '../../../static/images/phone.png';
+import { useEffect } from 'react/cjs/react.development';
 
 function ToolFooter() {
+  useEffect(() => {
+    window.Kakao.init('1b4391ecab97342f8952423eba09a979');
+  }, []);
+
+  const shareKakao = () => {
+    window.Kakao.Link.sendDefault({
+      objectType: 'feed',
+      content: {
+        title: '타이틀',
+        description: '내용!',
+        imageUrl: '',
+        link: {
+          mobileWebUrl: 'https://master.dqlh28bpjy2qg.amplifyapp.com/',
+          androidExecParams: 'test',
+        },
+      },
+      buttons: [
+        {
+          title: '웹으로 이동',
+          link: {
+            mobileWebUrl: 'https://master.dqlh28bpjy2qg.amplifyapp.com/',
+          },
+        },
+      ],
+    });
+  };
   return (
     <div className="toolFooterWrapper">
       <div className="footerContentWrapper">
@@ -54,8 +81,11 @@ function ToolFooter() {
           <span>찾아오시는길</span>
         </div>
         <div className="toolItem lastChild">
-          <img src={share} alt="" />
-          <span>공유하기</span>
+          <a id="kakao_share">
+            <img src={share} alt="" />
+            <span>공유하기</span>
+            <button onClick={shareKakao}>카카오톡 공유하기</button>
+          </a>
         </div>
       </div>
     </div>
