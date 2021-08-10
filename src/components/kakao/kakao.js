@@ -9,17 +9,20 @@ export default function Kakao() {
     try {
       window.Kakao.init('d149effdaec276eadf4b088d938de0f2');
     } catch (e) {}
-    window.Kakao.Channel.createChatButton({
-      container: '#kakao-talk-channel-chat-button',
-      channelPublicId: '_mQQWs',
-      title: 'consult',
-      size: 'small',
-      color: 'yellow',
-      shape: 'pc',
-      supportMultipleDensities: true,
-    });
-    document.body.appendChild(script);
-    document.body.removeChild(script);
+    try {
+      window.Kakao.Channel.createChatButton({
+        container: '#kakao-talk-channel-chat-button',
+        channelPublicId: '_mQQWs',
+        title: 'consult',
+        size: 'small',
+        color: 'yellow',
+        shape: 'pc',
+        supportMultipleDensities: true,
+      });
+
+      document.body.appendChild(script);
+      document.body.removeChild(script);
+    } catch (e) {}
   }, []);
   return <div class="kakaoBtn" id="kakao-talk-channel-chat-button"></div>;
 }

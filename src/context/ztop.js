@@ -163,6 +163,8 @@ const ZtopContextProvider = ({ children }) => {
         setEvent,
         namecardTarget,
         setNamecardTarget,
+        namecardTarget,
+        setNamecardTarget,
       }}
     >
       {children}

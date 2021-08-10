@@ -10,6 +10,8 @@ import NewsView from './pages/newsview';
 import NoticeView from './pages/noticeview';
 import ScrollToTop from '../src/components/common/scrollToTop';
 import CardContainers from './containers/CardContainers';
+import Contact from './pages/contact';
+
 
 function App() {
   return (
@@ -17,12 +19,17 @@ function App() {
       <BrowserRouter>
         <ScrollToTop />
         <Switch>
+
+          <Route path="/" exact component={Main}/>
+          <Route path="/about" component={About}/>
+          <Route path="/contact" component={Contact} />
           <Route path="/" exact component={Main} />
           <Route path="/about" component={About} />
           <Route path="/media" component={Media} />
           <Route path="/newsview/:no" component={NewsView} />
           <Route path="/noticeview/:no" component={NoticeView} />
           <Route path="/namecard/:no" component={CardContainers} />
+
         </Switch>
       </BrowserRouter>
     </ZtopContextProvider>

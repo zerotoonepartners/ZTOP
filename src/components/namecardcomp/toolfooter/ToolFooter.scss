@@ -50,14 +50,15 @@
   .toolWrapper {
     width: 100%;
     height: 40%;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     .toolItem {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       height: 100%;
-      width: 25%;
+
       height: 100%;
       border-right: 1px dotted #ffffff;
       span {
