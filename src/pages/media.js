@@ -1,26 +1,29 @@
 import './scss/media.scss';
-import { useState } from 'react';
+import {useState,useEffect} from 'react';
 import NewsPagenator from '../components/newsPagenator/newsPagenator';
 import CardPagenator from '../components/cardPage/cardPagenator/cardpagenator';
-import Header from '../components/header/newheader';
+import Header from "../components/header/newheader";
+import Footer from '../components/footer/footer';
+import {useLocation} from "react-router";
+import Kakao from "../components/kakao/kakao";
 
-function Media() {
-  const [news, setNews] = useState(true);
-  const [notice, setNotice] = useState(false);
 
-  const [selectionNotice, setSelelctionNotice] = useState(-1);
-  const clickAct = () => {
-    if (news === true) {
-      setNews(!news);
-      setNotice(!notice);
+function Media({location}) {
+  const [news,setNews]=useState(true);
+  const [notice,setNotice]=useState(false);
+
+  const clickAct = () => {if(news===true){setNews(!news);setNotice(!notice)}};
+  const clickNotice = () => {if(notice===true){setNotice(!notice);setNews(!news)}};
+  useEffect(()=>{
+    console.log(location);
+    if(location.pathname=="/media/2"){
+      clickAct();
     }
-  };
-  const clickNotice = () => {
-    if (notice === true) {
-      setNotice(!notice);
-      setNews(!news);
+    if(location.pathname=="/media/1"){
+      clickNotice();
     }
-  };
+  },[])
+  
   return (
     <div>
       <Header />
@@ -43,6 +46,8 @@ function Media() {
       <div className="libraryPageWrapper">
         {news ? <NewsPagenator /> : <CardPagenator />}
       </div>
+      <Kakao/>
+      <Footer/>
     </div>
   );
 }

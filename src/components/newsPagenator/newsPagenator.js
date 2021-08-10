@@ -8,6 +8,7 @@ import Pagination from './pagination';
 import NewsRead from '../newsRead/newsRead';
 import { useEffect } from 'react/cjs/react.development';
 
+
 function NewsPagenator({ match }) {
   const { news_, selectionNews_ } = useContext(ZtopContext);
   const [currentPage, setCurrentPage] = useState(1);

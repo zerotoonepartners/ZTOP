@@ -8,6 +8,7 @@ import Mainevent from '../components/main/mainevent/mainevent';
 import Mainstory from '../components/main/mainstory/mainstory';
 import Footer from '../components/footer/footer';
 import TopCircle from '../components/topcircle/topcircle';
+import Kakao from "../components/kakao/kakao";
 
 function Main() {
   return (
@@ -20,6 +21,7 @@ function Main() {
       <Mainstory />
       <Footer />
       <TopCircle />
+      <Kakao/>
     </>
   );
 }
