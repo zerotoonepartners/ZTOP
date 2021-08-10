@@ -3,7 +3,7 @@ import './NameCard.scss';
 import avatar1 from '../../../static/images/avatar1.png';
 import logo from '../../../static/images/ztopLogo.png';
 import { ZtopContext } from '../../../context/ztop';
-import { useContext } from 'react/cjs/react.development';
+import { useContext } from 'react';
 
 function NameCard({ no }) {
   const { namecard_ } = useContext(ZtopContext);

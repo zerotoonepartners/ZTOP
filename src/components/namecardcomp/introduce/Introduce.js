@@ -1,7 +1,7 @@
 import React from 'react';
 import './Introduce.scss';
 import { ZtopContext } from '../../../context/ztop';
-import { useContext } from 'react/cjs/react.development';
+import { useContext } from 'react';
 
 function Introduce({ no }) {
   const { namecard_ } = useContext(ZtopContext);
