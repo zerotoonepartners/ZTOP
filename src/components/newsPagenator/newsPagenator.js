@@ -5,9 +5,7 @@ import Loading from '../loading/loading';
 import { ZtopContext } from '../../context/ztop';
 import Posts from './Posts';
 import Pagination from './pagination';
-import NewsRead from '../newsRead/newsRead';
 import { useEffect } from 'react/cjs/react.development';
-
 
 function NewsPagenator({ match }) {
   const { news_, selectionNews_ } = useContext(ZtopContext);

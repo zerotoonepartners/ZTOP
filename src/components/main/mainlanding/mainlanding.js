@@ -6,7 +6,7 @@ function MainLanding() {
   return (
     <>
       <div className="mainLandingWrapper">
-        <div className="landingWrapper">
+        <div className="landingWrapperr">
           <div className="landingTitle">
             <span>ZeroToOnePartners</span>
           </div>
