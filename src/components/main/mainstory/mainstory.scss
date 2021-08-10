@@ -1,0 +1,102 @@
+@media all and (min-width: 320px) {
+  .mainStoryWrapper {
+    width: 100%;
+    height: 100vh;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .ztopTitleWrapper {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      margin-top: 2rem;
+      span {
+        font-weight: 800;
+        font-size: 1.6rem;
+      }
+    }
+    .ztopDescWrapper {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      margin-top: 1rem;
+      margin-bottom: 2rem;
+      span {
+        font-weight: 200;
+        font-size: 0.8rem;
+      }
+    }
+  }
+}
+@media all and (min-width: 768px) {
+  .mainStoryWrapper {
+    width: 100%;
+    height: 100vh;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .ztopTitleWrapper {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      margin-top: 2rem;
+      span {
+        font-weight: 800;
+        font-size: 1.6rem;
+      }
+    }
+    .ztopDescWrapper {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      margin-top: 1rem;
+      margin-bottom: 2rem;
+      span {
+        font-weight: 200;
+        font-size: 0.8rem;
+      }
+    }
+  }
+}
+@media all and (min-width: 1024px) {
+  .mainStoryWrapper {
+    width: 100%;
+    height: 100vh;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .ztopTitleWrapper {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      margin-top: 5rem;
+      span {
+        font-weight: 800;
+        font-size: 1.8rem;
+      }
+    }
+    .boardWrapper {
+      margin-top: 3rem;
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+    }
+    .ztopDescWrapper {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      margin-top: 1rem;
+      margin-bottom: 2rem;
+      span {
+        font-weight: 200;
+        font-size: 1rem;
+      }
+    }
+  }
+}
