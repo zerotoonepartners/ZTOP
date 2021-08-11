@@ -11,6 +11,7 @@ import NoticeView from './pages/noticeview';
 import ScrollToTop from '../src/components/common/scrollToTop';
 import CardContainers from './containers/CardContainers';
 import Contact from './pages/contact';
+import WebProfileContainers from './containers/WebProfileContainers';
 
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
           <Route path="/newsview/:no" component={NewsView} />
           <Route path="/noticeview/:no" component={NoticeView} />
           <Route path="/namecard/:no" component={CardContainers} />
+          <Route path="/webprofile/:no" component={WebProfileContainers} />
 
         </Switch>
       </BrowserRouter>
