@@ -6,6 +6,7 @@ import ToolFooter from '../components/namecardcomp/toolfooter/ToolFooter';
 import Introduce from '../components/namecardcomp/introduce/Introduce';
 import { useContext, useState, useEffect } from 'react';
 import { ZtopContext } from '../../src/context/ztop';
+import './CardContainers.scss';
 
 function CardContainers({ match }) {
   const { namecard_ } = useContext(ZtopContext);
@@ -25,13 +26,16 @@ function CardContainers({ match }) {
   }, []);
 
   return (
-    <div className="cardContainerWrapper">
-      <Header />
-      <Landing />
-      <NameCard no={no} />
-      <ToolFooter no={no} kp={kp} />
-      <Introduce no={no} />
-    </div>
+    <>
+      <div className="cardContainerWrapper">
+        <Header />
+        <Landing />
+        <NameCard no={no} />
+        <ToolFooter no={no} kp={kp} />
+        <Introduce no={no} />
+      </div>
+      <div className="webCardContainerWrapper">this is for web namecard</div>
+    </>
   );
 }
 

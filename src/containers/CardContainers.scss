@@ -1,0 +1,24 @@
+@media all and (min-width: 320px) {
+  .cardContainerWrapper {
+    display: block;
+  }
+  .webCardContainerWrapper {
+    display: none;
+  }
+}
+@media all and (min-width: 768px) {
+  .cardContainerWrapper {
+    display: none;
+  }
+  .webCardContainerWrapper {
+    display: block;
+  }
+}
+@media all and (min-width: 1024px) {
+  .cardContainerWrapper {
+    display: none;
+  }
+  .webCardContainerWrapper {
+    display: block;
+  }
+}
