@@ -2,14 +2,21 @@
 @media all and (min-width: 320px) {
     .contactPageWrapper2{
         width: 100%;
+<<<<<<< HEAD
         height: 80vh;
         //border:3px solid pink;
+=======
+        height: 100%;
+
+
+>>>>>>> 33fa0417fd4982fd3c47996d33eb97d3c01f0c30
         .contactContentsWrapper2{
             //border:3px solid pink;
             height: 10rem;
             display: flex;
             flex-direction: column;
             margin-top: 15%;
+            
 
             .contentsWrapperOne2{
                 //border:1px solid red;
@@ -79,7 +86,7 @@
 @media all and (min-width: 768px) {
     .contactPageWrapper2{
         width: 100%;
-        height: 100vh;
+        height: 100%;
 
 
 
@@ -159,7 +166,7 @@
 @media all and (min-width: 1024px) {
     .contactPageWrapper2{
         width: 100%;
-        height: 100vh;
+        height: 100%;
 
 
         .contactContentsWrapper2{

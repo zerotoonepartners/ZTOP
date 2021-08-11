@@ -1,0 +1,219 @@
+.webProfileWrapper {
+  font-family: 'InfinitySans-RegularA1';
+}
+
+@media all and (min-width: 320px) {
+  .webProfileWrapper {
+    display: none;
+  }
+}
+
+@media all and (min-width: 768px) {
+  .webProfileWrapper {
+    background-color: #f1f1f1;
+    // border: 1px solid pink;
+    padding-top: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .picAndContents {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      // border: 3px solid red;
+      width: 80%;
+      height: 120vh;
+
+      .pictureWrapper {
+        // border: 1px solid blue;
+        width: 80%;
+        height: 80%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        img {
+          // border: 1px solid purple;
+          width: 55vw;
+          height: 60vw;
+        }
+      }
+
+      .contentsWrapper {
+        // border: 1px solid green;
+        width: 80%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .name {
+          // border: 1px solid yellow;
+          height: 20%;
+          display: flex;
+          align-items: flex-end;
+          white-space: nowrap;
+
+          .nameKor {
+            // border: 1px solid purple;
+            font-size: 7vw;
+            font-weight: 900;
+          }
+
+          .nameEng {
+            // border: 1px solid orange;
+            font-size: 5vw;
+            font-weight: 500;
+            color: gray;
+            margin-left: 5%;
+          }
+        }
+
+        .department {
+          // border: 1px solid gray;
+          height: 10%;
+          display: flex;
+          align-items: center;
+          font-size: 2vw;
+          font-weight: 500;
+          color: gray;
+        }
+
+        .contents {
+          // border: 2px solid skyblue;
+          height: 70%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+
+          .hashTag {
+            // border: 1px solid pink;
+            height: 20%;
+            display: flex;
+            align-items: center;
+            font-size: 3vw;
+            font-weight: 900;
+            justify-content: center;
+            // text-align: center;
+          }
+
+          .introduce {
+            // border: 1px solid pink;
+            height: 80%;
+
+            display: flex;
+            font-size: 2.5vw;
+            line-height: 140%;
+            text-align: justify;
+            font-weight: 100;
+            // align-items: center;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media all and (min-width: 1024px) {
+  .webProfileWrapper {
+    background-color: #f1f1f1;
+    // border: 2px solid pink;
+    padding-top: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .picAndContents {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      //   border: 3px solid red;
+      width: 80%;
+      height: 100vh;
+      .pictureWrapper {
+        // border: 1px solid blue;
+        width: 50%;
+        height: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+          // width: 85%;
+          // height: 85%;
+          width: 34vw;
+          height: 40vw;
+        }
+      }
+
+      .contentsWrapper {
+        // border: 1px solid green;
+        width: 50%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        .name {
+          // border: 1px solid yellow;
+          height: 20%;
+          display: flex;
+          align-items: flex-end;
+
+          .nameKor {
+            // border: 1px solid purple;
+            font-size: 5vw;
+            font-weight: 900;
+          }
+
+          .nameEng {
+            // border: 1px solid orange;
+            font-size: 3vw;
+            font-weight: 500;
+            color: gray;
+            margin-left: 5%;
+          }
+        }
+
+        .department {
+          // border: 1px solid gray;
+          height: 10%;
+          display: flex;
+          align-items: center;
+          font-size: 1.5vw;
+          font-weight: 500;
+          color: gray;
+        }
+
+        .contents {
+          // border: 2px solid skyblue;
+          height: 70%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+
+          .hashTag {
+            // border: 1px solid pink;
+            height: 20%;
+            display: flex;
+            align-items: center;
+            font-size: 1.5vw;
+            font-weight: 900;
+            justify-content: flex-start;
+          }
+
+          .introduce {
+            // border: 1px solid pink;
+            height: 80%;
+            display: flex;
+            font-size: 1.3vw;
+            text-align: start;
+            line-height: 140%;
+            font-weight: 200;
+
+            // align-items: center;
+          }
+        }
+      }
+    }
+  }
+}
