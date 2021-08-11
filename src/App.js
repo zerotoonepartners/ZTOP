@@ -13,16 +13,14 @@ import CardContainers from './containers/CardContainers';
 import Contact from './pages/contact';
 import WebProfileContainers from './containers/WebProfileContainers';
 
-
 function App() {
   return (
     <ZtopContextProvider>
       <BrowserRouter>
         <ScrollToTop />
         <Switch>
-
-          <Route path="/" exact component={Main}/>
-          <Route path="/about" component={About}/>
+          <Route path="/" exact component={Main} />
+          <Route path="/about" component={About} />
           <Route path="/contact" component={Contact} />
           <Route path="/" exact component={Main} />
           <Route path="/about" component={About} />
@@ -31,7 +29,6 @@ function App() {
           <Route path="/noticeview/:no" component={NoticeView} />
           <Route path="/namecard/:no" component={CardContainers} />
           <Route path="/webprofile/:no" component={WebProfileContainers} />
-
         </Switch>
       </BrowserRouter>
     </ZtopContextProvider>
