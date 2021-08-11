@@ -16,7 +16,10 @@ function ContactTwo() {
           <div className="contentsWrapperOne2">
             {
               ww>1024?
+              ww<=1440?
               <Location w={ww*0.7} h={ww*0.4}/>
+              :
+              <Location w={ww*0.7} h={ww*0.3}/>
               :
               <Location w={ww*0.85} h={ww*0.4}/>
               
