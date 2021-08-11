@@ -104,8 +104,10 @@ a {
       width: 100%;
       height: auto;
       .cardBtn {
-        display: block;
-        border: none;
+        display: flex;
+        width: 5rem;
+        align-items: center;
+        justify-content: center;
         background-color: transparent;
         img {
           display: block;
