@@ -66,7 +66,6 @@ function Contact() {
             </div>
         </div>
         {contact === 0 ?  <ContactOne /> :<ContactTwo /> }
-        <Footer/>
       </div>
       <Footer/>
     </>
