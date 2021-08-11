@@ -3,7 +3,6 @@ import { ZtopContext } from '../../../context/ztop';
 
 function Kakaolink() {
   const { namecardTarget } = useContext(ZtopContext);
-  const location = window.location.href;
   useEffect(() => {
       if(namecardTarget.length>1){
     try {
