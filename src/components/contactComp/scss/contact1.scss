@@ -5,7 +5,7 @@
 
         .contactContentsWrapper{
             // border:3px solid pink;
-            height: 80%;
+            height: 100%;
             display: flex;
             flex-direction: column;
             margin-top: 20%;
@@ -92,6 +92,7 @@
                 .buttonWrapper{
                     // border:1px solid pink;
                     margin-top: 20%;
+                    margin-bottom: 5rem;
                     span{
                         cursor: pointer;
                         display: flex;

@@ -6,6 +6,7 @@ import Location from "./location";
 
 function ContactTwo() {
   let ww = window.innerWidth;
+  console.log(ww);
   return (
     <div>
       <div className="contactPageWrapper2">
@@ -15,9 +16,13 @@ function ContactTwo() {
           <div className="contentsWrapperOne2">
             {
               ww>767?
-              <Location w={600} h={450}/>
+              ww<=1439?
+              <Location w={700} h={450}/>
+              :
+              <Location w={1200} h={450}/>
               :
               <Location w={280} h={280}/>
+              
             }
           </div>
           
