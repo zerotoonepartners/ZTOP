@@ -4,6 +4,9 @@ import Landing from '../components/namecardcomp/landing/Landing';
 import NameCard from '../components/namecardcomp/namecard/NameCard';
 import ToolFooter from '../components/namecardcomp/toolfooter/ToolFooter';
 import Introduce from '../components/namecardcomp/introduce/Introduce';
+import Footer from '../components/footer/footer';
+import Newheader from '../components/header/newheader';
+import WebProfile from '../components/webprofile/webprofile';
 import { useContext, useState, useEffect } from 'react';
 import { ZtopContext } from '../../src/context/ztop';
 import './CardContainers.scss';
@@ -34,7 +37,11 @@ function CardContainers({ match }) {
         <ToolFooter no={no} kp={kp} />
         <Introduce no={no} />
       </div>
-      <div className="webCardContainerWrapper">this is for web namecard</div>
+      <div className="webCardContainerWrapper">
+        <Newheader />
+        <WebProfile no={no} />
+        <Footer />
+      </div>
     </>
   );
 }
