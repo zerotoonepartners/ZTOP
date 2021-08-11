@@ -20,6 +20,11 @@ function Kakaolink() {
             webUrl: window.location.href,
           },
         },
+        social: {
+          likeCount: 286,
+          commentCount: 45,
+          sharedCount: 845,
+        },
         buttons: [
           {
             title: '제로투원파트너스',
