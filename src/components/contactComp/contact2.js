@@ -2,8 +2,10 @@ import './scss/contact2.scss';
 import ci1 from '../../static/images/contactIcon1.png';
 import ci2 from '../../static/images/contactIcon2.png';
 import ci3 from '../../static/images/contactIcon3.png';
+import Location from "./location";
 
 function ContactTwo() {
+  let ww = window.innerWidth;
   return (
     <div>
       <div className="contactPageWrapper2">
@@ -11,17 +13,14 @@ function ContactTwo() {
 
         <div className="contactContentsWrapper2">
           <div className="contentsWrapperOne2">
-            <div className="pcMap">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.5579659085147!2d127.01632383205065!3d37.49475630341633!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca129eb6c5139%3A0xb4aa89d247509b99!2z7KCc66Gc7Yis7JuQ7YyM7Yq464SI7Iqk!5e0!3m2!1sko!2skr!4v1628059317024!5m2!1sko!2skr"
-              width="600" height="450">
-              </iframe>
-            </div>
-            <div className="mobileMap">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.5579659085147!2d127.01632383205065!3d37.49475630341633!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca129eb6c5139%3A0xb4aa89d247509b99!2z7KCc66Gc7Yis7JuQ7YyM7Yq464SI7Iqk!5e0!3m2!1sko!2skr!4v1628059317024!5m2!1sko!2skr"
-              width="280" height="280">
-              </iframe>
-            </div>
+            {
+              ww>767?
+              <Location w={600} h={450}/>
+              :
+              <Location w={280} h={280}/>
+            }
           </div>
+          
           <div className="contentsWrapperTwo2">
             <div className="infoWrapper">
               <div className="info">

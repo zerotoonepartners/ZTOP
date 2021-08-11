@@ -37,6 +37,7 @@ function NoticeView({ history, location, match }) {
         {ztopNotice_.data !== null ? (
           ztopNotice_.data.map((post, idx) => {
             if (no == post.id) {
+                console.log(post);
               return (
                 <>
                   <div className="noticeViewWrapper">
@@ -63,7 +64,7 @@ function NoticeView({ history, location, match }) {
                         }`}
                       >
                         <img src={post.picture_1} alt="" />
-                        <br />
+                        
                       </div>
                       <div
                         className={`noticeViewContentImgBox ${
@@ -71,7 +72,7 @@ function NoticeView({ history, location, match }) {
                         }`}
                       >
                         <img src={post.picture_2} alt="" />
-                        <br />
+                    
                       </div>
                       <div
                         className={`noticeViewContentImgBox ${
@@ -79,7 +80,6 @@ function NoticeView({ history, location, match }) {
                         }`}
                       >
                         <img src={post.picture_3} alt="" />
-                        <br />
                       </div>
                       <div
                         className={`noticeViewContentTextBox ${
@@ -168,22 +168,6 @@ function NoticeView({ history, location, match }) {
                         <br />
                       </div>
                       <div
-                        className={`noticeViewContentImgBox ${
-                          post.picture_11 !== null ? 'active' : 'inactive'
-                        }`}
-                      >
-                        <img src={post.picture_11} alt="" />
-                        <br />
-                      </div>
-                      <div
-                        className={`noticeViewContentImgBox ${
-                          post.picture_12 !== null ? 'active' : 'inactive'
-                        }`}
-                      >
-                        <img src={post.picture_12} alt="" />
-                        <br />
-                      </div>
-                      <div
                         className={`noticeViewContentTextBox ${
                           post.content_4 !== null ? 'active' : 'inactive'
                         }`}
@@ -192,30 +176,6 @@ function NoticeView({ history, location, match }) {
                           {post.content_4}
                           <br />
                         </span>
-                      </div>
-                      <div
-                        className={`noticeViewContentImgBox ${
-                          post.picture_13 !== null ? 'active' : 'inactive'
-                        }`}
-                      >
-                        <img src={post.picture_13} alt="" />
-                        <br />
-                      </div>
-                      <div
-                        className={`noticeViewContentImgBox ${
-                          post.picture_14 !== null ? 'active' : 'inactive'
-                        }`}
-                      >
-                        <img src={post.picture_14} alt="" />
-                        <br />
-                      </div>
-                      <div
-                        className={`noticeViewContentImgBox ${
-                          post.picture_15 !== null ? 'active' : 'inactive'
-                        }`}
-                      >
-                        <img src={post.picture_15} alt="" />
-                        <br />
                       </div>
                       <div
                         className={`noticeViewContentTextBox ${
