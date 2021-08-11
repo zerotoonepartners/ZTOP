@@ -6,7 +6,6 @@ import Location from "./location";
 
 function ContactTwo() {
   let ww = window.innerWidth;
-  console.log(ww);
   return (
     <div>
       <div className="contactPageWrapper2">
