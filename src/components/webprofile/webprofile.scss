@@ -16,14 +16,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
     .picAndContents {
       display: flex;
       align-items: center;
       flex-direction: column;
       // border: 3px solid red;
       width: 80%;
-      height: 120vh;
+      height: 100%;
+      margin:10% 0%;
 
       .pictureWrapper {
         // border: 1px solid blue;
@@ -46,6 +46,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin: 3% 0%;//dd
 
         .name {
           // border: 1px solid yellow;
@@ -77,6 +78,7 @@
           font-size: 2vw;
           font-weight: 500;
           color: gray;
+          margin: 3% 0%;//dd
         }
 
         .contents {
@@ -93,8 +95,9 @@
             align-items: center;
             font-size: 3vw;
             font-weight: 900;
-            justify-content: center;
+            justify-content: flex-start;
             // text-align: center;
+            margin: 3% 0%;//dd
           }
 
           .introduce {
@@ -103,7 +106,7 @@
 
             display: flex;
             font-size: 2.5vw;
-            line-height: 140%;
+            line-height: 160%;
             text-align: justify;
             font-weight: 100;
             // align-items: center;
@@ -127,9 +130,10 @@
       display: flex;
       align-items: center;
       flex-direction: row;
-      //   border: 3px solid red;
+      // border: 3px solid red;
       width: 80%;
       height: 100vh;
+      margin:0% 0%;
       .pictureWrapper {
         // border: 1px solid blue;
         width: 50%;
@@ -152,6 +156,7 @@
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+        margin: 0% 0%;//dd
 
         .name {
           // border: 1px solid yellow;
@@ -182,6 +187,7 @@
           font-size: 1.5vw;
           font-weight: 500;
           color: gray;
+          margin: 0% 0%;//dd
         }
 
         .contents {
@@ -199,6 +205,7 @@
             font-size: 1.5vw;
             font-weight: 900;
             justify-content: flex-start;
+            margin: 0% 0%;//dd
           }
 
           .introduce {
@@ -207,7 +214,7 @@
             display: flex;
             font-size: 1.3vw;
             text-align: start;
-            line-height: 140%;
+            line-height: 170%;
             font-weight: 200;
 
             // align-items: center;
