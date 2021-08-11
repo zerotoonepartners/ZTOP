@@ -24,7 +24,7 @@
       margin-top: 1rem;
       margin-bottom: 2rem;
       span {
-        font-weight: 200;
+        font-weight: 400;
         font-size: 0.8rem;
       }
     }
@@ -56,7 +56,7 @@
       margin-top: 1rem;
       margin-bottom: 2rem;
       span {
-        font-weight: 200;
+        font-weight: 400;
         font-size: 0.8rem;
       }
     }
@@ -65,7 +65,7 @@
 @media all and (min-width: 1024px) {
   .mainStoryWrapper {
     width: 100%;
-    height: 100vh;
+    height: 120vh;
     background-color: #ffffff;
     display: flex;
     flex-direction: column;
@@ -83,7 +83,7 @@
     }
     .boardWrapper {
       margin-top: 3rem;
-      width: 100%;
+      width: 85%;
       display: flex;
       justify-content: space-around;
     }
@@ -94,7 +94,7 @@
       margin-top: 1rem;
       margin-bottom: 2rem;
       span {
-        font-weight: 200;
+        font-weight: 400;
         font-size: 1rem;
       }
     }

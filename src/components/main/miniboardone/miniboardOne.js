@@ -7,9 +7,9 @@ import { useHistory } from 'react-router';
 import {Link} from 'react-router-dom';
 
 function MiniboardOne() {
-  const { ztopNotice_ } = useContext(ZtopContext);
+  const { news_ } = useContext(ZtopContext);
   let history = useHistory();
-  switch (ztopNotice_.status) {
+  switch (news_.status) {
     case 'pending':
       return <Loading />;
     case 'idle':
@@ -17,7 +17,7 @@ function MiniboardOne() {
     case 'rejected':
       return <>Err</>;
     default:
-      console.log(ztopNotice_.data);
+      //console.log(ztopNotice_.data);
       return (
         <>
           <div className="miniboardWrapperOne">
@@ -30,28 +30,28 @@ function MiniboardOne() {
               </div>
             </div>
             <div className="boardContentWrapper">
-              <Link className="boardContent border" to={`/noticeview/${ztopNotice_.data[0].id}`}>
+              <Link className="boardContent border" to={`/newsview/${news_.data[0].id}`}>
                 <span className="borderTitleSpan">
-                  {ztopNotice_.data[0].title.length > 35
-                    ? `${ztopNotice_.data[0].title.substring(0, 35)}...`
-                    : `${ztopNotice_.data[0].title}`}
+                  {news_.data[0].title.length > 35
+                    ? `${news_.data[0].title.substring(0, 70)}...`
+                    : `${news_.data[0].title}`}
                 </span>
                 <span className="borderTitleDesc">
-                  {ztopNotice_.data[0].content_1.length > 70
-                    ? `${ztopNotice_.data[0].content_1.substring(0, 70)}...`
-                    : `${ztopNotice_.data[0].content_1}`}
+                  {news_.data[0].content_1.length > 70
+                    ? `${news_.data[0].content_1.substring(0, 100)}...`
+                    : `${news_.data[0].content_1}`}
                 </span>
               </Link>
-              <Link className="boardContent" to={`/noticeview/${ztopNotice_.data[1].id}`}>
+              <Link className="boardContent" to={`/newsview/${news_.data[1].id}`}>
                 <span className="borderTitleSpan">
-                  {ztopNotice_.data[1].title.length > 35
-                    ? `${ztopNotice_.data[1].title.substring(0, 35)} ...`
-                    : `${ztopNotice_.data[1].title}`}
+                  {news_.data[1].title.length > 35
+                    ? `${news_.data[1].title.substring(0, 70)} ...`
+                    : `${news_.data[1].title}`}
                 </span>
                 <span className="borderTitleDesc">
-                  {ztopNotice_.data[1].content_1.length > 70
-                    ? `${ztopNotice_.data[1].content_1.substring(0, 70)}...`
-                    : `${ztopNotice_.data[1].content_1}`}
+                  {news_.data[1].content_1.length > 70
+                    ? `${news_.data[1].content_1.substring(0, 100)}...`
+                    : `${news_.data[1].content_1}`}
                 </span>
               </Link>
             </div>

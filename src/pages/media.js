@@ -48,7 +48,7 @@ function Media({ location }) {
             className={`libraryCategoryBox ${notice ? 'active' : 'inactive'}`}
             onClick={clickAct}
           >
-            <span>기업소식</span>
+            <span>기업행사</span>
           </div>
         </div>
       </div>
