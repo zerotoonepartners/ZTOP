@@ -9,7 +9,6 @@ import ContactOne from '../components/contactComp/contact1';
 import ContactTwo from '../components/contactComp/contact2';
 import Footer from "../components/footer/footer";
 import styled, {css}from 'styled-components';
-import Footer from '../components/footer/footer';
 
 
 const Menu = styled.div`
