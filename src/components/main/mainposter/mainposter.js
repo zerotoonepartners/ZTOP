@@ -105,8 +105,10 @@ const Poster = styled.div`
   }
   &:hover {
     &:after{
-      opacity:0.7!important;
-      filter:alpha(opacity=50);
+      opacity:0.5!important;
+      filter:alpha(opacity=20);
+      filter: grayscale(100%);
+
     }
   }
 `;

@@ -17,7 +17,7 @@ function Mainintro() {
       </div>
       <div className="introBoxWrapper">
         <div className="boxItem">
-          <span className="itemTItle">EDUCATION</span>
+          <span className="itemTItle">INVESTMENT</span>
           <span className="itemDesc">
             Seed~Series A 기업 대상 <br /> 직·간접 투자 <br />
             <br /> 뛰어난 역량을 갖춘 팀이라면? <br /> 시기와 관계없이 투자
@@ -31,7 +31,7 @@ function Mainintro() {
           </span>
         </div>
         <div className="boxItem">
-          <span className="itemTItle">AUDIT</span>
+          <span className="itemTItle">PROGRAM</span>
           <span className="itemDesc">
             엑셀레이팅을 위한 <br /> IR 컨퍼런스, 스케일러레이팅 <br /> 등
             프로그램 기획 및 진행

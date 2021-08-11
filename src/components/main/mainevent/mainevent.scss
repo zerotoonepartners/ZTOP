@@ -29,7 +29,7 @@ a {
       .eventContentDesc {
         margin-bottom: 4rem;
         span {
-          font-weight: 200;
+          font-weight: 500;
           font-size: 0.7rem;
           color: #ffffff;
         }
@@ -92,7 +92,7 @@ a {
       .eventContentDesc {
         margin-bottom: 6rem;
         span {
-          font-weight: 200;
+          font-weight: 500;
           font-size: 1rem;
           color: #ffffff;
         }
@@ -104,8 +104,10 @@ a {
       width: 100%;
       height: auto;
       .cardBtn {
-        display: block;
-        border: none;
+        display: flex;
+        width: 5rem;
+        align-items: center;
+        justify-content: center;
         background-color: transparent;
         img {
           display: block;

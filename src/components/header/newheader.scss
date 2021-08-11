@@ -103,7 +103,11 @@
         cursor: pointer;
         span {
           color: #ffffff;
-          font-weight: 500;
+          font-weight: 800;
+          transition: 0.2s all ease;
+          &:hover {
+            color: #0038ff;
+          }
         }
       }
     }
