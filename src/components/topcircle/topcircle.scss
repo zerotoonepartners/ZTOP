@@ -11,9 +11,9 @@
   .topButtonWrapper {
     border-radius: 50%;
     background-color: #ffffff;
-    width: 2.3rem;
-    height: 2.3rem;
-    bottom: 18%;
+    width: 2.5rem;
+    height: 2.5rem;
+    bottom: 22%;
     right: 1.5rem;
     -webkit-box-shadow: -1px 0px 42px 5px rgba(0, 0, 0, 0.3);
     box-shadow: -1px 0px 42px 5px rgba(0, 0, 0, 0.3);
@@ -26,6 +26,19 @@
 }
 @media all and (min-width: 768px) {
   .topButtonWrapper {
+    border-radius: 50%;
+    background-color: #ffffff;
+    width: 3rem;
+    height: 3rem;
+    bottom: 18%;
+    right: 1.5rem;
+    -webkit-box-shadow: -1px 0px 42px 5px rgba(0, 0, 0, 0.3);
+    box-shadow: -1px 0px 42px 5px rgba(0, 0, 0, 0.3);
+    .topImg {
+      width: 60%;
+      display: block;
+      padding-right: 0.03rem;
+    }
   }
 }
 @media all and (min-width: 1024px) {
@@ -35,7 +48,7 @@
     border: 1px solid #ffffff;
     width: 3rem;
     height: 3rem;
-    bottom: 15%;
+    bottom: 20%;
     right: 2rem;
     -webkit-box-shadow: -1px 0px 42px 5px rgba(0, 0, 0, 0.1);
     box-shadow: -1px 0px 42px 5px rgba(0, 0, 0, 0.1);
