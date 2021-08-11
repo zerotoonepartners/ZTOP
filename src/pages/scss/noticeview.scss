@@ -542,13 +542,14 @@
                         display: none;
                         width : 100%;
                         margin-bottom: 2rem;
+                        
+                    }
+                    .noticeViewContentImgBox.active{
+                        display: block;
                         img{
                             width : 100%;
                             //border : 1px solid black;
                         }
-                    }
-                    .noticeViewContentImgBox.active{
-                        display: block;
                     }
                     .noticeViewContentTextBox{
                         width : 100%;
