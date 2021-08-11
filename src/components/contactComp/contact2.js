@@ -15,15 +15,13 @@ function ContactTwo() {
         <div className="contactContentsWrapper2">
           <div className="contentsWrapperOne2">
             {
-              ww>767?
-              ww<=1439?
-              <Location w={700} h={450}/>
+              ww>1024?
+              <Location w={ww*0.7} h={ww*0.4}/>
               :
-              <Location w={1200} h={450}/>
-              :
-              <Location w={280} h={280}/>
+              <Location w={ww*0.85} h={ww*0.4}/>
               
             }
+            
           </div>
           
           <div className="contentsWrapperTwo2">

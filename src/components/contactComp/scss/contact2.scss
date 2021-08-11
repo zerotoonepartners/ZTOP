@@ -2,14 +2,16 @@
 @media all and (min-width: 320px) {
     .contactPageWrapper2{
         width: 100%;
-        height: 80vh;
+        height: 60vh;
         //border:3px solid pink;
         .contactContentsWrapper2{
             //border:3px solid pink;
             height: 10rem;
             display: flex;
             flex-direction: column;
-            margin-top: 15%;
+            justify-content: center;
+                align-items: center;
+            margin-top: 10rem;
             
 
             .contentsWrapperOne2{
@@ -37,9 +39,9 @@
                 //border:1px solid blue;
                 height: 10rem;
                 display: flex;
-                justify-content: center;
+                justify-content: flex-start;
                 align-items: center;
-                width : 70%;
+                width : 85%;
                 .infoWrapper{
                     //border:1px solid pink;
                     display: flex;
@@ -82,15 +84,14 @@
         width: 100%;
         height: 100%;
 
-
-
-
         .contactContentsWrapper2{
             // border:3px solid pink;
             height: 80%;
             display: flex;
             flex-direction: column;
             margin-top: 10%;
+            justify-content: center;
+                align-items: center;
 
 
             .contentsWrapperOne2{
@@ -100,14 +101,6 @@
                 justify-content: center;
                 align-items: center;
 
-                .pcMap{
-                    display: flex;
-                    
-                }
-                .mobileMap{
-                    display: none;
-
-                }
 
 
             }
@@ -115,10 +108,12 @@
 
 
             .contentsWrapperTwo2{
-                // border:1px solid blue;
+                //border:1px solid blue;
                 height: 50%;
                 display: flex;
-                justify-content: center;
+                align-items: center;
+                justify-content: flex-start;
+                width: 85%;
 
                 .infoWrapper{
                     // border:1px solid pink;
@@ -160,37 +155,24 @@
 @media all and (min-width: 1024px) {
     .contactPageWrapper2{
         width: 100%;
-        height: 100%;
-
-
+        height: 70%;
         .contactContentsWrapper2{
             //border:3px solid pink;
-            height: 70%;
+            height: 45rem;
             display: flex;
             flex-direction: column;
             justify-content: center;
                 align-items: center;
-            margin-top: 0%;
+            margin-top: 5rem;
 
             .contentsWrapperOne2{
                 //border:1px solid red;
                 width: 60%;
-                height: auto;
+                //height: auto;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 //padding-left: 6rem;
-
-                .pcMap{
-                    display: flex;
-                    
-                }
-                .mobileMap{
-                    display: none;
-
-                }
-
-
             }
 
 
@@ -198,9 +180,9 @@
             .contentsWrapperTwo2{
                 //border:1px solid blue;
                 width:70%;
-                height: auto;
+                height: 20rem;
                 display: flex;
-                justify-content: start;
+                justify-content: flex-start;
                 align-items: center;
 
 
@@ -241,4 +223,74 @@
     }   
 
   
+}
+@media all and (min-width: 1440px) {
+    .contactPageWrapper2{
+        width: 100%;
+        height: 70%;
+        .contactContentsWrapper2{
+            //border:3px solid pink;
+            height: 50rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+                align-items: center;
+            margin-top: 10rem;
+
+            .contentsWrapperOne2{
+                //border:1px solid red;
+                width: 60%;
+                //height: auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                //padding-left: 6rem;
+            }
+
+
+
+            .contentsWrapperTwo2{
+                //border:1px solid blue;
+                width:70%;
+                height: 20rem;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+
+
+                .infoWrapper{
+                    // border:1px solid pink;
+                    display: flex;
+                    flex-direction: column;
+                    // justify-content: space-around;
+
+                    .info{
+                        // border: 1px solid green;
+                        margin: 4% 0;
+                        
+
+                        span{
+                            font-size: 1.8vw;
+                            color:#4D4D4D;
+                        }
+                        .strong{
+                            font-size: 1.5vw;
+                            font-weight: 700;
+                            color:black;
+                        }
+
+                    }
+                }
+
+            }
+
+
+
+
+
+        }
+
+
+
+    }  
 }
