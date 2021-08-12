@@ -2,68 +2,96 @@
 @media all and (min-width: 320px) {
     .contactPageWrapper2{
         width: 100%;
-        height: 60vh;
-        //border:3px solid pink;
+        height: 100%;
         .contactContentsWrapper2{
             //border:3px solid pink;
-            height: 10rem;
+            height: 40rem;
             display: flex;
             flex-direction: column;
             justify-content: center;
+            align-items: center;
+            margin-top: 0rem;
+            .contactTitleWrapper{
+                display: flex;
+                flex-direction: column;
                 align-items: center;
-            margin-top: 10rem;
-            
+                span{
+                    font-weight: 800;
+                    font-size : 3vw;
+                }
+            }
 
             .contentsWrapperOne2{
                 //border:1px solid red;
-                height: 20rem;
+                width: 80%;
+                height: 45%;
                 display: flex;
                 justify-content: center;
-                align-items: center;
-
-                .pcMap{
-                    display: none;
-                    
-                }
-                .mobileMap{
-                    display: block;
-
-                }
-
-
+                align-items: flex-end;
+                position: relative;
+                margin-top: 2rem;
             }
 
 
 
             .contentsWrapperTwo2{
                 //border:1px solid blue;
+                width:80%;
                 height: 10rem;
                 display: flex;
                 justify-content: flex-start;
                 align-items: center;
-                width : 85%;
+                margin-top: 2rem;
+
+
                 .infoWrapper{
                     //border:1px solid pink;
                     display: flex;
                     flex-direction: column;
-                    // justify-content: space-around;
-
-                    .info{
-                        // border: 1px solid green;
-                        margin: 2% 0;
-                        
-                        span{
-                            font-size: 2vw;
-                            color:#4D4D4D;
+                    width : 100%;
+                    height: 100%;
+                    .contactinfoBox{
+                        height: 50%;
+                        width : 100%;
+                        display: flex;
+                        flex-direction: row;
+                        //border:1px solid red;
+                        .contactinfoContent1{
+                            //border:1px solid blue;
+                            width: 80%;
+                            display: flex;
+                            justify-content: flex-start;
+                            q{
+                                font-weight: 600;
+                                font-size: 0.8rem;
+                            }
+                            span{
+                                font-weight: 400;
+                                font-size: 0.6rem;
+                            }
                         }
-                        .strong{
-                            font-size: 2vw;
-                            font-weight: 700;
-                            color:black;
+                        .contactinfoContent2{
+                            //border:1px solid green;
+                            width: 20%;
+                            display: flex;
+                            justify-content: flex-start;
+                            q{
+                                font-weight: 600;
+                                font-size: 0.8rem;
+                            }
+                            span{
+                                font-weight: 400;
+                                font-size: 0.6rem;
+                            }
                         }
-
 
                     }
+
+
+
+                    
+
+
                 }
 
             }
@@ -76,67 +104,102 @@
 
 
 
-    }
+    }  
    
 }
 @media all and (min-width: 768px) {
     .contactPageWrapper2{
         width: 100%;
         height: 100%;
-
         .contactContentsWrapper2{
-            // border:3px solid pink;
-            height: 80%;
+            //border:3px solid pink;
+            height: 40rem;
             display: flex;
             flex-direction: column;
-            margin-top: 10%;
             justify-content: center;
+            align-items: center;
+            margin-top: 0rem;
+            .contactTitleWrapper{
+                display: flex;
+                flex-direction: column;
                 align-items: center;
-
+                span{
+                    font-weight: 800;
+                    font-size : 3vw;
+                }
+            }
 
             .contentsWrapperOne2{
-                // border:1px solid red;
-                height: 100%;
+                //border:1px solid red;
+                width: 80%;
+                height: 45%;
                 display: flex;
                 justify-content: center;
-                align-items: center;
-
-
-
+                align-items: flex-end;
+                position: relative;
+                margin-top: 2rem;
             }
 
 
 
             .contentsWrapperTwo2{
                 //border:1px solid blue;
-                height: 50%;
+                width:80%;
+                height: 10rem;
                 display: flex;
-                align-items: center;
                 justify-content: flex-start;
-                width: 85%;
+                align-items: center;
+                margin-top: 2rem;
+
 
                 .infoWrapper{
-                    // border:1px solid pink;
+                    //border:1px solid pink;
                     display: flex;
                     flex-direction: column;
-                    // justify-content: space-around;
-
-                    .info{
-                        // border: 1px solid green;
-                        margin: 2% 0;
-                        
-                        span{
-                            font-size: 2vw;
-                            color:#4D4D4D;
-                        
+                    width : 100%;
+                    height: 100%;
+                    .contactinfoBox{
+                        height: 50%;
+                        width : 100%;
+                        display: flex;
+                        flex-direction: row;
+                        //border:1px solid red;
+                        .contactinfoContent1{
+                            //border:1px solid blue;
+                            width: 80%;
+                            display: flex;
+                            justify-content: flex-start;
+                            q{
+                                font-weight: 600;
+                                font-size: 1rem;
+                            }
+                            span{
+                                font-weight: 400;
+                                font-size: 0.8rem;
+                            }
                         }
-                        .strong{
-                            font-size: 2vw;
-                            font-weight: 700;
-                            color:black;
+                        .contactinfoContent2{
+                            //border:1px solid green;
+                            width: 20%;
+                            display: flex;
+                            justify-content: flex-start;
+                            q{
+                                font-weight: 600;
+                                font-size: 1rem;
+                            }
+                            span{
+                                font-weight: 400;
+                                font-size: 0.8rem;
+                            }
                         }
 
                     }
+
+
+
+                    
+
+
                 }
 
             }
@@ -149,65 +212,102 @@
 
 
 
-    }
+    }  
 
 }
 @media all and (min-width: 1024px) {
     .contactPageWrapper2{
         width: 100%;
-        height: 70%;
+        height: 100%;
         .contactContentsWrapper2{
             //border:3px solid pink;
-            height: 45rem;
+            height: 55rem;
             display: flex;
             flex-direction: column;
             justify-content: center;
+            align-items: center;
+            margin-top: 0rem;
+            .contactTitleWrapper{
+                display: flex;
+                flex-direction: column;
                 align-items: center;
-            margin-top: 5rem;
+                span{
+                    font-weight: 800;
+                    font-size : 1.5vw;
+                }
+            }
 
             .contentsWrapperOne2{
                 //border:1px solid red;
-                width: 60%;
-                //height: auto;
+                width: 80%;
+                height: 45%;
                 display: flex;
                 justify-content: center;
-                align-items: center;
-                //padding-left: 6rem;
+                align-items: flex-end;
+                position: relative;
+                margin-top: 2rem;
             }
 
 
 
             .contentsWrapperTwo2{
                 //border:1px solid blue;
-                width:70%;
-                height: 20rem;
+                width:80%;
+                height: 10rem;
                 display: flex;
                 justify-content: flex-start;
                 align-items: center;
+                margin-top: 2rem;
 
 
                 .infoWrapper{
-                    // border:1px solid pink;
+                    //border:1px solid pink;
                     display: flex;
                     flex-direction: column;
-                    // justify-content: space-around;
-
-                    .info{
-                        // border: 1px solid green;
-                        margin: 4% 0;
-                        
-
-                        span{
-                            font-size: 1.8vw;
-                            color:#4D4D4D;
+                    width : 100%;
+                    height: 100%;
+                    .contactinfoBox{
+                        height: 50%;
+                        width : 100%;
+                        display: flex;
+                        flex-direction: row;
+                        //border:1px solid red;
+                        .contactinfoContent1{
+                            //border:1px solid blue;
+                            width: 80%;
+                            display: flex;
+                            justify-content: flex-start;
+                            q{
+                                font-weight: 600;
+                                font-size: 1.2rem;
+                            }
+                            span{
+                                font-weight: 400;
+                                font-size: 1rem;
+                            }
                         }
-                        .strong{
-                            font-size: 1.5vw;
-                            font-weight: 700;
-                            color:black;
+                        .contactinfoContent2{
+                            //border:1px solid green;
+                            width: 20%;
+                            display: flex;
+                            justify-content: flex-start;
+                            q{
+                                font-weight: 600;
+                                font-size: 1.2rem;
+                            }
+                            span{
+                                font-weight: 400;
+                                font-size: 1rem;
+                            }
                         }
 
                     }
+
+
+
+                    
+
+
                 }
 
             }
@@ -220,7 +320,7 @@
 
 
 
-    }   
+    }    
 
   
 }
@@ -234,25 +334,35 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
+            align-items: center;
+            margin-top: 5rem;
+            .contactTitleWrapper{
+                display: flex;
+                flex-direction: column;
                 align-items: center;
-            margin-top: 10rem;
+                span{
+                    font-weight: 800;
+                    font-size : 1.5vw;
+                }
+            }
 
             .contentsWrapperOne2{
                 //border:1px solid red;
-                width: 60%;
-                //height: auto;
+                width: 80%;
+                height: 100%;
                 display: flex;
                 justify-content: center;
-                align-items: center;
-                //padding-left: 6rem;
+                align-items: flex-end;
+                position: relative;
+                margin-top: 2rem;
             }
 
 
 
             .contentsWrapperTwo2{
                 //border:1px solid blue;
-                width:70%;
-                height: 20rem;
+                width:80%;
+                height: 10rem;
                 display: flex;
                 justify-content: flex-start;
                 align-items: center;
@@ -260,27 +370,53 @@
 
 
                 .infoWrapper{
-                    // border:1px solid pink;
+                    //border:1px solid pink;
                     display: flex;
                     flex-direction: column;
-                    // justify-content: space-around;
-
-                    .info{
-                        // border: 1px solid green;
-                        margin: 4% 0;
-                        
-
-                        span{
-                            font-size: 1.8vw;
-                            color:#4D4D4D;
+                    width : 100%;
+                    height: 100%;
+                    .contactinfoBox{
+                        height: 50%;
+                        width : 100%;
+                        display: flex;
+                        flex-direction: row;
+                        //border:1px solid red;
+                        .contactinfoContent1{
+                            //border:1px solid blue;
+                            width: 80%;
+                            display: flex;
+                            justify-content: flex-start;
+                            q{
+                                font-weight: 600;
+                                font-size: 1.5rem;
+                            }
+                            span{
+                                font-weight: 400;
+                                font-size: 1.3rem;
+                            }
                         }
-                        .strong{
-                            font-size: 1.5vw;
-                            font-weight: 700;
-                            color:black;
+                        .contactinfoContent2{
+                            //border:1px solid green;
+                            width: 20%;
+                            display: flex;
+                            justify-content: flex-start;
+                            q{
+                                font-weight: 600;
+                                font-size: 1.5rem;
+                            }
+                            span{
+                                font-weight: 400;
+                                font-size: 1.3rem;
+                            }
                         }
 
                     }
+
+
+
+                    
+
+
                 }
 
             }
