@@ -26,7 +26,7 @@ function MiniboardTwo() {
               </div>
             </div>
             <div className="boardLinkWrapper">
-              {blogLink_.data.slice(undefined, 12).map((item, index) => {
+              {blogLink_.data.slice(undefined, 10).map((item, index) => {
                 return (
                   <div className="boardLinkItem">
                     <span onClick={()=>{window.open(`${item.link}`,'_blank');console.log(item.link)}}>{item.title.length>21? `▶ ${item.title.substring(0,21)} ...` : `▶ ${item.title}`}</span>
