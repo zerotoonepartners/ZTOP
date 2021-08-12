@@ -29,7 +29,7 @@ function MiniboardTwo() {
               {blogLink_.data.slice(undefined, 12).map((item, index) => {
                 return (
                   <div className="boardLinkItem">
-                    <span onClick={()=>{window.open(`${item.link}`,'_blank');console.log(item.link)}}>{item.title.length>70? `▶ ${item.title.substring(0,70)} ...` : `▶ ${item.title}`}</span>
+                    <span onClick={()=>{window.open(`${item.link}`,'_blank');console.log(item.link)}}>{item.title.length>21? `▶ ${item.title.substring(0,21)} ...` : `▶ ${item.title}`}</span>
                   </div>
                 );
               })}
