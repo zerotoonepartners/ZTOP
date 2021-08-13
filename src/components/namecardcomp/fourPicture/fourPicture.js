@@ -1,9 +1,9 @@
 import React from 'react';
 import './fourPicture.scss';
-import layer1 from '../../../static/images/shortlayer1.jpg';
-import layer2 from '../../../static/images/shortlayer2.jpg';
-import layer3 from '../../../static/images/shortlayer3.jpg';
-import layer4 from '../../../static/images/shortlayer4.jpg';
+import layer1 from '../../../static/images/shortlayer1.png';
+import layer2 from '../../../static/images/shortlayer2.png';
+import layer3 from '../../../static/images/shortlayer3.png';
+import layer4 from '../../../static/images/shortlayer4.png';
 
 
 function FourPicture() {
