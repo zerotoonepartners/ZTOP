@@ -1,0 +1,35 @@
+.footerContentsWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .mapWrapper {
+    img {
+      width: 18rem;
+      height: 12rem;
+      border-radius: 10px;
+    }
+  }
+  .mapBtnWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+    span {
+      padding: 7px;
+      border: 1px solid #000;
+      border-radius: 30px;
+      font-weight: 200;
+      color: #ffffff;
+      background-color: black;
+      font-size: 0.8rem;
+    }
+  }
+  .bannerWrapper {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+}

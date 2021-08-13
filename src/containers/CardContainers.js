@@ -12,7 +12,7 @@ import { ZtopContext } from '../../src/context/ztop';
 import './CardContainers.scss';
 import FourPicture from '../components/namecardcomp/fourPicture/fourPicture';
 import MobileTeam from './mobileTeam';
-
+import Footercontents from '../components/namecardcomp/footercontents/footercontents';
 
 function CardContainers({ match }) {
   const { namecard_ } = useContext(ZtopContext);
@@ -41,6 +41,8 @@ function CardContainers({ match }) {
         <ToolFooter no={no} kp={kp} />
         <Introduce no={no} />
         <MobileTeam />
+        <Footercontents />
+        <Footer />
       </div>
       <div className="webCardContainerWrapper">
         <Newheader />
