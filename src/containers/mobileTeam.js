@@ -18,7 +18,6 @@ function MobileTeam({ match }) {
       console.log(namecard_);
       return (
         <>
-          <Newheader />
           <div className="aboutPageWrapper">
             <div className="aboutSlogan">
               <span>About ZeroToOnePartners</span>
