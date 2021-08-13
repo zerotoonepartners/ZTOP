@@ -1,0 +1,47 @@
+.fourPictureWrapper{
+    .picturesWrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    
+
+        .onePicture{
+            // border: 1px solid blue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img{
+
+                width: 100%;
+                height: 15vh;
+                
+            }
+
+            .subject{
+                // border: 1px solid red;
+                position: absolute;
+                
+
+                span{
+                    
+                    font-size: 1.5rem;
+                    font-weight: 400;
+                    color: white;
+
+                }
+            }
+        }
+
+
+
+        
+    }
+
+
+
+
+
+
+
+}
