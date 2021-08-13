@@ -37,7 +37,7 @@ function CardContainers({ match }) {
         <NameCard no={no} />
         <ToolFooter no={no} kp={kp} />
         <Introduce no={no} />
-        <MobileTeam/>
+        <MobileTeam />
       </div>
       <div className="webCardContainerWrapper">
         <Newheader />
