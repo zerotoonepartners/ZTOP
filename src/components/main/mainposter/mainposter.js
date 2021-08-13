@@ -1,10 +1,10 @@
 import React from 'react';
 import styled, { css, keyframes } from 'styled-components';
 import './mainposter.scss';
-import layer1 from '../../../static/images/mainlayer1.png';
-import layer2 from '../../../static/images/mainlayer2.png';
-import layer3 from '../../../static/images/mainlayer3.png';
-import layer4 from '../../../static/images/mainlayer4.png';
+import layer1 from '../../../static/images/mainlayer1.jpeg';
+import layer2 from '../../../static/images/mainlayer2.jpeg';
+import layer3 from '../../../static/images/mainlayer3.jpeg';
+import layer4 from '../../../static/images/mainlayer4.jpeg';
 
 function Mainposter() {
   return (
@@ -88,27 +88,25 @@ function Mainposter() {
 
 const Poster = styled.div`
   position: relative;
-  z-index:1;
+  z-index: 1;
   &:after {
-    position:absolute;
-    content: ""
-    top:0;
-    left:0;
+    position: absolute;
+    top: 0;
+    left: 0;
     cursor: pointer;
     background: url(${(props) => props.img});
     background-repeat: no-repeat;
     background-size: cover;
-    z-index:-1;
-    content:"";
-    width:100%;
-    height:100%;
+    z-index: -1;
+    content: '';
+    width: 100%;
+    height: 100%;
   }
   &:hover {
-    &:after{
-      opacity:0.5!important;
-      filter:alpha(opacity=20);
+    &:after {
+      opacity: 0.5 !important;
+      filter: alpha(opacity=20);
       filter: grayscale(100%);
-
     }
   }
 `;
