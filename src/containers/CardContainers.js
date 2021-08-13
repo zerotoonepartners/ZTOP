@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from '../components/namecardcomp/header/Header';
+import Headerr from '../components/namecardcomp/header/Header';
 import Landing from '../components/namecardcomp/landing/Landing';
 import NameCard from '../components/namecardcomp/namecard/NameCard';
 import ToolFooter from '../components/namecardcomp/toolfooter/ToolFooter';
@@ -34,7 +34,7 @@ function CardContainers({ match }) {
   return (
     <>
       <div className="cardContainerWrapper">
-        <Header />
+        <Headerr />
         {/* <Landing /> */}
         <FourPicture />
         <NameCard no={no} />
