@@ -9,7 +9,7 @@ const Location=({w,h})=>{
     useEffect(()=>{
         let container = document.getElementById('map');
         let options = {
-            center: new kakao.maps.LatLng(37.494660, 127.018490),
+            center: new kakao.maps.LatLng(37.494660, 127.021093),
             level: 4
         };
         let map = new kakao.maps.Map(container,options);

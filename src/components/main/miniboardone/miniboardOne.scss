@@ -1,7 +1,7 @@
 @media all and (min-width: 320px) {
   .miniboardWrapperOne {
     width: 17rem;
-    height: 14rem;
+    height: 18rem;
     background-color: #eeeef9;
     // border: 1px solid red;
     margin-bottom: 2rem;
@@ -16,7 +16,7 @@
       align-items: center;
       position: relative;
       .boradMore {
-        padding-top: 1rem;
+        padding-top: 2rem;
         cursor: pointer;
         span {
           display: block;
@@ -33,17 +33,19 @@
         background-color: #000a60;
         position: absolute;
         left: -1rem;
-        top: -0.5rem;
+        top: 1rem;
         border-radius: 2px;
         span {
           color: #ffffff;
           font-size: 0.7rem;
+          font-weight: 600;
         }
       }
     }
     .boardContentWrapper {
       display: flex;
       flex-direction: column;
+      justify-content: center;
       flex: 1;
       .boardContent {
         height: 40%;
@@ -60,7 +62,8 @@
         }
         .borderTitleDesc {
           font-size: 0.6rem;
-          font-weight: 200;
+          font-weight: 400;
+          line-height: 120%;
         }
       }
       .border {
@@ -72,8 +75,8 @@
 }
 @media all and (min-width: 768px) {
   .miniboardWrapperOne {
-    width: 17rem;
-    height: 14rem;
+    width: 28rem;
+    height: 22rem;
     background-color: #eeeef9;
     margin-bottom: 2rem;
     border-radius: 10px;
@@ -87,10 +90,11 @@
       align-items: center;
       position: relative;
       .boradMore {
+        padding-top: 2.2rem;
         span {
           display: block;
           margin-right: 0.8rem;
-          font-size: 1.2rem;
+          font-size: 2rem;
         }
       }
       .boardName {
@@ -102,32 +106,35 @@
         background-color: #000a60;
         position: absolute;
         left: -1rem;
-        top: -0.5rem;
+        top: 1rem;
         border-radius: 2px;
         span {
           color: #ffffff;
-          font-size: 0.7rem;
+          font-size: 0.8rem;
+          font-weight: 600;
         }
       }
     }
     .boardContentWrapper {
       display: flex;
       flex-direction: column;
+      justify-content: center;
       flex: 1;
       .boardContent {
         height: 40%;
-        width: 80%;
+        width: 90%;
         margin: 0 auto;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         .borderTitleSpan {
-          font-size: 0.8rem;
-          font-weight: 500;
+          font-size: 1rem;
+          font-weight: 600;
         }
         .borderTitleDesc {
-          font-size: 0.6rem;
-          font-weight: 200;
+          font-size: 0.8rem;
+          font-weight: 400;
+          line-height: 140%;
         }
       }
       .border {
@@ -139,8 +146,8 @@
 }
 @media all and (min-width: 1024px) {
   .miniboardWrapperOne {
-    width: 28rem;
-    height: 24rem;
+    width: 22rem;
+    height: 32rem;
     background-color: #eeeef9;
     margin-bottom: 2rem;
     border-radius: 10px;
@@ -154,7 +161,7 @@
       align-items: center;
       position: relative;
       .boradMore {
-        padding-top: 1rem;
+        padding-top: 3rem;
         span {
           display: block;
           margin-right: 0.8rem;
@@ -170,17 +177,19 @@
         background-color: #000a60;
         position: absolute;
         left: -1rem;
-        top: -0.5rem;
+        top: 1rem;
         border-radius: 2px;
         span {
           color: #ffffff;
           font-size: 1rem;
+          font-weight: 600;
         }
       }
     }
     .boardContentWrapper {
       display: flex;
       flex-direction: column;
+      justify-content: center;
       flex: 1;
       .boardContent {
         height: 40%;
@@ -188,7 +197,7 @@
         margin: 0 auto;
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        //justify-content: space-around;
         text-decoration: none !important;
         color : black;
         .borderTitleSpan {
@@ -197,9 +206,84 @@
           line-height: 120%;
         }
         .borderTitleDesc {
-          font-size: 1rem;
-          font-weight: 200;
+          font-size: 1.1rem;
+          font-weight: 400;
+          line-height: 130%;
+        }
+      }
+      .border {
+        border-bottom: 1px solid #5e5e62;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
+
+@media all and (min-width: 1440px) {
+  .miniboardWrapperOne {
+    width: 30rem;
+    height: 36rem;
+    background-color: #eeeef9;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    .miniboardHeaderWrapper {
+      width: 100%;
+      height: 2rem;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      position: relative;
+      .boradMore {
+        padding-top: 3rem;
+        span {
+          display: block;
+          margin-right: 0.8rem;
+          font-size: 3rem;
+        }
+      }
+      .boardName {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 10rem;
+        height: 3rem;
+        background-color: #000a60;
+        position: absolute;
+        left: -1rem;
+        top: 1rem;
+        border-radius: 2px;
+        span {
+          color: #ffffff;
+          font-size: 1.2rem;
+          font-weight: 600;
+        }
+      }
+    }
+    .boardContentWrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      flex: 1;
+      .boardContent {
+        height: 40%;
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        //justify-content: space-around;
+        text-decoration: none !important;
+        color : black;
+        .borderTitleSpan {
+          font-size: 1.4rem;
+          font-weight: 600;
           line-height: 120%;
+        }
+        .borderTitleDesc {
+          font-size: 1.2rem;
+          font-weight: 400;
+          line-height: 130%;
         }
       }
       .border {

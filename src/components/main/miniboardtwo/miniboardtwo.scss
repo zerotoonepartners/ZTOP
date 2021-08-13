@@ -1,14 +1,14 @@
 @media all and (min-width: 320px) {
   .miniboardWrapperTwo {
     width: 17rem;
-    height: 14rem;
+    height: 18rem;
     background-color: #eeeef9;
     margin-bottom: 2rem;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     .miniboardHeaderWrapper {
-      margin-bottom: 1.5rem;
+      margin-bottom: 0.5rem;
       width: 100%;
       height: 2rem;
       display: flex;
@@ -16,6 +16,7 @@
       align-items: center;
       justify-content: flex-end;
       .boradMore {
+        padding-top: 2rem;
         span {
           display: block;
           margin-right: 0.8rem;
@@ -31,11 +32,12 @@
         background-color: #000a60;
         position: absolute;
         left: -1rem;
-        top: -0.5rem;
+        top: 1rem;
         border-radius: 2px;
         span {
           color: #ffffff;
           font-size: 0.7rem;
+          font-weight: 600;
         }
       }
     }
@@ -43,11 +45,13 @@
       flex: 1;
       display: flex;
       flex-direction: column;
-      justify-content: space-around;
+      justify-content: flex-start;
+      margin-top: 1rem;
       .boardLinkItem {
+        margin-bottom: 0.4rem;
         span {
           margin-left: 1rem;
-          font-weight: 200;
+          font-weight: 400;
           font-size: 0.8rem;
         }
       }
@@ -56,8 +60,8 @@
 }
 @media all and (min-width: 768px) {
   .miniboardWrapperTwo {
-    width: 17rem;
-    height: 14rem;
+    width: 28rem;
+    height: 22rem;
     background-color: #eeeef9;
     margin-bottom: 2rem;
     border-radius: 10px;
@@ -69,10 +73,11 @@
       align-items: center;
       justify-content: flex-end;
       .boradMore {
+        padding-top: 2.2rem;
         span {
           display: block;
           margin-right: 0.8rem;
-          font-size: 1.2rem;
+          font-size: 2rem;
         }
       }
       .boardName {
@@ -84,11 +89,12 @@
         background-color: #000a60;
         position: absolute;
         left: -1rem;
-        top: -0.5rem;
+        top: 1rem;
         border-radius: 2px;
         span {
           color: #ffffff;
-          font-size: 0.7rem;
+          font-size: 0.8rem;
+          font-weight: 600;
         }
       }
     }
@@ -96,12 +102,14 @@
       flex: 1;
       display: flex;
       flex-direction: column;
-      justify-content: space-around;
+      justify-content: flex-start;
+      margin-top: 1.5rem;
       .boardLinkItem {
+        margin-bottom: 0.7rem;
         span {
-          margin-left: 1rem;
-          font-weight: 200;
-          font-size: 0.8rem;
+          margin-left: 2rem;
+          font-weight: 400;
+          font-size: 1rem;
         }
       }
     }
@@ -109,13 +117,16 @@
 }
 @media all and (min-width: 1024px) {
   .miniboardWrapperTwo {
-    width: 28rem;
-    height: 24rem;
+    width: 22rem;
+    height: 32rem;
     background-color: #eeeef9;
     margin-bottom: 2rem;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     .miniboardHeaderWrapper {
-      margin-bottom: 1.5rem;
+      margin-bottom: 3rem;
       width: 100%;
       height: 2rem;
       display: flex;
@@ -123,7 +134,7 @@
       align-items: center;
       justify-content: flex-end;
       .boradMore {
-        padding-top: 1rem;
+        padding-top: 3rem;
         span {
           display: block;
           margin-right: 0.8rem;
@@ -144,11 +155,12 @@
         background-color: #000a60;
         position: absolute;
         left: -1rem;
-        top: -0.5rem;
+        top: 1rem;
         border-radius: 2px;
         span {
           color: #ffffff;
           font-size: 1rem;
+          font-weight: 600;
         }
       }
     }
@@ -156,7 +168,11 @@
       flex: 1;
       display: flex;
       flex-direction: column;
+      justify-content: flex-start;
+      width : 80%;
       .boardLinkItem {
+        margin-bottom: 1.5rem;
+        //border : 1px solid red;
         cursor: pointer;
         &:hover{
           color : #000a60;
@@ -164,10 +180,85 @@
         }
         span {
           margin-left: 1rem;
-          font-weight: 200;
-          font-size: 1rem;
+          font-weight: 600;
+          font-size: 0.9rem;
         }
       }
     }
   }
 }
+
+@media all and (min-width: 1440px) {
+  .miniboardWrapperTwo {
+    width: 30rem;
+    height: 36rem;
+    background-color: #eeeef9;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .miniboardHeaderWrapper {
+      margin-bottom: 3rem;
+      width: 100%;
+      height: 2rem;
+      display: flex;
+      position: relative;
+      align-items: center;
+      justify-content: flex-end;
+      .boradMore {
+        padding-top: 3rem;
+        span {
+          display: block;
+          margin-right: 0.8rem;
+          font-size: 3rem;
+          cursor: pointer;
+          &:hover{
+          color : blue;
+          text-decoration: blue;
+        }
+        }
+      }
+      .boardName {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 10rem;
+        height: 3rem;
+        background-color: #000a60;
+        position: absolute;
+        left: -1rem;
+        top: 1rem;
+        border-radius: 2px;
+        span {
+          color: #ffffff;
+          font-size: 1.2rem;
+          font-weight: 600;
+        }
+      }
+    }
+    .boardLinkWrapper {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      width : 80%;
+      margin-top: 1rem;
+      .boardLinkItem {
+        margin-bottom: 1.4rem;
+        //border : 1px solid red;
+        cursor: pointer;
+        &:hover{
+          color : #000a60;
+          text-decoration: #000a60;
+        }
+        span {
+          margin-left: 1rem;
+          font-weight: 600;
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+}
+

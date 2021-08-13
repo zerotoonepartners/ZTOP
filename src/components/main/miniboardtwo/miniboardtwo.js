@@ -26,10 +26,10 @@ function MiniboardTwo() {
               </div>
             </div>
             <div className="boardLinkWrapper">
-              {blogLink_.data.slice(undefined, 7).map((item, index) => {
+              {blogLink_.data.slice(undefined, 10).map((item, index) => {
                 return (
                   <div className="boardLinkItem">
-                    <span onClick={()=>{window.open(`${item.link}`,'_blank');console.log(item.link)}}>▶ {item.title}</span>
+                    <span onClick={()=>{window.open(`${item.link}`,'_blank');console.log(item.link)}}>{item.title.length>19? `▶ ${item.title.substring(0,19)}...` : `▶ ${item.title}`}</span>
                   </div>
                 );
               })}

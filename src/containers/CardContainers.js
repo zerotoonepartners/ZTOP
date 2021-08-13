@@ -10,6 +10,7 @@ import WebProfile from '../components/webprofile/webprofile';
 import { useContext, useState, useEffect } from 'react';
 import { ZtopContext } from '../../src/context/ztop';
 import './CardContainers.scss';
+import MobileTeam from './mobileTeam';
 
 function CardContainers({ match }) {
   const { namecard_ } = useContext(ZtopContext);
@@ -36,6 +37,7 @@ function CardContainers({ match }) {
         <NameCard no={no} />
         <ToolFooter no={no} kp={kp} />
         <Introduce no={no} />
+        <MobileTeam/>
       </div>
       <div className="webCardContainerWrapper">
         <Newheader />
