@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from '../components/namecardcomp/header/Header';
+import Headerr from '../components/namecardcomp/header/Header';
 import Landing from '../components/namecardcomp/landing/Landing';
 import NameCard from '../components/namecardcomp/namecard/NameCard';
 import ToolFooter from '../components/namecardcomp/toolfooter/ToolFooter';
@@ -10,7 +10,9 @@ import WebProfile from '../components/webprofile/webprofile';
 import { useContext, useState, useEffect } from 'react';
 import { ZtopContext } from '../../src/context/ztop';
 import './CardContainers.scss';
+import FourPicture from '../components/namecardcomp/fourPicture/fourPicture';
 import MobileTeam from './mobileTeam';
+import Footercontents from '../components/namecardcomp/footercontents/footercontents';
 
 function CardContainers({ match }) {
   const { namecard_ } = useContext(ZtopContext);
@@ -26,18 +28,19 @@ function CardContainers({ match }) {
           setKp(item.kakao_picture);
         }
       });
-    console.log(kp);
   }, []);
 
   return (
     <>
       <div className="cardContainerWrapper">
-        <Header />
-        <Landing />
+        <Headerr />
+        <FourPicture />
         <NameCard no={no} />
         <ToolFooter no={no} kp={kp} />
         <Introduce no={no} />
-        <MobileTeam/>
+        <MobileTeam />
+        <Footercontents />
+        <Footer />
       </div>
       <div className="webCardContainerWrapper">
         <Newheader />

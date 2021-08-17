@@ -70,6 +70,21 @@ function About({ match }) {
                     </>
                   );
               })}
+
+              <div className="ceoIntroduceWrapper">
+              {namecard_.data.map((item, index) => {
+                if (item.group === '.')
+                  return (
+                    <>
+                    <div className="ceoIntroduce">
+                      <span>"{item.intro}"</span>
+                    </div>
+                    
+                 </>
+                  );
+              })}
+              </div>
+    
             </div>
             <div className="lineWrapper">
               <div className="titleTag">

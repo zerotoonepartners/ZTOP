@@ -11,13 +11,29 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
+      .posterDisplayWrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .displayTitle {
+          font-weight: 800;
+          margin-bottom: 0.8rem;
+        }
+        .displayDesc {
+          font-weight: 200;
+          font-size: 0.6rem;
+        }
+        span {
+          color: #ffffff;
+        }
+      }
       .posterContentWrapper {
         display: none;
         width: 100%;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        color: #000;
+        color: #ffffff;
         .posterTitle {
           margin-bottom: 0.2rem;
           span {
@@ -46,12 +62,18 @@
         .posterContentWrapper {
           display: flex;
         }
+        .posterDisplayWrapper {
+          display: none;
+        }
       }
     }
     .posterTwo {
       &:hover {
         .posterContentWrapper {
           display: flex;
+        }
+        .posterDisplayWrapper {
+          display: none;
         }
       }
     }
@@ -60,12 +82,18 @@
         .posterContentWrapper {
           display: flex;
         }
+        .posterDisplayWrapper {
+          display: none;
+        }
       }
     }
     .posterFour {
       &:hover {
         .posterContentWrapper {
           display: flex;
+        }
+        .posterDisplayWrapper {
+          display: none;
         }
       }
     }
@@ -84,13 +112,29 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
+      .posterDisplayWrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .displayTitle {
+          font-weight: 800;
+          margin-bottom: 0.8rem;
+        }
+        .displayDesc {
+          font-weight: 200;
+          font-size: 0.6rem;
+        }
+        span {
+          color: #ffffff;
+        }
+      }
       .posterContentWrapper {
         display: none;
         width: 100%;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        color: #000;
+        color: #ffffff;
         .posterTitle {
           margin-bottom: 0.2rem;
           span {
@@ -119,12 +163,18 @@
         .posterContentWrapper {
           display: flex;
         }
+        .posterDisplayWrapper {
+          display: none;
+        }
       }
     }
     .posterTwo {
       &:hover {
         .posterContentWrapper {
           display: flex;
+        }
+        .posterDisplayWrapper {
+          display: none;
         }
       }
     }
@@ -133,12 +183,18 @@
         .posterContentWrapper {
           display: flex;
         }
+        .posterDisplayWrapper {
+          display: none;
+        }
       }
     }
     .posterFour {
       &:hover {
         .posterContentWrapper {
           display: flex;
+        }
+        .posterDisplayWrapper {
+          display: none;
         }
       }
     }
@@ -157,13 +213,30 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
+      .posterDisplayWrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .displayTitle {
+          font-weight: 800;
+          margin-bottom: 0.8rem;
+          font-size: 1.8rem;
+        }
+        .displayDesc {
+          font-weight: 200;
+          font-size: 1rem;
+        }
+        span {
+          color: #ffffff;
+        }
+      }
       .posterContentWrapper {
         display: none;
         width: 100%;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        color: #000;
+        color: #ffffff;
         .posterTitle {
           margin-bottom: 0.4rem;
           span {
@@ -193,12 +266,18 @@
         .posterContentWrapper {
           display: flex;
         }
+        .posterDisplayWrapper {
+          display: none;
+        }
       }
     }
     .posterTwo {
       &:hover {
         .posterContentWrapper {
           display: flex;
+        }
+        .posterDisplayWrapper {
+          display: none;
         }
       }
     }
@@ -207,12 +286,18 @@
         .posterContentWrapper {
           display: flex;
         }
+        .posterDisplayWrapper {
+          display: none;
+        }
       }
     }
     .posterFour {
       &:hover {
         .posterContentWrapper {
           display: flex;
+        }
+        .posterDisplayWrapper {
+          display: none;
         }
       }
     }

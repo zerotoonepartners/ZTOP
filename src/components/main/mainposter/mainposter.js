@@ -10,13 +10,11 @@ function Mainposter() {
   return (
     <div className="mainPoster">
       <Poster className="posterOne poster" img={layer1}>
+        <div className="posterDisplayWrapper">
+          <span className="displayTitle">ACCELERATOR</span>
+          <span className="displayDesc">스타트업의 성장을 가속화하는 기업</span>
+        </div>
         <div className="posterContentWrapper">
-          <div className="posterTitle">
-            <span>ACCELERATOR</span>
-          </div>
-          <div className="posterKorTitle">
-            <span>스타트업의 성장을 가속화하는 기업</span>
-          </div>
           <div className="posterDesc">
             <span>
               역동적인 스타트업 시장에 부합하는 변화하는 엑셀러레이터가
@@ -28,13 +26,11 @@ function Mainposter() {
         </div>
       </Poster>
       <Poster className="posterTwo poster" img={layer2}>
+        <div className="posterDisplayWrapper">
+          <span className="displayTitle">COMPANY BUILDER</span>
+          <span className="displayDesc">스타트업 생태계를 선도하는 기업</span>
+        </div>
         <div className="posterContentWrapper">
-          <div className="posterTitle">
-            <span>COMPANY BUILDER</span>
-          </div>
-          <div className="posterKorTitle">
-            <span>스타트업 생태계를 선도하는 기업</span>
-          </div>
           <div className="posterDesc">
             <span>
               우리는 스타트업을 기획부터 사업화하는 컴퍼니 빌더입니다.
@@ -46,13 +42,11 @@ function Mainposter() {
         </div>
       </Poster>
       <Poster className="posterThree poster" img={layer3}>
+        <div className="posterDisplayWrapper">
+          <span className="displayTitle">CONSULTANT</span>
+          <span className="displayDesc">기업의 고민을 알고 함께하는 기업</span>
+        </div>
         <div className="posterContentWrapper">
-          <div className="posterTitle">
-            <span>CONSULTANT</span>
-          </div>
-          <div className="posterKorTitle">
-            <span>기업의 고민을 알고 함께하는 기업</span>
-          </div>
           <div className="posterDesc">
             <span>
               스타트업의 문제점을 파악하고 해결방안을 제시해드립니다.
@@ -65,13 +59,11 @@ function Mainposter() {
       </Poster>
 
       <Poster className="posterFour poster" img={layer4}>
+        <div className="posterDisplayWrapper">
+          <span className="displayTitle">FUND RAISER</span>
+          <span className="displayDesc">정직하게 성장하는 기업</span>
+        </div>
         <div className="posterContentWrapper">
-          <div className="posterTitle">
-            <span>FUND RAISER</span>
-          </div>
-          <div className="posterKorTitle">
-            <span>정직하게 성장하는 기업</span>
-          </div>
           <div className="posterDesc">
             <span>
               탁월한 판단력을 통해 100% 투자생존율을 보유하고 있습니다. <br />
@@ -88,27 +80,24 @@ function Mainposter() {
 
 const Poster = styled.div`
   position: relative;
-  z-index:1;
+  z-index: 1;
   &:after {
-    position:absolute;
-    content: ""
-    top:0;
-    left:0;
+    position: absolute;
+    top: 0;
+    left: 0;
     cursor: pointer;
     background: url(${(props) => props.img});
     background-repeat: no-repeat;
     background-size: cover;
-    z-index:-1;
-    content:"";
-    width:100%;
-    height:100%;
+    z-index: -1;
+    content: '';
+    width: 100%;
+    height: 100%;
   }
   &:hover {
-    &:after{
-      opacity:0.5!important;
-      filter:alpha(opacity=20);
-      filter: grayscale(100%);
-
+    background-color: #000;
+    &:after {
+      opacity: 0.5;
     }
   }
 `;

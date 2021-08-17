@@ -1,6 +1,6 @@
 import Newheader from '../components/header/newheader';
 import Footer from '../components/footer/footer';
-import {useContext} from 'react';
+import { useContext } from 'react';
 import { ZtopContext } from '../context/ztop';
 import Loading from 'react-loading';
 import { Link } from 'react-router-dom';
@@ -15,10 +15,8 @@ function MobileTeam({ match }) {
     case 'rejected':
       return <>Err</>;
     default:
-      console.log(namecard_);
       return (
         <>
-          <Newheader />
           <div className="aboutPageWrapper">
             <div className="aboutSlogan">
               <span>About ZeroToOnePartners</span>
@@ -36,14 +34,20 @@ function MobileTeam({ match }) {
                       <Link to={`/namecard/${item.id}`}>
                         <div className="gridWrapper">
                           <div className="avatarCardWrapper">
-                            <img src={item.picture} alt="" className="cardImg" />
+                            <img
+                              src={item.picture}
+                              alt=""
+                              className="cardImg"
+                            />
                             <div className="cardInfoWrapper">
                               <div className="nameWrapper">
                                 <span className="mainName">{item.name} </span>
                                 <span className="subName">{item.sub_name}</span>
                               </div>
                               <div className="statusWrapper">
-                                <span className="statusSpan">{item.status}</span>
+                                <span className="statusSpan">
+                                  {item.status}
+                                </span>
                               </div>
                             </div>
                           </div>
@@ -64,20 +68,26 @@ function MobileTeam({ match }) {
                   return (
                     <>
                       <Link to={`/namecard/${item.id}`}>
-                      <div className="gridWrapper">
-                        <div className="avatarCardWrapper">
-                          <img src={item.picture} alt="" className="cardImg" />
-                          <div className="cardInfoWrapper">
-                            <div className="nameWrapper">
-                              <span className="mainName">{item.name} </span>
-                              <span className="subName">{item.sub_name}</span>
-                            </div>
-                            <div className="statusWrapper">
-                              <span className="statusSpan">{item.status}</span>
+                        <div className="gridWrapper">
+                          <div className="avatarCardWrapper">
+                            <img
+                              src={item.picture}
+                              alt=""
+                              className="cardImg"
+                            />
+                            <div className="cardInfoWrapper">
+                              <div className="nameWrapper">
+                                <span className="mainName">{item.name} </span>
+                                <span className="subName">{item.sub_name}</span>
+                              </div>
+                              <div className="statusWrapper">
+                                <span className="statusSpan">
+                                  {item.status}
+                                </span>
+                              </div>
                             </div>
                           </div>
                         </div>
-                      </div>
                       </Link>
                     </>
                   );
@@ -94,16 +104,22 @@ function MobileTeam({ match }) {
                   return (
                     <>
                       <Link to={`/namecard/${item.id}`}>
-                      <div className="gridWrapper">
+                        <div className="gridWrapper">
                           <div className="avatarCardWrapper">
-                            <img src={item.picture} alt="" className="cardImg" />
+                            <img
+                              src={item.picture}
+                              alt=""
+                              className="cardImg"
+                            />
                             <div className="cardInfoWrapper">
                               <div className="nameWrapper">
                                 <span className="mainName">{item.name} </span>
                                 <span className="subName">{item.sub_name}</span>
                               </div>
                               <div className="statusWrapper">
-                                <span className="statusSpan">{item.status}</span>
+                                <span className="statusSpan">
+                                  {item.status}
+                                </span>
                               </div>
                             </div>
                           </div>
@@ -124,16 +140,22 @@ function MobileTeam({ match }) {
                   return (
                     <>
                       <Link to={`/namecard/${item.id}`}>
-                      <div className="gridWrapper">
+                        <div className="gridWrapper">
                           <div className="avatarCardWrapper">
-                            <img src={item.picture} alt="" className="cardImg" />
+                            <img
+                              src={item.picture}
+                              alt=""
+                              className="cardImg"
+                            />
                             <div className="cardInfoWrapper">
                               <div className="nameWrapper">
                                 <span className="mainName">{item.name} </span>
                                 <span className="subName">{item.sub_name}</span>
                               </div>
                               <div className="statusWrapper">
-                                <span className="statusSpan">{item.status}</span>
+                                <span className="statusSpan">
+                                  {item.status}
+                                </span>
                               </div>
                             </div>
                           </div>
@@ -144,7 +166,6 @@ function MobileTeam({ match }) {
               })}
             </div>
           </div>
-          <Footer />
         </>
       );
   }

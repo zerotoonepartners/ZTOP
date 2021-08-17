@@ -3,10 +3,10 @@ import './header.scss';
 import ztopLogo from '../../../static/images/ztopLogo.png';
 import { useHistory } from 'react-router-dom';
 
-function Header() {
+function Headerr() {
   const history = useHistory();
   return (
-    <div className="headerWrapper">
+    <div className="hheaderWrapper">
       <div
         className="logoWrapper"
         onClick={() => {
@@ -19,4 +19,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default Headerr;
