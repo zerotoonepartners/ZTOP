@@ -9,6 +9,7 @@ import ContactOne from '../components/contactComp/contact1';
 import ContactTwo from '../components/contactComp/contact2';
 import Footer from "../components/footer/footer";
 import styled, {css}from 'styled-components';
+import HeaderBlack from "../components/homeHeader/homeHeaderBlack";
 
 
 const Menu = styled.div`
@@ -48,7 +49,7 @@ function Contact() {
 
   return (
     <>
-      <Newheader />
+      <HeaderBlack />
       <div className="contactPageWrapper">
         <div className="contactMenuBarWrapper">
 

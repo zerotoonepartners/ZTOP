@@ -14,8 +14,8 @@ function ContactOne() {
             <div className="contentTitleWrapper">
               <span>신청방법</span>
             </div>
-            <span>간단한 신청 빠른 답변!<br/>
-            아래 신청하기를 눌러 카카오톡으로 문의 및 신청을 해주세요</span>
+            <p>간단한 신청 빠른 답변!<br/>
+            아래 신청하기를 눌러 카카오톡으로 문의 및 신청을 해주세요</p>
           </div>
           <div className="contentsWrapperTwo">
             <div className="iconAndNameWrapper">

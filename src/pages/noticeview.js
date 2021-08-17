@@ -5,6 +5,7 @@ import Footer from '../components/footer/footer';
 import { ZtopContext } from '../context/ztop';
 import './scss/noticeview.scss';
 import Kakao from '../components/kakao/kakao';
+import HeaderBlack from "../components/homeHeader/homeHeaderBlack";
 
 function NoticeView({ history, location, match }) {
   const { ztopNotice_ } = useContext(ZtopContext);
@@ -12,8 +13,11 @@ function NoticeView({ history, location, match }) {
   const { no } = match.params;
   return (
     <div>
-      <Header />
+      <HeaderBlack />
       <div className="noticeViewImgWrapper">
+      <div className="noticeViewCommonTitle">
+          <span>MEDIA</span>
+        </div>
         <div className="noticeViewCategoryContainer">
           <div
             className="noticeViewCategoryBox inactive"
@@ -29,7 +33,7 @@ function NoticeView({ history, location, match }) {
               history.push('/media/2');
             }}
           >
-            <span>기업소식</span>
+            <span>기업행사</span>
           </div>
         </div>
       </div>
@@ -42,7 +46,7 @@ function NoticeView({ history, location, match }) {
                 <>
                   <div className="noticeViewWrapper">
                     <div className="noticeViewTitlecontainer">
-                      <span>기업소식</span>
+                      <span>기업행사</span>
                     </div>
                     <div className="noticeViewInfoContainer">
                       <div className="noticeViewTitleBox">

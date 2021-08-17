@@ -2,6 +2,7 @@ import './scss/main.scss';
 import { BrowserRouter, Route, Switch, useHistory } from 'react-router-dom';
 import MainLanding from '../components/main/mainlanding/mainlanding';
 import Newheader from '../components/header/newheader';
+import HomeNewheader from "../components/homeHeader/homeheader";
 import Mainintro from '../components/main/mainintro/mainintro';
 import Mainposter from '../components/main/mainposter/mainposter';
 import Mainevent from '../components/main/mainevent/mainevent';
@@ -13,7 +14,7 @@ import Kakao from "../components/kakao/kakao";
 function Main() {
   return (
     <>
-      <Newheader />
+      <HomeNewheader />
       <MainLanding />
       <Mainintro />
       <Mainposter />

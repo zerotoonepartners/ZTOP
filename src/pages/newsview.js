@@ -8,6 +8,7 @@ import Footer from '../components/footer/footer';
 import { ZtopContext } from '../context/ztop';
 import './scss/newsview.scss';
 import Kakao from '../components/kakao/kakao';
+import HeaderBlack from "../components/homeHeader/homeHeaderBlack";
 
 function NewsView({ history, location, match }) {
   const [news, setNews] = useState(true);
@@ -17,8 +18,11 @@ function NewsView({ history, location, match }) {
   const { no } = match.params;
   return (
     <div>
-      <Header />
+      <HeaderBlack />
       <div className="newsViewImgWrapper">
+      <div className="newsViewCommonTitle">
+          <span>MEDIA</span>
+        </div>
         <div className="newsViewCategoryContainer">
           <div
             className="newsViewCategoryBox active"

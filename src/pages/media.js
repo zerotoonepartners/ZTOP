@@ -6,6 +6,7 @@ import Header from '../components/header/newheader';
 import Footer from '../components/footer/footer';
 import { useLocation } from 'react-router';
 import Kakao from '../components/kakao/kakao';
+import HeaderBlack from "../components/homeHeader/homeHeaderBlack";
 
 function Media({ location }) {
   const [news, setNews] = useState(true);
@@ -35,8 +36,11 @@ function Media({ location }) {
 
   return (
     <div>
-      <Header />
+      <HeaderBlack />
       <div className="libraryImgWrapper">
+        <div className="libraryCommonTitle">
+          <span>MEDIA</span>
+        </div>
         <div className="libraryCategoryContainer">
           <div
             className={`libraryCategoryBox ${news ? 'active' : 'inactive'}`}

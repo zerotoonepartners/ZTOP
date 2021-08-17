@@ -1,0 +1,691 @@
+// start common
+
+button {
+    background-color: transparent;
+    border: none;
+    font-weight: 800;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+  }
+  
+  .header {
+    transition: all 0.3s ease-in;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    font-family: 'ONE-Mobile-Regular';
+    button {
+      background-color: transparent;
+      border: none;
+    }
+  }
+  
+  .newHeader {
+    transition: all 0.3s ease-in;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 1);
+    top: 0;
+    font-family: 'ONE-Mobile-Regular';
+    button {
+      background-color: transparent;
+      border: none;
+    }
+  }
+  
+  // end common
+  .button_1 {
+    background-color: transparent;
+    border: 0px;
+  }
+  // start mobile
+  @media all and (min-width: 320px) {
+    .newHeader {
+      height: 12vh;
+      .shortDown {
+        font-size: 0.8rem;
+      }
+      .logoWrapper {
+        width: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+          display: block;
+          width: 100%;
+          margin-left: 0.5rem;
+        }
+      }
+      .menuBlock {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: flex-end;
+      }
+      .menuWrapper {
+        width: 70%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        .menuItem {
+          display: none;
+          font-size: 0.7rem;
+          color: #ffffff;
+          font-weight: 800;
+        }
+  
+        .menuItem {
+          cursor: pointer;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          display: none;
+        }
+  
+        .menuItem span {
+          position: relative;
+        }
+  
+        .menuItem span:before {
+          content: '';
+          position: absolute;
+          //background-color: dodgerblue;
+          height: 0.2rem;
+          width: 0;
+          bottom: -1px;
+          transition: 0.5s;
+        }
+  
+        .menuItem span:hover:before {
+          width: 1.8rem;
+        }
+  
+        .hamItem {
+          display: flex;
+          justify-content: flex-end;
+          width: 100%;
+          align-items: center;
+        }
+        .ham {
+          display: block;
+          width: 1.5rem;
+          margin-right: 0.8rem;
+        }
+      }
+    }
+  
+    .header {
+      height: 12vh;
+      .shortDown {
+        font-size: 0.8rem;
+      }
+      .logoWrapper {
+        width: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+          display: block;
+          width: 100%;
+          margin-left: 0.5rem;
+        }
+      }
+      .menuBlock {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: flex-end;
+      }
+      .menuWrapper {
+        width: 70%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        .menuItem {
+          display: none;
+          font-size: 0.7rem;
+          color: #ffffff;
+          font-weight: 800;
+        }
+  
+        .menuItem {
+          cursor: pointer;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          // position: relative;
+          display: none;
+        }
+  
+        .menuItem span {
+          position: relative;
+        }
+  
+        .menuItem span:before {
+          content: '';
+          position: absolute;
+          //background-color: dodgerblue;
+          height: 0.2rem;
+          width: 0;
+          bottom: -1px;
+          transition: 0.5s;
+        }
+  
+        .menuItem span:hover:before {
+          width: 1.8rem;
+        }
+  
+        .hamItem {
+          display: flex;
+          justify-content: flex-end;
+          width: 100%;
+          align-items: center;
+        }
+        .ham {
+          display: block;
+          width: 1.5rem;
+          margin-right: 0.8rem;
+        }
+      }
+    }
+    .arrowWrapper {
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      .closeArrow {
+        width: 100%;
+        height: 12vh;
+        display: flex;
+        align-items: center;
+        .arrow {
+          margin-top: 0.5rem;
+          display: block;
+          width: 1.5rem;
+          margin-left: 0.8rem;
+        }
+      }
+    }
+    .menuContents {
+      color: #ffffff;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      .menuItem {
+        white-space: nowrap;
+        overflow: hidden;
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        height: 5vh;
+        span {
+          font-family: 'InfinitySans-RegularA1';
+          font-size: 0.9rem;
+          font-weight: 800;
+          display: block;
+          margin-right: 1rem;
+        }
+      }
+    }
+  }
+  // end mobile
+  
+  // start tablet
+  @media all and (min-width: 768px) {
+    .newHeader {
+      height: 12vh;
+      .shortDown {
+        font-size: 0.8rem;
+      }
+      .logoWrapper {
+        width: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+          display: block;
+          width: 80%;
+          margin-left: 0.5rem;
+        }
+      }
+      .menuBlock {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: flex-end;
+      }
+      .menuWrapper {
+        width: 70%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        .menuItem {
+          display: none;
+          font-size: 0.7rem;
+          color: #ffffff;
+          font-weight: 800;
+        }
+        .menuItem {
+          cursor: pointer;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          display: none;
+        }
+        .menuItem span {
+          position: relative;
+        }
+        .menuItem span:before {
+          content: '';
+          position: absolute;
+          //background-color: dodgerblue;
+          height: 0.2rem;
+          width: 0;
+          bottom: -1px;
+          transition: 0.5s;
+        }
+  
+        .menuItem span:hover:before {
+          width: 1.8rem;
+        }
+  
+        .hamItem {
+          display: flex;
+          justify-content: flex-end;
+          width: 100%;
+          align-items: center;
+        }
+        .ham {
+          display: block;
+          width: 1.5rem;
+          margin-right: 0.8rem;
+        }
+      }
+    }
+  
+    .header {
+      height: 12vh;
+      .shortDown {
+        font-size: 0.8rem;
+      }
+      .logoWrapper {
+        width: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+          display: block;
+          width: 80%;
+          margin-left: 0.5rem;
+        }
+      }
+      .menuBlock {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: flex-end;
+      }
+      .menuWrapper {
+        width: 70%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        .menuItem {
+          display: none;
+          font-size: 0.7rem;
+          color: #ffffff;
+          font-weight: 800;
+        }
+  
+        .menuItem {
+          cursor: pointer;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          // position: relative;
+          display: none;
+        }
+  
+        .menuItem span {
+          position: relative;
+        }
+  
+        .menuItem span:before {
+          content: '';
+          position: absolute;
+          //background-color: dodgerblue;
+          height: 0.2rem;
+          width: 0;
+          bottom: -1px;
+          transition: 0.5s;
+        }
+  
+        .menuItem span:hover:before {
+          width: 1.8rem;
+        }
+  
+        .hamItem {
+          display: flex;
+          justify-content: flex-end;
+          width: 100%;
+          align-items: center;
+        }
+        .ham {
+          display: block;
+          width: 1.5rem;
+          margin-right: 0.8rem;
+        }
+      }
+    }
+    .arrowWrapper {
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      .closeArrow {
+        width: 100%;
+        height: 12vh;
+        display: flex;
+        align-items: center;
+        .arrow {
+          margin-top: 0.5rem;
+          display: block;
+          width: 1.5rem;
+          margin-left: 0.8rem;
+        }
+      }
+    }
+  
+    .menuContents {
+      color: #ffffff;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      .menuItem {
+        white-space: nowrap;
+        overflow: hidden;
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        height: 5vh;
+        span {
+          font-family: 'InfinitySans-RegularA1';
+          font-size: 0.9rem;
+          font-weight: 800;
+          display: block;
+          margin-right: 1rem;
+        }
+      }
+    }
+  }
+  // end tablet
+  
+  // start desktop
+  @media all and (min-width: 1024px) {
+    .newHeader {
+      width: 100%;
+      height: auto;
+      display: flex;
+      align-items: center;
+      position: fixed;
+      z-index: 1000;
+      top: 0;
+      font-family: 'ONE-Mobile-Regular';
+      button {
+        background-color: transparent;
+        border: none;
+      }
+      background-color: rgba(0, 0, 0, 1);
+      height: 12vh;
+      .logoWrapper {
+        width: 15%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+          display: block;
+          width: 10rem;
+        }
+      }
+      .menuBlock {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: flex-end;
+      }
+      .menuWrapper {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        .menuItem {
+          .blogBtn {
+            color: #ffffff;
+            font-size: 1.3rem;
+            font-family: 'ONE-Mobile-Regular';
+            a {
+              text-decoration: none;
+            }
+          }
+          font-size: 1.3rem;
+          color: #ffffff;
+          font-weight: 700;
+          .ham {
+            display: block;
+            width: 1.5rem;
+          }
+        }
+        .menuItem {
+          cursor: pointer;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          position: relative;
+        }
+  
+        .menuItem span:before {
+          content: '';
+          position: absolute;
+          //background-color: dodgerblue;
+          height: 0.15rem;
+          width: 0;
+          bottom: -5px;
+          transition: 0.5s;
+          text-decoration: none;
+        }
+        .menuItem {
+          cursor: pointer;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          position: relative;
+          &:hover{
+            color: rgb(25,93,245);
+        }
+        }
+  
+        .menuItem span:hover:before {
+          width: 100%;
+          text-decoration: none;
+        }
+  
+        .hamItem {
+          display: none;
+        }
+      }
+    }
+    .header {
+      background-color: rgba(0, 0, 0, 0);
+      height: 12vh;
+      .logoWrapper {
+        width: 15%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+          display: block;
+          width: 10rem;
+        }
+      }
+      .menuBlock {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: flex-end;
+      }
+      .menuWrapper {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        .menuItem {
+          .blogBtn {
+            color: #ffffff;
+            font-size: 1.3rem;
+            font-family: 'ONE-Mobile-Regular';
+            a {
+              text-decoration: none;
+            }
+          }
+          font-size: 1.3rem;
+          color: #ffffff;
+          font-weight: 700;
+          .ham {
+            display: block;
+            width: 1.5rem;
+          }
+        }
+        .menuItem {
+          cursor: pointer;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          position: relative;
+          &:hover{
+              color: rgb(25,93,245);
+          }
+        }
+  
+        .menuItem span:before {
+          content: '';
+          position: absolute;
+          //background-color: dodgerblue;
+          height: 0.15rem;
+          width: 0;
+          bottom: -5px;
+          transition: 0.5s;
+          text-decoration: none;
+        }
+        .menuItem {
+          cursor: pointer;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          position: relative;
+        }
+  
+        .menuItem span:hover:before {
+          width: 100%;
+          text-decoration: none;
+        }
+  
+        .hamItem {
+          display: none;
+        }
+      }
+    }
+  
+    .change_header {
+      height: 12vh;
+      .shortDown {
+        font-size: 0.8rem;
+      }
+      .logoWrapper {
+        width: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+          display: block;
+          width: 100%;
+        }
+      }
+      .menuBlock {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: flex-end;
+      }
+      .menuWrapper {
+        width: 70%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        .menuItem {
+          display: none;
+          font-size: 0.7rem;
+          color: #ffffff;
+          font-weight: 800;
+        }
+  
+        .menuItem {
+          cursor: pointer;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          // position: relative;
+          display: none;
+        }
+  
+        .menuItem span {
+          position: relative;
+        }
+  
+        .menuItem span:before {
+          content: '';
+          position: absolute;
+          //background-color: dodgerblue;
+          height: 0.2rem;
+          width: 0;
+          bottom: -1px;
+          transition: 0.5s;
+        }
+  
+        .menuItem span:hover:before {
+          width: 2rem;
+        }
+  
+        .hamItem {
+          display: flex;
+          justify-content: flex-end;
+          width: 100%;
+          align-items: center;
+        }
+        .ham {
+          display: block;
+          width: 1.5rem;
+          margin-right: 0.8rem;
+        }
+      }
+    }
+  }
+  // end desktop
+  

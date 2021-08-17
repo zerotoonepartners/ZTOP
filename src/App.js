@@ -22,7 +22,6 @@ function App() {
           <Route path="/" exact component={Main} />
           <Route path="/about" component={About} />
           <Route path="/contact" component={Contact} />
-          <Route path="/" exact component={Main} />
           <Route path="/about" component={About} />
           <Route path="/media" component={Media} />
           <Route path="/newsview/:no" component={NewsView} />

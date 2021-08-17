@@ -5,6 +5,7 @@ import {useContext} from 'react';
 import { ZtopContext } from '../context/ztop';
 import Loading from 'react-loading';
 import { Link } from 'react-router-dom';
+import HeaderBlack from "../components/homeHeader/homeHeaderBlack";
 
 function About({ match }) {
   const { namecard_ } = useContext(ZtopContext);
@@ -19,7 +20,7 @@ function About({ match }) {
       console.log(namecard_);
       return (
         <>
-          <Newheader />
+          <HeaderBlack />
           <div className="aboutPageWrapper">
             <div className="aboutSlogan">
               <span>About ZeroToOnePartners</span>
