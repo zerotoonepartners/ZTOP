@@ -13,7 +13,7 @@ import './CardContainers.scss';
 import FourPicture from '../components/namecardcomp/fourPicture/fourPicture';
 import MobileTeam from './mobileTeam';
 import Footercontents from '../components/namecardcomp/footercontents/footercontents';
-
+import Slogan from '../components/namecardcomp/slogan/slogan';
 function CardContainers({ match }) {
   const { namecard_ } = useContext(ZtopContext);
   const { no } = match.params;
@@ -37,6 +37,7 @@ function CardContainers({ match }) {
         <FourPicture />
         <NameCard no={no} />
         <ToolFooter no={no} kp={kp} />
+
         <Introduce no={no} />
         <MobileTeam />
         <Footercontents />
