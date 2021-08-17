@@ -8,7 +8,7 @@ import layer1 from '../../../static/images/mainlayer1.jpeg';
 import layer2 from '../../../static/images/mainlayer2.jpeg';
 import layer3 from '../../../static/images/mainlayer3.jpeg';
 import layer4 from '../../../static/images/mainlayer4.jpeg';
-
+import Slogan from '../slogan/slogan';
 function Introduce({ no }) {
   const { namecard_ } = useContext(ZtopContext);
   console.log(namecard_);
@@ -36,6 +36,7 @@ function Introduce({ no }) {
                     <span>{item.intro}</span>
                   </div>
                 </div>
+                <Slogan />
                 <div className="mainPoster">
                   <Poster className="posterOne poster" img={layer1}>
                     <div className="posterContentWrapper">
