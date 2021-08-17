@@ -28,14 +28,12 @@ function CardContainers({ match }) {
           setKp(item.kakao_picture);
         }
       });
-    console.log(kp);
   }, []);
 
   return (
     <>
       <div className="cardContainerWrapper">
         <Headerr />
-        {/* <Landing /> */}
         <FourPicture />
         <NameCard no={no} />
         <ToolFooter no={no} kp={kp} />

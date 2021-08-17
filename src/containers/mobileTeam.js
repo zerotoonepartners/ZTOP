@@ -15,7 +15,6 @@ function MobileTeam({ match }) {
     case 'rejected':
       return <>Err</>;
     default:
-      console.log(namecard_);
       return (
         <>
           <div className="aboutPageWrapper">
