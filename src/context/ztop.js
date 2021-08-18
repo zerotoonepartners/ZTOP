@@ -17,10 +17,7 @@ const ZtopContextProvider = ({ children }) => {
   const [event, setEvent] = useState();
   const [namecardTarget, setNamecardTarget] = useState('');
 
-  const [blogLink_, setBlogLink_] = useState({
-    status: 'idle',
-    data: null,
-  });
+
   const [ztopNotice_, setZtopNotice_] = useState({
     status: 'idle',
     data: null,
@@ -54,24 +51,6 @@ const ZtopContextProvider = ({ children }) => {
   const [selectionNews_, setSelectionNews_] = useState(undefined);
   const [selectionNotice_, setSelectionNotice_] = useState(undefined);
 
-  const getBlogLink = async () => {
-    let res = await blogLink();
-    try {
-      setBlogLink_({
-        status: 'pending',
-        data: null,
-      });
-      setBlogLink_({
-        status: 'resolved',
-        data: res.reverse(),
-      });
-    } catch (e) {
-      setBlogLink_({
-        status: 'rejected',
-        data: null,
-      });
-    }
-  };
 
   const getBlogLink1 = async () => {
     let res = await blogLink1();
@@ -169,7 +148,6 @@ const ZtopContextProvider = ({ children }) => {
   };
   const getNews = async () => {
     let res = await news();
-    console.log(res);
     try {
       setNews_({
         status: 'pending',
@@ -187,35 +165,15 @@ const ZtopContextProvider = ({ children }) => {
     }
   };
 
-  const getDetail = async (id) => {
-    let res = await detail(id);
-    console.log(res, 'this is detail');
-    try {
-      setDetail_({
-        status: 'pending',
-        data: null,
-      });
-      setDetail_({
-        status: 'resolved',
-        data: res.reverse(),
-      });
-    } catch (e) {
-      setDetail_({
-        status: 'rejected',
-        data: null,
-      });
-      console.log(e);
-    }
-  };
   useEffect(() => {
     try {
       //getBlogLink();
       getZtopNotice();
       getNamecard();
       getNews();
-      // getBlogLink1();
-      // getBlogLink2();
-      // getBlogLink3();
+      getBlogLink1();
+      getBlogLink2();
+      getBlogLink3();
       setLoading(false);
     } catch (e) {
       alert(e);
@@ -228,8 +186,6 @@ const ZtopContextProvider = ({ children }) => {
         setLoading,
         modal,
         setModal,
-        blogLink_,
-        setBlogLink_,
         ztopNotice_,
         setZtopNotice_,
         namecard_,

@@ -35,7 +35,7 @@ function CardPosts({posts}){
                                 <span>{post.title}</span>
                             </div>
                             <div className="cardPagenatorStamp">
-                                <span>{post.created_at.slice(0,10)}</span>
+                                <span>{post.time_stamp.slice(0,10)}</span>
                         </div>
                     </div>
               </Link>

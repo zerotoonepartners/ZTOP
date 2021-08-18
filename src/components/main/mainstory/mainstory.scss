@@ -141,6 +141,11 @@
           display: flex;
           justify-content: center;
           span {
+            &:hover{
+              background-color: #001489;
+              color: white;
+            }
+            cursor: pointer;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -155,12 +160,17 @@
       }
     }
     .blogBtnWrapper {
+      
       width: 100%;
       margin: 2rem 0;
       display: flex;
       justify-content: center;
+      
 
       span {
+        &:hover{
+          background-color: #011274;
+        }
         border-radius: 5px;
         display: flex;
         align-items: center;
@@ -169,6 +179,7 @@
         height: 2rem;
         font-weight: 800;
         background-color: #001489;
+        cursor: pointer;
         color: #ffffff;
       }
     }
@@ -195,7 +206,7 @@
     }
     .storyGridWrapper {
       margin-top: 3rem;
-      width: 100%;
+      width: 85%;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       .gridItem {

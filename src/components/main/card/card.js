@@ -2,7 +2,6 @@ import React from 'react';
 import './card.scss';
 
 function Card({ data }) {
-  console.log(data);
   return (
     <div className="cardWrapper">
       <div className="cardImgWrapper">
