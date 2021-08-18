@@ -12,8 +12,14 @@ import ScrollToTop from '../src/components/common/scrollToTop';
 import CardContainers from './containers/CardContainers';
 import Contact from './pages/contact';
 import WebProfileContainers from './containers/WebProfileContainers';
+import { useEffect } from 'react';
 
 function App() {
+  useEffect(()=>{
+    try{
+      window.Kakao.init('d149effdaec276eadf4b088d938de0f2');
+    }catch(e){}
+  })
   return (
     <ZtopContextProvider>
       <BrowserRouter>

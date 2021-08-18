@@ -8,7 +8,7 @@ function Kakaolink() {
     try {
       window.Kakao.init('d149effdaec276eadf4b088d938de0f2');
     } catch (e) {}
-    try {
+    // try {
       window.Kakao.Link.createDefaultButton({
         container: '#kakao_share',
         objectType: 'feed',
@@ -36,7 +36,7 @@ function Kakaolink() {
           },
         ],
       });
-    } catch (e) {}
+    // } catch (e) {}
     }
   }, [namecardTarget]);
 
