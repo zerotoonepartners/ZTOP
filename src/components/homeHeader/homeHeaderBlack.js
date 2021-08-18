@@ -149,7 +149,13 @@ const MenuBox = styled.div`
   ${(props) =>
     props.clickOpenArrow &&
     css`
-      width: 30%;
+    @media only screen and (min-width: 320px){
+      width : 50%
+    }
+      @media only screen and (min-width: 768px){
+        width : 40%
+
+      }
       height: 100vh;
     `}
 `;

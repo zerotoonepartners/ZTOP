@@ -10,13 +10,14 @@ import Mainstory from '../components/main/mainstory/mainstory';
 import Footer from '../components/footer/footer';
 import TopCircle from '../components/topcircle/topcircle';
 import Kakao from "../components/kakao/kakao";
+import NewMainIntro from "../components/main/newmainintro/newmainintro";
 
 function Main() {
   return (
     <>
       <HomeNewheader />
       <MainLanding />
-      <Mainintro />
+      <NewMainIntro />
       <Mainposter />
       <Mainevent />
       <Mainstory />
