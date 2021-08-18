@@ -5,6 +5,15 @@ import logoTwo from '../../../static/images/story2logo.png';
 import logoThree from '../../../static/images/story3logo.png';
 
 function Mainstory() {
+  const { blogLink_ } = useContext(ZtopContext);
+  switch (blogLink_.status) {
+    case 'pending':
+      return <Loading />;
+    case 'idle':
+      return <Loading />;
+    case 'rejected':
+      return <>Err</>;
+    default:
   return (
     <div className="mainStoryWrapper">
       <div className="ztopTitleWrapper">
@@ -67,6 +76,7 @@ function Mainstory() {
       </div>
     </div>
   );
+  }
 }
 
 export default Mainstory;
