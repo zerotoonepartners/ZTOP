@@ -64,15 +64,15 @@ function About({ match }) {
                             <div className="cardInfoWrapper">
                               <div className="nameWrapper">
                                 <span className="mainName">
-                                  {/* {item.name} */}
+                                  {item.name}
                                   </span>
                                 <span className="subName">
-                                  {/* {item.sub_name} */}
+                                  {item.sub_name}
                                   </span>
                               </div>
                               <div className="statusWrapper">
                                 <span className="statusSpan">
-                                  {/* {item.status} */}
+                                  {item.status}
                                   </span>
                               </div>
                             </div>

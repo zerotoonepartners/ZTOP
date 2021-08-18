@@ -1,53 +1,56 @@
 @media all and (min-width: 320px) {
   .footerWrapper {
     width: 100%;
-    height: 15vh;
+    height: 35vh;
     background-color: #000;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+
     .footerLogoWrapper {
-      width: 20%;
+      width: 90%;
       height: 100%;
       display: flex;
       align-items: center;
       justify-content: flex-start;
         // border: 1px solid red;
       span {
-        margin-left: 2rem;
+        margin-left: 0rem;
         display: block;
         color: #ffffff;
         font-weight: 800;
+
       }
     }
     .footerContentWrapper {
       // border: 1px solid blue;
-      width: 33%;
+      width: 90%;
       height: 100%;
-      display: none;
+      display: flex;
       align-items: center;
-      justify-content: center;
+      justify-content: flex-start;
 
       span {
         // margin-right: 3rem;
-        line-height: 160%;
+        line-height: 120%;
         display: block;
         color: #ffffff;
         font-weight: 200;
-        font-size: 0.8rem;
-        text-align: center;
+        font-size: 0.3rem;
+        text-align: start;
       }
     }
     .iconWrapper{
       // border: 1px solid yellow;
-      width: 33%;
-      display: none;
-      justify-content: center;
+      width: 90%;
+      display: flex;
+      justify-content: flex-end;
       align-items: center;
 
       img{
-        width: 2.5rem;
-        height: 2.5rem;
-        margin: 0rem 0.4rem;
+        width: 2rem;
+        height: 2rem;
+        margin: 0.5rem 0.4rem;
         cursor: pointer;
       }
 
@@ -58,11 +61,12 @@
 @media all and (min-width: 768px) {
   .footerWrapper {
     width: 100%;
-    height: 30vh;
+    height: 20vh;
     background-color: #000;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    flex-direction: row;
     .footerLogoWrapper {
       width: 18%;
       height: 80%;
@@ -93,6 +97,7 @@
         display: block;
         color: #ffffff;
         font-weight: 200;
+        font-size: 0.5rem;
         text-align: start;
         white-space: nowrap;
       }
@@ -102,6 +107,7 @@
       .copyrights{
         font-size: 1rem;
         color:#0057ff;
+        font-size: 0.5rem;
       }
     }
     .iconWrapper{
@@ -131,6 +137,9 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    flex-direction: row;
+    
+
     .footerLogoWrapper {
       width: 18%;
       height: 80%;
@@ -143,7 +152,7 @@
         margin-left: 2rem;
         display: block;
         color: #ffffff;
-        font-size: 2rem;
+        font-size: 1.3vw;
         font-weight: 800;
       }
     }
@@ -162,7 +171,7 @@
         display: block;
         color: #ffffff;
         font-weight: 200;
-        font-size: 1rem;
+        font-size: 0.8vw;
         text-align: start;
         white-space: nowrap;
       }
@@ -170,14 +179,14 @@
 
 
       .copyrights{
-        font-size: 1rem;
+        font-size: 0.8vw;
         color:#0057ff;
       }
     }
     .iconWrapper{
       // border: 1px solid yellow;
       width: 33%;
-      height: 90%;
+      height: 80%;
       display: flex;
       justify-content: center;
       align-items: flex-start;
