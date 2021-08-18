@@ -10,6 +10,7 @@ import ContactTwo from '../components/contactComp/contact2';
 import Footer from "../components/footer/footer";
 import styled, {css}from 'styled-components';
 import HeaderBlack from "../components/homeHeader/homeHeaderBlack";
+import KakaoBtn from '../components/kakaobtn/kakao';
 
 
 const Menu = styled.div`
@@ -69,6 +70,7 @@ function Contact() {
         {contact === 0 ?  <ContactOne /> :<ContactTwo /> }
       </div>
       <Footer/>
+      <KakaoBtn/>
     </>
   );
 }

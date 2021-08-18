@@ -6,6 +6,7 @@ import { ZtopContext } from '../context/ztop';
 import Loading from 'react-loading';
 import { Link } from 'react-router-dom';
 import HeaderBlack from "../components/homeHeader/homeHeaderBlack";
+import KakaoBtn from '../components/kakaobtn/kakao';
 
 function About({ match }) {
   const { namecard_ } = useContext(ZtopContext);
@@ -199,6 +200,7 @@ function About({ match }) {
               })}
             </div>
           </div>
+          <KakaoBtn/>
           <Footer />
         </>
       );

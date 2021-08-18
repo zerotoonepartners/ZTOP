@@ -65,7 +65,7 @@ function Mainstory() {
                     {bloglink2_.data.slice(undefined, 1).map((item, idx) => {
                       return (
                         <div className="gridItem">
-                          <img src={logoOne} alt="" className="storyLogoImg" />
+                          <img src={logoTwo} alt="" className="storyLogoImg" />
                           <div className="storyTitle">
                             <span>{item.title}</span>
                           </div>
@@ -87,7 +87,7 @@ function Mainstory() {
                     {bloglink3_.data.slice(undefined, 1).map((item, idx) => {
                       return (
                         <div className="gridItem">
-                          <img src={logoOne} alt="" className="storyLogoImg" />
+                          <img src={logoThree} alt="" className="storyLogoImg" />
                           <div className="storyTitle">
                             <span>{item.title}</span>
                           </div>

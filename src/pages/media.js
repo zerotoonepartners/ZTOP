@@ -7,6 +7,7 @@ import Footer from '../components/footer/footer';
 import { useLocation } from 'react-router';
 import Kakao from '../components/kakao/kakao';
 import HeaderBlack from "../components/homeHeader/homeHeaderBlack";
+import KakaoBtn from '../components/kakaobtn/kakao';
 
 function Media({ location }) {
   const [news, setNews] = useState(true);
@@ -59,7 +60,7 @@ function Media({ location }) {
       <div className="libraryPageWrapper">
         {news ? <NewsPagenator /> : <CardPagenator />}
       </div>
-      <Kakao />
+      <KakaoBtn />
       <Footer />
     </div>
   );

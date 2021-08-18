@@ -9,6 +9,7 @@ import { ZtopContext } from '../context/ztop';
 import './scss/newsview.scss';
 import Kakao from '../components/kakao/kakao';
 import HeaderBlack from "../components/homeHeader/homeHeaderBlack";
+import KakaoBtn from '../components/kakaobtn/kakao';
 
 function NewsView({ history, location, match }) {
   const [news, setNews] = useState(true);
@@ -312,7 +313,7 @@ function NewsView({ history, location, match }) {
           <div>해당 게시글을 찾을 수 없습니다.</div>
         )}
       </div>
-      <Kakao />
+      <KakaoBtn />
       <Footer />
     </div>
   );

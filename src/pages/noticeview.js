@@ -6,6 +6,7 @@ import { ZtopContext } from '../context/ztop';
 import './scss/noticeview.scss';
 import Kakao from '../components/kakao/kakao';
 import HeaderBlack from "../components/homeHeader/homeHeaderBlack";
+import KakaoBtn from '../components/kakaobtn/kakao';
 
 function NoticeView({ history, location, match }) {
   const { ztopNotice_ } = useContext(ZtopContext);
@@ -363,7 +364,7 @@ function NoticeView({ history, location, match }) {
           <div>해당 게시글을 찾을 수 없습니다.</div>
         )}
       </div>
-      <Kakao />
+      <KakaoBtn />
       <Footer />
     </div>
   );
