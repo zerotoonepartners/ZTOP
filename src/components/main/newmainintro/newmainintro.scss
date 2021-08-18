@@ -133,7 +133,7 @@
 }
 @media all and (min-width: 1024px) {
   .NewMainIntroWrapper {
-    height: 100vh;
+    height: 110vh;
     .NewMainIntroTitleBox {
       margin-top: 5rem;
       width: 100%;
@@ -194,3 +194,66 @@
     }
   }
 }
+@media all and (min-width: 1024px) {
+    .NewMainIntroWrapper {
+      height: 100vh;
+      .NewMainIntroTitleBox {
+        margin-top: 5rem;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .NewMainIntroTitle {
+          width: 90%;
+          height: 50%;
+          span {
+            font-size: 3rem;
+            font-weight: 600;
+          }
+        }
+        .NewMainIntroSub {
+          width: 100%;
+          height: 50%;
+          span {
+            font-size: 1rem;
+            font-weight: 400;
+          }
+        }
+      }
+      .NewMainIntroContentBox {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+  
+        margin-top: 5rem;
+        .NewMainIntroContent {
+          width: 90%;
+          display: flex;
+          flex-direction: row;
+          height: 30rem;
+          .Slider {
+            .carouselBox {
+              width: 100%;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+  
+              margin-top: 5rem;
+              .NewMainIntroContent {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                height: 30rem;
+                border: 10px solid pink;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
