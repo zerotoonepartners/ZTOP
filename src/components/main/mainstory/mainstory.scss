@@ -130,10 +130,12 @@
         }
         .storyDesc {
           width: 30%;
+          height: 100%;
           margin-top: 1.5rem;
           font-weight: 200;
           font-size: 0.6rem;
           line-height: 160%;
+          text-align: justify;
         }
         .storyBtn {
           margin-top: 2rem;
@@ -210,6 +212,7 @@
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       .gridItem {
+        // border: 1px solid blue;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -229,11 +232,14 @@
           font-size: 1.3rem;
         }
         .storyDesc {
+          // border: 1px solid red;
           width: 60%;
+          height: 100%;
           margin-top: 1.5rem;
           font-weight: 200;
           font-size: 1rem;
           line-height: 160%;
+          text-align: justify;
         }
         .storyBtn {
           margin-top: 3rem;
