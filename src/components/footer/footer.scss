@@ -58,18 +58,20 @@
 @media all and (min-width: 768px) {
   .footerWrapper {
     width: 100%;
-    height: 20vh;
+    height: 30vh;
     background-color: #000;
     display: flex;
     justify-content: space-between;
+    align-items: flex-end;
     .footerLogoWrapper {
-      width: 33%;
-      height: 100%;
+      width: 18%;
+      height: 80%;
       display: flex;
-      align-items: center;
-      justify-content: flex-start;
-        // border: 1px solid red;
+      align-items: flex-start;
+      justify-content: flex-end;
+      // border: 1px solid red;
       span {
+        // margin-top: 4.3rem;
         margin-left: 2rem;
         display: block;
         color: #ffffff;
@@ -79,10 +81,11 @@
     .footerContentWrapper {
       // border: 1px solid blue;
       width: 33%;
-      height: 100%;
+      height: 80%;
       display: flex;
-      align-items: center;
-      justify-content: center;
+      align-items: flex-start;
+      justify-content: flex-start;
+      margin-left: -5rem;
 
       span {
         // margin-right: 3rem;
@@ -90,22 +93,29 @@
         display: block;
         color: #ffffff;
         font-weight: 200;
-        font-size: 0.8rem;
-        text-align: center;
+        text-align: start;
         white-space: nowrap;
+      }
+
+
+
+      .copyrights{
+        font-size: 1rem;
+        color:#0057ff;
       }
     }
     .iconWrapper{
       // border: 1px solid yellow;
       width: 33%;
+      height: 90%;
       display: flex;
       justify-content: center;
-      align-items: center;
+      align-items: flex-start;
 
       img{
         width: 2.5rem;
         height: 2.5rem;
-        margin: 0rem 0.4rem;
+        margin: 0rem 1rem;
         cursor: pointer;
       }
 
@@ -120,15 +130,16 @@
     background-color: #000;
     display: flex;
     justify-content: space-between;
+    align-items: flex-end;
     .footerLogoWrapper {
       width: 18%;
-      height: 100%;
+      height: 80%;
       display: flex;
       align-items: flex-start;
       justify-content: flex-end;
-        // border: 1px solid red;
+      // border: 1px solid red;
       span {
-        margin-top: 4.3rem;
+        // margin-top: 4.3rem;
         margin-left: 2rem;
         display: block;
         color: #ffffff;
@@ -139,9 +150,9 @@
     .footerContentWrapper {
       // border: 1px solid blue;
       width: 33%;
-      height: 100%;
+      height: 80%;
       display: flex;
-      align-items: center;
+      align-items: flex-start;
       justify-content: flex-start;
       margin-left: -5rem;
 
@@ -156,10 +167,7 @@
         white-space: nowrap;
       }
 
-      .bar{
-        font-size: 1rem;
-        padding:0rem 1rem ;
-      }
+
 
       .copyrights{
         font-size: 1rem;
@@ -169,6 +177,7 @@
     .iconWrapper{
       // border: 1px solid yellow;
       width: 33%;
+      height: 90%;
       display: flex;
       justify-content: center;
       align-items: flex-start;
@@ -176,7 +185,7 @@
       img{
         width: 2.5rem;
         height: 2.5rem;
-        margin: 4.3rem 1rem;
+        margin: 0rem 1rem;
         cursor: pointer;
       }
 

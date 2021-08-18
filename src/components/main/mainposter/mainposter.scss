@@ -253,9 +253,11 @@
         }
         .posterDesc {
           width: 80%;
+          display: flex;
+          justify-content: center;
           span {
-            line-height: 160%;
-            font-size: 1rem;
+            line-height: 180%;
+            font-size: 1.3rem;
             font-weight: 200;
           }
         }

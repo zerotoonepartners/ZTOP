@@ -63,11 +63,17 @@ function About({ match }) {
                             <img src={item.picture} alt="" className="cardImg" />
                             <div className="cardInfoWrapper">
                               <div className="nameWrapper">
-                                <span className="mainName">{item.name} </span>
-                                <span className="subName">{item.sub_name}</span>
+                                <span className="mainName">
+                                  {/* {item.name} */}
+                                  </span>
+                                <span className="subName">
+                                  {/* {item.sub_name} */}
+                                  </span>
                               </div>
                               <div className="statusWrapper">
-                                <span className="statusSpan">{item.status}</span>
+                                <span className="statusSpan">
+                                  {/* {item.status} */}
+                                  </span>
                               </div>
                             </div>
                           </div>
@@ -83,7 +89,17 @@ function About({ match }) {
                   return (
                     <>
                     <div className="ceoIntroduce">
-                      <span>"{item.intro}"</span>
+
+                      <div className="nameWrapper">
+                        <span className="mainName">{item.name} </span>
+                        <span className="subName">{item.sub_name} | </span>
+                        <span className="statusSpan">{item.status}</span>
+                      </div>
+
+                        
+
+                      
+                      <span className="ceoIntroduceSpan">"{item.intro}"</span>
                     </div>
                     
                  </>

@@ -316,11 +316,39 @@
       width: 70%;
       margin-bottom: 10vw;
       margin-top: 5vw;
-      padding-top: 4vw;
-      span{
-        font-size: 1.5vw;
+      padding-top: 0vw;
+
+      .nameWrapper{
+        // border:1px solid red;
+        margin-bottom: 10%;
+        .mainName{
+          font-size: 1.5vw;
+          line-height: 150%;
+          color: black;
+          font-weight: 800;
+        }
+        .subName{
+          font-size: 1.5vw;
+          line-height: 150%;
+          color: #707070;
+          font-weight: 500;
+
+        }
+        .statusSpan{
+          font-size: 1.5vw;
+          line-height: 150%;
+          color: black;
+          font-weight: 800;
+        }
+
+
+
+      }
+      .ceoIntroduceSpan{
+        font-size: 1.2vw;
         line-height: 150%;
-        color: #707070;
+        color: black;
+
       }
     }
   }
@@ -515,11 +543,39 @@
       width: 70%;
       margin-bottom: 10vw;
       margin-top: 5vw;
-      padding-top: 4vw;
-      span{
-        font-size: 1.5vw;
+      padding-top: 0vw;
+
+      .nameWrapper{
+        // border:1px solid red;
+        margin-bottom: 10%;
+        .mainName{
+          font-size: 1.5vw;
+          line-height: 150%;
+          color: black;
+          font-weight: 800;
+        }
+        .subName{
+          font-size: 1.5vw;
+          line-height: 150%;
+          color: #707070;
+          font-weight: 500;
+
+        }
+        .statusSpan{
+          font-size: 1.5vw;
+          line-height: 150%;
+          color: black;
+          font-weight: 800;
+        }
+
+
+
+      }
+      .ceoIntroduceSpan{
+        font-size: 1.2vw;
         line-height: 150%;
-        color: #707070;
+        color: black;
+
       }
     }
   }
