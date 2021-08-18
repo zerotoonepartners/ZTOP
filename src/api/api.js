@@ -12,6 +12,39 @@ export const blogLink = async () => {
   }
 };
 
+export const blogLink1 = async () => {
+  try {
+    const res = await axios.get(`${url}/bloglink1`);
+    const data = res.data;
+
+    return data;
+  } catch (e) {
+    alert(e);
+  }
+};
+
+export const blogLink2 = async () => {
+  try {
+    const res = await axios.get(`${url}/bloglink2`);
+    const data = res.data;
+
+    return data;
+  } catch (e) {
+    alert(e);
+  }
+};
+
+export const blogLink3 = async () => {
+  try {
+    const res = await axios.get(`${url}/bloglink3`);
+    const data = res.data;
+
+    return data;
+  } catch (e) {
+    alert(e);
+  }
+};
+
 export const ztopNotice = async () => {
   try {
     const res = await axios.get(`${url}/ztopnotice`);
