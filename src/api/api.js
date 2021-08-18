@@ -1,9 +1,32 @@
 import { url } from './config.js';
 import axios from 'axios';
 
-export const blogLink = async () => {
+
+export const blogLink1 = async () => {
   try {
-    const res = await axios.get(`${url}/bloglink`);
+    const res = await axios.get(`${url}/bloglinkone`);
+    const data = res.data;
+
+    return data;
+  } catch (e) {
+    alert(e);
+  }
+};
+
+export const blogLink2 = async () => {
+  try {
+    const res = await axios.get(`${url}/bloglinktwo`);
+    const data = res.data;
+
+    return data;
+  } catch (e) {
+    alert(e);
+  }
+};
+
+export const blogLink3 = async () => {
+  try {
+    const res = await axios.get(`${url}/bloglinkthree`);
     const data = res.data;
 
     return data;
