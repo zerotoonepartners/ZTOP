@@ -209,7 +209,7 @@ const ZtopContextProvider = ({ children }) => {
   };
   useEffect(() => {
     try {
-      getBlogLink();
+      //getBlogLink();
       getZtopNotice();
       getNamecard();
       getNews();

@@ -11,14 +11,12 @@ function Header() {
   const [scrollPosition, setScrollPosition] = useState(0);
   const [clickOpenArrow, setClickOpenArrow] = useState(false);
   const [clickCloseArrow, setClickCloseArrow] = useState(false);
-
   const updateScroll = () => {
     setScrollPosition(window.scrollY || document.documentElement.scrollTop);
   };
   useEffect(() => {
     window.addEventListener('scroll', updateScroll);
   });
-
   return (
     <>
       <div className={scrollPosition < 100 ? 'header' : 'newHeader'}>
@@ -74,7 +72,10 @@ function Header() {
               <div
                 className="menuItem"
                 onClick={() => {
-                    window.open('https://page.stibee.com/subscriptions/82706', '_blank');
+                  window.open(
+                    'https://page.stibee.com/subscriptions/82706',
+                    '_blank',
+                  );
                 }}
               >
                 <span>NEWS LETTER</span>
@@ -121,7 +122,10 @@ function Header() {
             <div
               className="menuItem"
               onClick={() => {
-                window.open('https://page.stibee.com/subscriptions/82706', '_blank')
+                window.open(
+                  'https://page.stibee.com/subscriptions/82706',
+                  '_blank',
+                );
               }}
             >
               <span>NEWS LETTER</span>
@@ -157,12 +161,11 @@ const MenuBox = styled.div`
   ${(props) =>
     props.clickOpenArrow &&
     css`
-    @media only screen and (min-width: 320px){
-      width : 50%
-    }
-      @media only screen and (min-width: 768px){
-        width : 40%
-
+      @media only screen and (min-width: 320px) {
+        width: 50%;
+      }
+      @media only screen and (min-width: 768px) {
+        width: 40%;
       }
       height: 100vh;
     `}
