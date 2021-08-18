@@ -46,6 +46,7 @@ function NewMainIntro(){
                                 </CarouselTextContent>
                             </CarouselTextBox>
                         </CarouselBox>
+                        
                     </Slider>
                 </div>
             </div>
@@ -58,23 +59,22 @@ const CarouselBox = styled.div`
     @media only screen and (min-width: 320px){
         width : 100%;
         height : 25rem;
-        flex : 1;
-        flex-direction : row;
+        display : flex;
 
     }
     @media only screen and (min-width: 768px){
         width : 100%;
         height : 25rem;
-        flex : 1;
-        flex-direction : row;
+        display : flex;
     
     }
     @media only screen and (min-width: 1024px){
         width : 100%;
-        height : 25rem;
-        flex : 1;
+        height : 100%;
+        display : flex;
         flex-direction : row;
         border: 1px solid blue;
+        z-index : 100000;
 
     }  
 `
@@ -108,10 +108,8 @@ const CarouselTextTitle = styled.text`
     }
     @media only screen and (min-width: 1024px){
         width : 50%;
-        height : 25rem;
-        display : flex;
-        align-items : center;
-        justify-content : center;
+        height : 20rem;
+
     }
 `
 const CarouselTextContent = styled.text`
@@ -126,11 +124,7 @@ const CarouselTextContent = styled.text`
  
     }
     @media only screen and (min-width: 1024px){
-        width : 50%;
-        border: 1px solid orange;
-        display : flex;
-        align-items : center;
-        justify-content : center;
+        
     }
 `
 const CarouselImgBox = styled.div`
@@ -147,9 +141,8 @@ const CarouselImgBox = styled.div`
     @media only screen and (min-width: 1024px){
         width : 50%;
         height : 25rem;
-
-        display : flex;
-        flexDirection : row;
+        // display : flex;
+        border : 1px solid green;
 
 
     } 

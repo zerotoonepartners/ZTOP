@@ -27,8 +27,8 @@
 
     display: block;
 
-    width: 4rem;
-    height: 4rem;
+    width: 1rem;
+    height: 1rem;
     padding: 0;
     -webkit-transform: translate(0, -50%);
     -ms-transform: translate(0, -50%);
@@ -68,7 +68,7 @@
     font-family: 'slick';
     font-size: 3rem;
     line-height: 1;
-
+    border : 1px solid orange;
     opacity: .75;
     color: rgb(189, 189, 189);
 
@@ -83,7 +83,7 @@
 [dir='rtl'] .slick-prev
 {
     right: -5%;
-    left: auto;
+    /* left: auto; */
 }
 .slick-prev:before
 {
@@ -100,7 +100,7 @@
 }
 [dir='rtl'] .slick-next
 {
-    right: auto;
+    /* right: auto; */
     left: -5%;
 }
 .slick-next:before
@@ -125,7 +125,6 @@
     bottom: 0;
 
     display: block;
-
     width: 100%;
     padding: 0;
     margin: 0;
@@ -140,11 +139,11 @@
     position: relative;
 
     display: inline-block;
-
-    width: 20px;
-    height: 20px;
-    margin: 0 5px;
-    padding: 0;
+    
+    width: 1rem;
+    height: 1rem;
+    margin: 0 0.5rem;
+    padding: 0.1rem;
 
     cursor: pointer;
 }
@@ -155,9 +154,9 @@
 
     display: block;
 
-    width: 20px;
-    height: 20px;
-    padding: 5px;
+    width: 1rem;
+    height: 1rem;
+    padding: 0px;
 
     cursor: pointer;
 
@@ -181,13 +180,14 @@
     font-family: 'slick';
     font-size: 3rem;
     line-height: 20px;
+    border : 1px solid orange;
 
     position: absolute;
     top: 0;
     left: 0;
 
-    width: 20px;
-    height: 20px;
+    width: 1rem;
+    height: 1rem;
 
     content: '•';
     text-align: center;
