@@ -6,6 +6,7 @@ import ToolFooter from '../components/namecardcomp/toolfooter/ToolFooter';
 import Introduce from '../components/namecardcomp/introduce/Introduce';
 import Footer from '../components/footer/footer';
 import Newheader from '../components/header/newheader';
+import HeaderBlack from "../components/homeHeader/homeHeaderBlack";
 import WebProfile from '../components/webprofile/webprofile';
 import { useContext, useState, useEffect } from 'react';
 import { ZtopContext } from '../../src/context/ztop';
@@ -44,7 +45,7 @@ function CardContainers({ match }) {
         <Footer />
       </div>
       <div className="webCardContainerWrapper">
-        <Newheader />
+        <HeaderBlack />
         <WebProfile no={no} />
         <Footer />
       </div>
