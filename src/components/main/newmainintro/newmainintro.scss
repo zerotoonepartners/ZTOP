@@ -52,27 +52,26 @@
         flex-direction: row;
         height: 30rem;
         .Slider {
-          background-color: brown;
           .carouselBox {
             width: 100%;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-      
+
             margin-top: 5rem;
-            .NewMainIntroContent{
-                width: 100%;
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                justify-content: center;
-                height: 30rem;
-                border : 10px solid pink;
+            .NewMainIntroContent {
+              width: 100%;
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              justify-content: center;
+              height: 30rem;
+              border: 10px solid pink;
             }
+          }
         }
       }
     }
-  }
   }
 }
