@@ -1,5 +1,4 @@
 import React from 'react';
-//import Carousel from './carousel';
 import styled, { css, keyframes } from 'styled-components';
 import Slider from 'react-slick';
 import './slick.scss';

@@ -33,6 +33,7 @@ const ZtopContextProvider = ({ children }) => {
 
   const getBlogLink = async () => {
     let res = await blogLink();
+    console.log(res);
     try {
       setBlogLink_({
         status: 'pending',
@@ -88,7 +89,6 @@ const ZtopContextProvider = ({ children }) => {
   };
   const getNews = async () => {
     let res = await news();
-    console.log(res);
     try {
       setNews_({
         status: 'pending',
@@ -106,26 +106,6 @@ const ZtopContextProvider = ({ children }) => {
     }
   };
 
-  const getDetail = async (id) => {
-    let res = await detail(id);
-    console.log(res, 'this is detail');
-    try {
-      setDetail_({
-        status: 'pending',
-        data: null,
-      });
-      setDetail_({
-        status: 'resolved',
-        data: res.reverse(),
-      });
-    } catch (e) {
-      setDetail_({
-        status: 'rejected',
-        data: null,
-      });
-      console.log(e);
-    }
-  };
   useEffect(() => {
     try {
       getBlogLink();

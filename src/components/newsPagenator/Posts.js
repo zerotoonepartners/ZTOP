@@ -38,7 +38,7 @@ function Posts({ posts }) {
               <span>{post.writer}</span>
             </div>
             <div className="NewsPagenatorStamp">
-              <span>{post.created_at.slice(0, 10)}</span>
+              <span>{post.time_stamp.slice(0, 10)}</span>
             </div>
           </Link>
         ))

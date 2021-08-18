@@ -57,7 +57,7 @@ function NoticeView({ history, location, match }) {
                           <span>작성자 : {post.writer}</span>
                         </div>
                         <div className="noticeViewCreateBox">
-                          <span>작성일 : {post.created_at.slice(0, 10)}</span>
+                          <span>작성일 : {post.time_stamp.slice(0, 10)}</span>
                         </div>
                       </div>
                     </div>
