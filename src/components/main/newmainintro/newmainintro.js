@@ -112,6 +112,8 @@ const CarouselTextBox = styled.div`
     height: 100%;
     position: absolute;
     right: 0;
+    display: flex;
+    flex-direction: column;
   }
 `;
 const CarouselTextTitle = styled.text`
@@ -124,11 +126,13 @@ const CarouselTextTitle = styled.text`
     height: 20rem;
   }
   @media only screen and (min-width: 1024px) {
-    width: 50%;
-    height: 25rem;
+    width: 100%;
+    height: 50%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+    font-size: 1.4rem;
+    font-weight: 900;
   }
 `;
 const CarouselTextContent = styled.text`
@@ -141,10 +145,11 @@ const CarouselTextContent = styled.text`
     height: 20rem;
   }
   @media only screen and (min-width: 1024px) {
-    width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 100%;
+    height: 50%;
+    font-size: 1rem;
+    font-weight: 200;
+    line-height: 220%;
   }
 `;
 
