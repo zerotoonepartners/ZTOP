@@ -3,8 +3,12 @@ import './mainstory.scss';
 import logoOne from '../../../static/images/story1logo.png';
 import logoTwo from '../../../static/images/story2logo.png';
 import logoThree from '../../../static/images/story3logo.png';
+import { ZtopContext } from '../../../context/ztop';
+import { useContext } from 'react';
 
 function Mainstory() {
+  const { bloglink1_, bloglink2_, bloglink3_ } = useContext(ZtopContext);
+  console.log(bloglink1_, bloglink2_, bloglink3_);
   return (
     <div className="mainStoryWrapper">
       <div className="ztopTitleWrapper">
