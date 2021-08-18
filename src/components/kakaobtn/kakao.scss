@@ -1,0 +1,55 @@
+@media all and (min-width: 320px) {
+  .kakaoWrapper {
+    cursor: pointer;
+    position: fixed;
+    bottom: 5rem;
+    right: 1.4rem;
+    width: auto;
+    z-index: 10000;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    border: 2px solid #000;
+    background: url('../../static/images/kakaoImg.png');
+    background-size: 110%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+@media all and (min-width: 768px) {
+  .kakaoWrapper {
+    cursor: pointer;
+    position: fixed;
+    bottom: 2rem;
+    right: 1.4rem;
+    width: auto;
+    z-index: 10000;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    border: 2px solid #000;
+    background: url('../../static/images/kakaoImg.png');
+    background-size: 110%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+@media all and (min-width: 1024px) {
+  .kakaoWrapper {
+    cursor: pointer;
+    position: fixed;
+    bottom: 4rem;
+    right: 1.7rem;
+    width: auto;
+    z-index: 10000;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    border: 2px solid #000;
+    background: url('../../static/images/kakaoImg.png');
+    background-size: 110%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}

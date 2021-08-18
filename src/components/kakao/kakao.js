@@ -19,10 +19,11 @@ export default function Kakao() {
         shape: 'pc',
         supportMultipleDensities: true,
       });
-
       document.body.appendChild(script);
       document.body.removeChild(script);
-    } catch (e) {}
+    } catch (e) {
+      console.log(e, 'asd');
+    }
   }, []);
   return <div class="kakaoBtn" id="kakao-talk-channel-chat-button"></div>;
 }
