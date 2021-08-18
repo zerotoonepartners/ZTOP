@@ -1,46 +1,59 @@
-.NewMainIntroWrapper{
-    width : 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
+.NewMainIntroWrapper {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
-@media all and (min-width:320px){
-    .NewMainIntroWrapper{
-
-    }
+@media all and (min-width: 320px) {
+  .NewMainIntroWrapper {
+  }
 }
-@media all and (min-width:768px){
-    .NewMainIntroWrapper{
-
-    }
+@media all and (min-width: 768px) {
+  .NewMainIntroWrapper {
+  }
 }
-@media all and (min-width:1024px){
-    .NewMainIntroWrapper{
-        .NewMainIntroTitleBox{
-            margin-top: 5rem;
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            .NewMainIntroTitle{
-                width: 90%;
-                height: 50%;
-                span{
-                    font-size: 3rem;
-                    font-weight: 600;
-                }
-            }
-            .NewMainIntroSub{
-                width: 100%;
-                height: 50%;
-                span{
-                    font-size: 1rem;
-                    font-weight: 400;
-                }
-            }
+@media all and (min-width: 1024px) {
+  .NewMainIntroWrapper {
+    .NewMainIntroTitleBox {
+      margin-top: 5rem;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .NewMainIntroTitle {
+        width: 90%;
+        height: 50%;
+        span {
+          font-size: 3rem;
+          font-weight: 600;
         }
-        .NewMainIntroContentBox{
+      }
+      .NewMainIntroSub {
+        width: 100%;
+        height: 50%;
+        span {
+          font-size: 1rem;
+          font-weight: 400;
+        }
+      }
+    }
+    .NewMainIntroContentBox {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      margin-top: 5rem;
+      .NewMainIntroContent {
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        height: 30rem;
+        .Slider {
+          background-color: brown;
+          .carouselBox {
             width: 100%;
             display: flex;
             flex-direction: column;
@@ -55,8 +68,11 @@
                 align-items: center;
                 justify-content: center;
                 height: 30rem;
-                border : 1px solid pink;
+                border : 10px solid pink;
             }
         }
+      }
     }
+  }
+  }
 }
