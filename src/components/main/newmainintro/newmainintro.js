@@ -5,6 +5,9 @@ import Slider from 'react-slick';
 import './slick.css';
 import './slick-theme.css';
 import './newmainintro.scss';
+import program from "../../../static/images/program.png"
+import investment from "../../../static/images/investment.png"
+import consulting from "../../../static/images/consulting.png"
 
 function NewMainIntro() {
   const settings = {
@@ -20,14 +23,16 @@ function NewMainIntro() {
       <div className="NewMainIntroWrapper">
         <div className="NewMainIntroTitleBox">
           <div className="NewMainIntroTitle">
-            <span>START-UP ACCELERATOR</span>
+            <span>ZeroToOnePartners' Services</span>
           </div>
         </div>
         <div className="NewMainIntroContentBox">
           <div className="NewMainIntroContent">
             <Slider {...settings}>
               <CarouselBox>
-                <CarouselImgBox>12</CarouselImgBox>
+                <CarouselImgBox>
+                    <CarouselImg src={investment}/>
+                </CarouselImgBox>
 
                 <CarouselTextBox>
                   <CarouselTextTitle>INVESTMENT</CarouselTextTitle>
@@ -94,6 +99,9 @@ const CarouselImgBox = styled.div`
     width: 50%;
     height: 100%;
     position: absolute;
+    display : flex;
+    align-items : center;
+    justify-content : center;
     left: 0;
   }
 `;
@@ -111,6 +119,7 @@ const CarouselTextBox = styled.div`
     width: 50%;
     height: 100%;
     position: absolute;
+
     right: 0;
     display: flex;
     flex-direction: column;
@@ -152,5 +161,21 @@ const CarouselTextContent = styled.text`
     line-height: 220%;
   }
 `;
+
+const CarouselImg = styled.img`
+    @media only screen and (min-width: 320px) {
+        width: 50%;
+        height: 15rem;
+    }
+    @media only screen and (min-width: 768px) {
+        width: 50%;
+        height: 20rem;
+    }
+    @media only screen and (min-width: 1024px) {
+        width: 15rem;
+        height : 15rem;
+        
+    }
+`
 
 export default NewMainIntro;
