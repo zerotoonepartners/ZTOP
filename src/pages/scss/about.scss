@@ -184,7 +184,7 @@
     justify-content: center;
   }
   .avatarCardWrapper {
-    // border:1px solid pink;
+    border:1px solid pink;
     width: 30vw;
     height: 34vw;
     display: flex;
@@ -199,7 +199,7 @@
       object-fit:fill;
     }
     .cardInfoWrapper {
-      // border:1px solid blue;
+      border:1px solid blue;
       flex: 1;
       height: 100%;
       display: flex;
@@ -208,7 +208,7 @@
       align-items: center;
       white-space: nowrap;
       .nameWrapper {
-        margin-top: 6%;
+        margin-top: 10%;
         .mainName {
           font-size: 0.9rem;
           font-weight: 800;
