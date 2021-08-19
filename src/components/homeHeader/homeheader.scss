@@ -438,6 +438,25 @@ button {
 // start desktop
 @media all and (min-width: 1024px) {
   .newHeader {
+    &:hover{
+      background-color :#ffffff;
+      .logoWrapper{
+        #logo{
+          display: block;
+          width: 10rem;
+          height: 3rem;
+          background-image: url("../../static/images/colorLogo.png");
+          background-size: 100%;
+          background-position: center;
+          background-repeat: no-repeat;
+        }
+      }
+      .menuWrapper{
+        .menuItem{
+          color : black;
+        }
+      }
+    }
     width: 100%;
     height: auto;
     display: flex;
@@ -458,10 +477,14 @@ button {
       display: flex;
       align-items: center;
       justify-content: center;
-      img {
+      #logo {
         display: block;
         width: 10rem;
         height: 3rem;
+        background-image: url("../../static/images/logowhite.png");
+        background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
       }
     }
     .menuBlock {
@@ -534,16 +557,44 @@ button {
   .header {
     background-color: rgba(0, 0, 0, 0);
     height: 12vh;
+    &:hover{
+      background-color: white;
+      .logoWrapper{
+        #logo{
+          display: block;
+          width: 10rem;
+          height: 3rem;
+          background-image: url("../../static/images/colorLogo.png");
+          background-size: 100%;
+          background-position: center;
+          background-repeat: no-repeat;
+        }
+      }
+      .menuWrapper{
+        .menuItem{
+          color : black;
+        }
+      }
+    }
     .logoWrapper {
       width: 15%;
       height: 100%;
       display: flex;
       align-items: center;
       justify-content: center;
-      img {
+      // img {
+      //   display: block;
+      //   width: 10rem;
+      //   height: 3rem;
+      // }
+      #logo{
         display: block;
         width: 10rem;
         height: 3rem;
+        background-image: url("../../static/images/logowhite.png");
+        background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
       }
     }
     .menuBlock {

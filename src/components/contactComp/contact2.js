@@ -38,7 +38,7 @@ function ContactTwo() {
             <div className="infoWrapper">
               <div className="contactinfoBox">
                 <div className="contactinfoContent1">
-                  <span><q>Add. </q>서울시 서초구 서초중앙로 22길 117,4층</span>
+                  <span><q>Add. </q>서울시 서초구 서초중앙로 22길 117, 4층</span>
                 </div>
                 <div className="contactinfoContent2">
                 <span><q>Tel. </q>02-6228-5100</span>

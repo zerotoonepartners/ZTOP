@@ -90,7 +90,8 @@ function Header() {
               history.push('/');
             }}
           >
-            <img class="logo" src={logoE} alt="" />
+            {/* <img class="logo" src={logoE} alt="" id="logo"/> */}
+            <div id="logo"></div>
           </button>
         </div>
         <div className="menuBlock">

@@ -34,7 +34,7 @@ function About({ match }) {
               </div>
             </div>
             <div className="aboutInfoDesc">
-              <span className="strong">스타트업의 성장 과정을 함께하겠습니다.</span>
+              <span className="strong">스타트업의 성장 과정을 함께 하겠습니다.</span>
               <span>
                 제로투원파트너스는 <br />
                 다년간 축척해 온 전문성과 노하우를 바탕으로 아이디어 단계부터

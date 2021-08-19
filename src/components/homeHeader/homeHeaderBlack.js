@@ -1,7 +1,8 @@
 import React, { useContext, useState, useEffect } from 'react';
 import styled, { css, keyframes } from 'styled-components';
 import './homeheader.scss';
-import logoE from '../../static/images/logo_white.png';
+import logoE from '../../static/images/logowhite.png';
+import logoB from '../../static/images/colorLogo.png';
 import ham from '../../static/images/hambur.png';
 import arrow from '../../static/images/arrow.png';
 import { useHistory } from 'react-router';
@@ -81,7 +82,8 @@ function HeaderBlack() {
               history.push('/');
             }}
           >
-            <img class="logo" src={logoE} alt="" />
+            {/* <img class="logo" src={logoE} alt="" id="logo"/> */}
+            <div id="logo"></div>
           </button>
         </div>
         <div className="menuBlock">
