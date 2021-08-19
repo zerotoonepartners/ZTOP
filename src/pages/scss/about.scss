@@ -184,7 +184,7 @@
     justify-content: center;
   }
   .avatarCardWrapper {
-    border:1px solid pink;
+    // border:1px solid pink;
     width: 30vw;
     height: auto;
     display: flex;
@@ -199,7 +199,7 @@
       object-fit:fill;
     }
     .cardInfoWrapper {
-      border:1px solid blue;
+      // border:1px solid blue;
       flex: 1;
       height: 100%;
       display: flex;
@@ -327,7 +327,7 @@
     // border:1px solid blue;
     width: 80%;
     padding-bottom: 3rem;
-    border-bottom: 1px solid #c9c9c9;
+    border-bottom: none;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin: 0vw 0vw;
@@ -559,7 +559,7 @@
     // border:1px solid blue;
     width: 80%;
     padding-bottom: 3rem;
-    border-bottom: 1px solid #c9c9c9;
+    border-bottom: none;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin: 0vw 0vw;
@@ -615,7 +615,6 @@
   }
 
   .lineWrapper {
-    // border:1px solid green;
     width: 80%;
     border-bottom: 1px solid #c9c9c9;
     position: relative;
