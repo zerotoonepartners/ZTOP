@@ -109,11 +109,11 @@ function About({ match }) {
               </div>
     
             </div>
-            <div className="lineWrapper">
+            {/* <div className="lineWrapper">
               <div className="titleTag">
                 <span>투자본부</span>
               </div>
-            </div>
+            </div> */}
             <div className="distributeWrapper statusCate">
               {namecard_.data.map((item, index) => {
                 if (item.group === '투자본부')
@@ -139,11 +139,11 @@ function About({ match }) {
                   );
               })}
             </div>
-            <div className="lineWrapper">
+            {/* <div className="lineWrapper">
               <div className="titleTag">
                 <span>기업지원본부</span>
               </div>
-            </div>
+            </div> */}
             <div className="supportWrapper statusCate">
               {namecard_.data.map((item, index) => {
                 if (item.group === '기업지원본부')
@@ -169,11 +169,11 @@ function About({ match }) {
                   );
               })}
             </div>
-            <div className="lineWrapper">
+            {/* <div className="lineWrapper">
               <div className="titleTag">
                 <span>경영기획본부</span>
               </div>
-            </div>
+            </div> */}
             <div className="supportWrapper statusCate">
               {namecard_.data.map((item, index) => {
                 if (item.group === '경영기획본부')
