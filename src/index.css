@@ -1,11 +1,15 @@
 @font-face {
-  font-family: 'InfinitySans-RegularA1';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/InfinitySans-RegularA1.woff')
+  font-family: 'Spoqa';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff')
     format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
+body {
+  font-family: 'Spoqa';
+}
+
 * {
-  font-family: 'InfinitySans-RegularA1';
+  font-family: 'Spoqa';
 }

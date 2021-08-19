@@ -1,3 +1,17 @@
+@font-face {
+  font-family: 'Spoqa';
+  /* font-style: normal; */
+  /* font-weight: normal; */
+  src: url('../../../static/font/SpoqaHanSansNeo-Medium.otf') format('otf');
+}
+body {
+  font-family: 'Spoqa';
+}
+
+* {
+  font-family: 'Spoqa';
+}
+
 @media all and (min-width: 320px) {
   .mainLandingWrapper {
     background: url('../../../static/images/landing.png');
@@ -66,7 +80,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rbga(0,0,0,0.8);
+    background-color: rbga(0, 0, 0, 0.8);
     // .mainLandingShadow{
     //   width : 100%;
     //   height: 100%;

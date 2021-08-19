@@ -17,7 +17,6 @@ const ZtopContextProvider = ({ children }) => {
   const [event, setEvent] = useState();
   const [namecardTarget, setNamecardTarget] = useState('');
 
-
   const [ztopNotice_, setZtopNotice_] = useState({
     status: 'idle',
     data: null,
@@ -50,7 +49,6 @@ const ZtopContextProvider = ({ children }) => {
 
   const [selectionNews_, setSelectionNews_] = useState(undefined);
   const [selectionNotice_, setSelectionNotice_] = useState(undefined);
-
 
   const getBlogLink1 = async () => {
     let res = await blogLink1();
@@ -137,7 +135,7 @@ const ZtopContextProvider = ({ children }) => {
       });
       setNamecard_({
         status: 'resolved',
-        data: res.reverse(),
+        data: res,
       });
     } catch (e) {
       setNamecard_({
