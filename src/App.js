@@ -2,7 +2,7 @@ import { BrowserRouter, Route, Switch, useHistory } from 'react-router-dom';
 import { ZtopContextProvider } from './context/ztop';
 import './App.css';
 import './reset.css';
-
+import './index.css';
 import About from './pages/about';
 import Main from './pages/main';
 import Media from './pages/media';
@@ -15,11 +15,11 @@ import WebProfileContainers from './containers/WebProfileContainers';
 import { useEffect } from 'react';
 
 function App() {
-  useEffect(()=>{
-    try{
+  useEffect(() => {
+    try {
       window.Kakao.init('d149effdaec276eadf4b088d938de0f2');
-    }catch(e){}
-  })
+    } catch (e) {}
+  });
   return (
     <ZtopContextProvider>
       <BrowserRouter>

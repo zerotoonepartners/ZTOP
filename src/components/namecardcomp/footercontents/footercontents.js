@@ -21,10 +21,18 @@ function Footercontents() {
         </div>
       </div>
       <div className="bannerWrapper">
-        <img src={b1} alt="" className="bannerItem" />
-        <img src={b3} alt="" className="bannerItem" />
-        <img src={b2} alt="" className="bannerItem" />
-        <img src={b4} alt="" className="bannerItem" />
+        <a href="https://vo.la/ZYO1s">
+          <img src={b1} alt="" className="bannerItem" />
+        </a>
+        <a href="https://page.stibee.com/subscriptions/82706">
+          <img src={b3} alt="" className="bannerItem" />
+        </a>
+        <a href="https://vo.la/dvJQc">
+          <img src={b2} alt="" className="bannerItem" />
+        </a>
+        <a href="https://cafe.naver.com/forcso">
+          <img src={b4} alt="" className="bannerItem" />
+        </a>
       </div>
     </div>
   );
