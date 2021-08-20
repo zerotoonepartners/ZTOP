@@ -57,86 +57,9 @@ function MobileTeam({ match }) {
                   );
               })}
             </div>
-            <div className="lineWrapper">
-              <div className="titleTag">
-                <span>투자본부</span>
-              </div>
-            </div>
             <div className="distributeWrapper statusCate">
               {namecard_.data.map((item, index) => {
-                if (item.group === '투자본부')
-                  return (
-                    <>
-                      <Link to={`/namecard/${item.id}`}>
-                        <div className="gridWrapper">
-                          <div className="avatarCardWrapper">
-                            <img
-                              src={item.picture}
-                              alt=""
-                              className="cardImg"
-                            />
-                            <div className="cardInfoWrapper">
-                              <div className="nameWrapper">
-                                <span className="mainName">{item.name} </span>
-                                <span className="subName">{item.sub_name}</span>
-                              </div>
-                              <div className="statusWrapper">
-                                <span className="statusSpan">
-                                  {item.status}
-                                </span>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </Link>
-                    </>
-                  );
-              })}
-            </div>
-            <div className="lineWrapper">
-              <div className="titleTag">
-                <span>기업지원본부</span>
-              </div>
-            </div>
-            <div className="supportWrapper statusCate">
-              {namecard_.data.map((item, index) => {
-                if (item.group === '기업지원본부')
-                  return (
-                    <>
-                      <Link to={`/namecard/${item.id}`}>
-                        <div className="gridWrapper">
-                          <div className="avatarCardWrapper">
-                            <img
-                              src={item.picture}
-                              alt=""
-                              className="cardImg"
-                            />
-                            <div className="cardInfoWrapper">
-                              <div className="nameWrapper">
-                                <span className="mainName">{item.name} </span>
-                                <span className="subName">{item.sub_name}</span>
-                              </div>
-                              <div className="statusWrapper">
-                                <span className="statusSpan">
-                                  {item.status}
-                                </span>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </Link>
-                    </>
-                  );
-              })}
-            </div>
-            <div className="lineWrapper">
-              <div className="titleTag">
-                <span>경영기획본부</span>
-              </div>
-            </div>
-            <div className="supportWrapper statusCate">
-              {namecard_.data.map((item, index) => {
-                if (item.group === '경영기획본부')
+                if (item.group === '..')
                   return (
                     <>
                       <Link to={`/namecard/${item.id}`}>
