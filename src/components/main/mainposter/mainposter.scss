@@ -30,7 +30,7 @@
       .posterContentWrapper {
         // border: 1px solid red;
         display: none;
-        width: auto;
+        width: 80%;
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -54,6 +54,7 @@
           span {
             font-size: 0.5rem;
             font-weight: 200;
+            line-height: 180%;
           }
         }
       }
@@ -153,6 +154,7 @@
         .posterDesc {
           width: 80%;
           span {
+            line-height: 180%;
             font-size: 1rem;
             font-weight: 200;
           }
