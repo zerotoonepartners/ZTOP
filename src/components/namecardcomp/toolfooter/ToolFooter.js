@@ -8,13 +8,15 @@ import { useContext, useEffect } from 'react';
 import Kakaolink from './kakaolink';
 
 function ToolFooter({ no }) {
-  const { namecard_, setNamecardTarget } = useContext(ZtopContext);
+  const { namecard_, setNamecardTarget, namecardTarget } =
+    useContext(ZtopContext);
+
   useEffect(() => {
     namecard_.data &&
       namecard_.data.map((item, idx) => {
         if (no == item.id) {
-          console.log(item);
           setNamecardTarget(item.kakao_picture);
+          console.log(namecardTarget);
         }
       });
   }, []);
@@ -74,8 +76,7 @@ function ToolFooter({ no }) {
                   >
                     <div className="shareBtn">
                       <img src={share} alt="" />
-
-                      <Kakaolink />
+                      <Kakaolink item={item} />
                       <span>공유하기</span>
                     </div>
                   </a>
