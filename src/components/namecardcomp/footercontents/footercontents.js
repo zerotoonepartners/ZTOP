@@ -1,6 +1,6 @@
 import React from 'react';
 import './footercontents.scss';
-import Map from '../../../static/images/map.JPG';
+import Map from '../../../static/images/map.png';
 import { useHistory } from 'react-router-dom';
 import b1 from '../../../static/images/001.png';
 import b2 from '../../../static/images/002.png';
