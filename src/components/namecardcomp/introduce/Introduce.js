@@ -41,7 +41,7 @@ function Introduce({ no }) {
           }
         })}
 
-      <div className="mainPoster">
+      <div className="mainPosterr">
         <Poster className="posterOne poster" img={layer1}>
           <div className="posterDisplayWrapper">
             <span className="displayTitle">ACCELERATOR</span>
