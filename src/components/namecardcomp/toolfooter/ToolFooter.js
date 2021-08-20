@@ -41,7 +41,7 @@ function ToolFooter({ no }) {
               <span className="strong">M. </span>
               010-1234-5678
               <span className="strong strongMargin">E. </span>
-              abc123@ztop.kr
+              info@ztop.kr
             </span>
           </div>
         </div>
