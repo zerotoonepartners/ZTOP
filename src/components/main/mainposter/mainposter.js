@@ -35,7 +35,7 @@ function Mainposter() {
         <div className="posterContentWrapper">
           <div className="posterDesc">
             <span>
-              우리는 스타트업을 기획 부터 사업화하는 컴퍼니 빌더입니다.
+              우리는 스타트업을 기획 부터<br />사업화하는 컴퍼니 빌더입니다.
               <br />
               <br /> 세상에 한 걸음 더 앞으로<br /> 나갈 수 있도록 혁신적인
               <br />
@@ -58,8 +58,8 @@ function Mainposter() {
               <br />
               <br />다년간 축적된 경험으로<br />기업의 브랜딩, 사업 계획,
               <br />
-              마케팅 등의 비즈니스 구축을<br />위한 중요한 방향성을 설정
-              <br />합니다.
+              마케팅 등의 비즈니스<br />구축을 위한 중요한 방향성을
+              <br />설정합니다.
             </span>
           </div>
         </div>
